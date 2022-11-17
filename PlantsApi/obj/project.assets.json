@@ -229,9 +229,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\GitHub\\Plants\\PlantsApi\\PlantsApi.csproj",
-      "projectName": "PlantsApi",
-      "projectPath": "E:\\GitHub\\Plants\\PlantsApi\\PlantsApi.csproj",
+      "projectUniqueName": "E:\\GitHub\\Plants\\PlantsApi\\Plants.Api.csproj",
+      "projectName": "Plants.Api",
+      "projectPath": "E:\\GitHub\\Plants\\PlantsApi\\Plants.Api.csproj",
       "packagesPath": "C:\\Users\\aleja\\.nuget\\packages\\",
       "outputPath": "E:\\GitHub\\Plants\\PlantsApi\\obj\\",
       "projectStyle": "PackageReference",

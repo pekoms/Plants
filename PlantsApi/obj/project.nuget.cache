@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "mFtdy3xHmybqItEWALpZvjta+1VNid9yChOOr+sAuoeQREpGilz1Gt8daNvBUbZmjWNhqplYVtCorVdNIvx7MA==",
+  "dgSpecHash": "0h9oDMBYoomMfCUAH0qV9Q36gX7m1t3Izz9wY4B8SMkivNktOGR9fdM7+MX7qWq4bj4B75eaWKIhPVNPIjz33Q==",
   "success": true,
-  "projectFilePath": "E:\\GitHub\\Plants\\PlantsApi\\PlantsApi.csproj",
+  "projectFilePath": "E:\\GitHub\\Plants\\PlantsApi\\Plants.Api.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\aleja\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
     "C:\\Users\\aleja\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",

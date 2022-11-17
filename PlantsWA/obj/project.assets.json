@@ -1767,9 +1767,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\GitHub\\Plants\\PlantsWA\\PlantsWA.csproj",
-      "projectName": "PlantsWA",
-      "projectPath": "E:\\GitHub\\Plants\\PlantsWA\\PlantsWA.csproj",
+      "projectUniqueName": "E:\\GitHub\\Plants\\PlantsWA\\Plants.WA.csproj",
+      "projectName": "Plants.WA",
+      "projectPath": "E:\\GitHub\\Plants\\PlantsWA\\Plants.WA.csproj",
       "packagesPath": "C:\\Users\\aleja\\.nuget\\packages\\",
       "outputPath": "E:\\GitHub\\Plants\\PlantsWA\\obj\\",
       "projectStyle": "PackageReference",

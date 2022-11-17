@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "+w6QEKXb6hoN8sjtQJNLscQmYsSIOwPPH7/XBgPm0f/EuahixBECMsxaJc1ThZWDbUXa9ihpuJ7QtprEnkxdTw==",
+  "dgSpecHash": "xN+vPiqwGK1+DDPf8+/vSwvG67Oee5ZT4HSvLw2p7EROpXKNyAtf9/3FBNQzfPWiT6PYmdoB4sfl15RLEr10TQ==",
   "success": true,
-  "projectFilePath": "E:\\GitHub\\Plants\\PlantsWA\\PlantsWA.csproj",
+  "projectFilePath": "E:\\GitHub\\Plants\\PlantsWA\\Plants.WA.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\aleja\\.nuget\\packages\\microsoft.aspnetcore.authorization\\6.0.10\\microsoft.aspnetcore.authorization.6.0.10.nupkg.sha512",
     "C:\\Users\\aleja\\.nuget\\packages\\microsoft.aspnetcore.components\\6.0.10\\microsoft.aspnetcore.components.6.0.10.nupkg.sha512",
