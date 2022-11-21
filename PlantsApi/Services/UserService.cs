@@ -11,7 +11,7 @@ using System.Threading.Tasks;
 
 namespace Plants.Services.Services
 {
-    internal class UserService:IUserService
+    public class UserService:IUserService
     {
         private readonly IMongoCollection<User> _users;
 
@@ -22,7 +22,7 @@ namespace Plants.Services.Services
                 .GetCollection<User>(options.Value.UsersCollectionName);
         }
 
-        public async Task<List<User>> Get() =>
+        public async Task<List<User>> GetAllUsers() =>
             await _users.Find(_ => true).ToListAsync();
         public async Task<User> Get(string id) =>
             await _users.Find(m => m.Id == id).FirstOrDefaultAsync();
@@ -33,5 +33,6 @@ namespace Plants.Services.Services
         public async Task Remove(string id) =>
             await _users.DeleteOneAsync(m => m.Id == id);
 
+        
     }
 }

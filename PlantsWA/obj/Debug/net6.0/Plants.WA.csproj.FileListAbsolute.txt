@@ -1,0 +1,6 @@
+E:\GitHub\Plants\PlantsWA\obj\Debug\net6.0\Plants.WA.csproj.AssemblyReference.cache
+E:\GitHub\Plants\PlantsWA\obj\Debug\net6.0\Plants.WA.GeneratedMSBuildEditorConfig.editorconfig
+E:\GitHub\Plants\PlantsWA\obj\Debug\net6.0\Plants.WA.AssemblyInfoInputs.cache
+E:\GitHub\Plants\PlantsWA\obj\Debug\net6.0\Plants.WA.AssemblyInfo.cs
+E:\GitHub\Plants\PlantsWA\obj\Debug\net6.0\Plants.WA.csproj.CoreCompileInputs.cache
+E:\GitHub\Plants\PlantsWA\obj\Debug\net6.0\Plants.WA.MvcApplicationPartsAssemblyInfo.cache
