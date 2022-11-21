@@ -1,32 +1,46 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Plants.Api.Services;
+using Plants.Services.Dtos;
+using Plants.Services.Services;
+
 
 namespace Plants.Api.Controllers
 {
+    [ApiController]
+    [Route("api/[controller]")]
     public class UserController : Controller
     {
-        private IUser
-        public UserController()
+
+        private IUserService _userService;
+
+        public UserController(IUserService userService)
         {
+            _userService = userService;
 
         }
 
         // GET: UserController
-        public ActionResult Index()
+        [HttpGet(Name = "GetAllUsers")]
+        public async Task<ActionResult<List<User>>> Get(CancellationToken cancellationToken)
         {
-            return View();
+            return await _userService.GetAllUsers();
         }
 
-        // GET: UserController/Details/5
-        public ActionResult Details(int id)
+        //GET: UserController/Details/5
+        [HttpGet("{id}",Name = "GetDetailedUser")]
+        public async Task<ActionResult<User>> Details(string id, CancellationToken cancellationToken)
         {
-            return View();
+            return await _userService.Get(id);
         }
 
         // GET: UserController/Create
-        public ActionResult Create()
+
+        [HttpPost(Name ="CreateUser")]
+        public async Task<ActionResult> Create([FromBody] User newUser,CancellationToken cancellationToken)
         {
-            return View();
+               await _userService.Create(newUser);
+            return await Create(newUser, cancellationToken);
         }
 
         // POST: UserController/Create
@@ -44,46 +58,47 @@ namespace Plants.Api.Controllers
             }
         }
 
-        // GET: UserController/Edit/5
-        public ActionResult Edit(int id)
-        {
-            return View();
-        }
+        //    // GET: UserController/Edit/5
+        //    public ActionResult Edit(int id)
+        //    {
+        //        return View();
+        //    }
 
-        // POST: UserController/Edit/5
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public ActionResult Edit(int id, IFormCollection collection)
-        {
-            try
-            {
-                return RedirectToAction(nameof(Index));
-            }
-            catch
-            {
-                return View();
-            }
-        }
+        //    // POST: UserController/Edit/5
+        //    [HttpPost]
+        //    [ValidateAntiForgeryToken]
+        //    public ActionResult Edit(int id, IFormCollection collection)
+        //    {
+        //        try
+        //        {
+        //            return RedirectToAction(nameof(Index));
+        //        }
+        //        catch
+        //        {
+        //            return View();
+        //        }
+        //    }
 
-        // GET: UserController/Delete/5
-        public ActionResult Delete(int id)
-        {
-            return View();
-        }
+        //    // GET: UserController/Delete/5
+        //    public ActionResult Delete(int id)
+        //    {
+        //        return View();
+        //    }
 
-        // POST: UserController/Delete/5
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public ActionResult Delete(int id, IFormCollection collection)
-        {
-            try
-            {
-                return RedirectToAction(nameof(Index));
-            }
-            catch
-            {
-                return View();
-            }
-        }
+        //    // POST: UserController/Delete/5
+        //    [HttpPost]
+        //    [ValidateAntiForgeryToken]
+        //    public ActionResult Delete(int id, IFormCollection collection)
+        //    {
+        //        try
+        //        {
+        //            return RedirectToAction(nameof(Index));
+        //        }
+        //        catch
+        //        {
+        //            return View();
+        //        }
+        //    }
+        //}
     }
 }

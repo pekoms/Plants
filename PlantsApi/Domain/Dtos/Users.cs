@@ -7,12 +7,14 @@ using System.Threading.Tasks;
 
 namespace Plants.Services.Dtos
 {
-    internal class User
+    public class User
     {
         [BsonId]
         [BsonRepresentation(MongoDB.Bson.BsonType.ObjectId)]
-        public string Id { get; set; }
+        public string? Id { get; set; }
+        [BsonRepresentation(MongoDB.Bson.BsonType.String)]
         public string? Name { get; set; }
+        [BsonRepresentation(MongoDB.Bson.BsonType.String)]
         public string? Password { get; set; }
 
     }

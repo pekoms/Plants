@@ -1,8 +1,8 @@
 {
   "Version": 1,
-  "Hash": "wPINkBUDcv5n3VZhnHlnJ8s0bszjmRLU1ZPZWlDgy5Q=",
-  "Source": "PlantsApi",
-  "BasePath": "_content/PlantsApi",
+  "Hash": "X5ElHKxbL4e0Vgxla4CNM1t7YV4GQ4IlFbRE3CVHd1M=",
+  "Source": "Plants.Api",
+  "BasePath": "_content/Plants.Api",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],
