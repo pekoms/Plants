@@ -34,7 +34,7 @@ namespace Plants.Api.Controllers
             return await _userService.Get(id);
         }
 
-        // GET: UserController/Create
+        // POST: UserController/Create
 
         [HttpPost(Name ="CreateUser")]
         public async Task<ActionResult> Create([FromBody] User newUser,CancellationToken cancellationToken)
@@ -43,10 +43,10 @@ namespace Plants.Api.Controllers
             return await Create(newUser, cancellationToken);
         }
 
-        // POST: UserController/Create
-        [HttpPost]
+        // POST: UserController/Edit/5
+        [HttpPut]
         [ValidateAntiForgeryToken]
-        public ActionResult Create(IFormCollection collection)
+        public ActionResult Edit(int id, IFormCollection collection)
         {
             try
             {
@@ -58,47 +58,26 @@ namespace Plants.Api.Controllers
             }
         }
 
-        //    // GET: UserController/Edit/5
-        //    public ActionResult Edit(int id)
-        //    {
-        //        return View();
-        //    }
+        // GET: UserController/Delete/5
+        public ActionResult Delete(int id)
+        {
+            return View();
+        }
 
-        //    // POST: UserController/Edit/5
-        //    [HttpPost]
-        //    [ValidateAntiForgeryToken]
-        //    public ActionResult Edit(int id, IFormCollection collection)
-        //    {
-        //        try
-        //        {
-        //            return RedirectToAction(nameof(Index));
-        //        }
-        //        catch
-        //        {
-        //            return View();
-        //        }
-        //    }
-
-        //    // GET: UserController/Delete/5
-        //    public ActionResult Delete(int id)
-        //    {
-        //        return View();
-        //    }
-
-        //    // POST: UserController/Delete/5
-        //    [HttpPost]
-        //    [ValidateAntiForgeryToken]
-        //    public ActionResult Delete(int id, IFormCollection collection)
-        //    {
-        //        try
-        //        {
-        //            return RedirectToAction(nameof(Index));
-        //        }
-        //        catch
-        //        {
-        //            return View();
-        //        }
-        //    }
-        //}
+        // POST: UserController/Delete/5
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public ActionResult Delete(int id, IFormCollection collection)
+        {
+            try
+            {
+                return RedirectToAction(nameof(Index));
+            }
+            catch
+            {
+                return View();
+            }
+        }
     }
 }
+
