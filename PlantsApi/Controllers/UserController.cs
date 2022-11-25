@@ -21,84 +21,52 @@ namespace Plants.Api.Controllers
         }
 
         // GET: UserController
-        [HttpGet(Name = "GetAllUsers")]
+        [HttpGet("user",Name = "GetAllUsers")]
         public async Task<ActionResult<List<User>>> Get(CancellationToken cancellationToken)
         {
-            return await _userService.GetAllUsers();
+            var users = await _userService.GetAllUsers();
+
+            return Ok(users);
         }
 
         //GET: UserController/Details/5
-        [HttpGet("{id}",Name = "GetDetailedUser")]
-        public async Task<ActionResult<User>> Details(string id, CancellationToken cancellationToken)
+        [HttpGet("user/{id}",Name = "GetDetailedUser")]
+        public async Task<ActionResult<User>> GetDetailedUser(string id, CancellationToken cancellationToken)
         {
-            return await _userService.Get(id);
-        }
+            var user = await _userService.Get(id); ;
 
-        // GET: UserController/Create
-
-        [HttpPost(Name ="CreateUser")]
-        public async Task<ActionResult> Create([FromBody] User newUser,CancellationToken cancellationToken)
-        {
-               await _userService.Create(newUser);
-            return await Create(newUser, cancellationToken);
+            return Ok(user);
         }
 
         // POST: UserController/Create
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public ActionResult Create(IFormCollection collection)
+
+        [HttpPost("user",Name ="CreateUser")]
+        public async Task<ActionResult> CreateUser([FromBody] User newUser,CancellationToken cancellationToken)
         {
-            try
-            {
-                return RedirectToAction(nameof(Index));
-            }
-            catch
-            {
-                return View();
-            }
+            await _userService.Create(newUser);
+            return  Ok(newUser);
         }
 
-        //    // GET: UserController/Edit/5
-        //    public ActionResult Edit(int id)
-        //    {
-        //        return View();
-        //    }
+        // POST: UserController/Edit/5
+        [HttpPut("user/{id}",Name ="UpdateDetailedUser")]
+        [ValidateAntiForgeryToken]
+        public async Task<ActionResult> UpdateDetailedUser(string id, [FromBody] User user, CancellationToken cancellationToken)
+        {
+                await _userService.Update(id, user);
 
-        //    // POST: UserController/Edit/5
-        //    [HttpPost]
-        //    [ValidateAntiForgeryToken]
-        //    public ActionResult Edit(int id, IFormCollection collection)
-        //    {
-        //        try
-        //        {
-        //            return RedirectToAction(nameof(Index));
-        //        }
-        //        catch
-        //        {
-        //            return View();
-        //        }
-        //    }
+                return Ok(user);
+        }
 
-        //    // GET: UserController/Delete/5
-        //    public ActionResult Delete(int id)
-        //    {
-        //        return View();
-        //    }
+        // Delete: UserController/Delete/5
+        [HttpDelete("user/{id}", Name = "DeleteDetailedUser")]
+        public async Task<ActionResult> Delete(string id)
+        {
+             await _userService.Remove(id);
+            
+             return Ok();
+        }
 
-        //    // POST: UserController/Delete/5
-        //    [HttpPost]
-        //    [ValidateAntiForgeryToken]
-        //    public ActionResult Delete(int id, IFormCollection collection)
-        //    {
-        //        try
-        //        {
-        //            return RedirectToAction(nameof(Index));
-        //        }
-        //        catch
-        //        {
-        //            return View();
-        //        }
-        //    }
-        //}
+     
     }
 }
+
