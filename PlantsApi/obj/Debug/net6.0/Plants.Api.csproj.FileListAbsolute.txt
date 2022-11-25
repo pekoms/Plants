@@ -42,3 +42,10 @@ E:\GitHub\Plants\PlantsApi\obj\Debug\net6.0\refint\Plants.Api.dll
 E:\GitHub\Plants\PlantsApi\obj\Debug\net6.0\Plants.Api.pdb
 E:\GitHub\Plants\PlantsApi\obj\Debug\net6.0\Plants.Api.genruntimeconfig.cache
 E:\GitHub\Plants\PlantsApi\obj\Debug\net6.0\ref\Plants.Api.dll
+E:\GitHub\Plants\PlantsApi\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+E:\GitHub\Plants\PlantsApi\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
+E:\GitHub\Plants\PlantsApi\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
+E:\GitHub\Plants\PlantsApi\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.dll
+E:\GitHub\Plants\PlantsApi\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+E:\GitHub\Plants\PlantsApi\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
+E:\GitHub\Plants\PlantsApi\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
