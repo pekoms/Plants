@@ -1,13 +1,8 @@
 ﻿using Microsoft.Extensions.Options;
 using MongoDB.Driver;
+using Plants.Api.Domain.Entities;
 using Plants.Api.Services;
 using Plants.Infrastructure.DBSettings;
-using Plants.Services.Dtos;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Plants.Services.Services
 {
