@@ -18,6 +18,9 @@ builder.Services.AddSingleton<IMongoClient>(s =>
 builder.Services.Configure<PlantsDatabaseSettings>(builder.Configuration.GetSection("PlantsDatabaseSettings"));
 
 builder.Services.AddScoped<IUserService,UserService>();
+builder.Services.AddScoped<IPlantService, PlantService>();
+builder.Services.AddScoped<IPlantRecordService, PlantRecordService>();
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

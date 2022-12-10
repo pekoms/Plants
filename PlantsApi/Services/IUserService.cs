@@ -1,4 +1,4 @@
-﻿using Plants.Services.Dtos;
+﻿using Plants.Api.Domain.Entities;
 
 namespace Plants.Api.Services
 {

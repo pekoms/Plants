@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Plants.Api.Domain.Entities;
 using Plants.Api.Services;
-using Plants.Services.Dtos;
 using Plants.Services.Services;
 
 
