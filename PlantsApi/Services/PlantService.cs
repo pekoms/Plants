@@ -2,6 +2,7 @@
 using MongoDB.Driver;
 using Plants.Api.Domain.Entities;
 using Plants.Infrastructure.DBSettings;
+using System.IO.Compression;
 
 namespace Plants.Api.Services
 {
@@ -27,5 +28,7 @@ namespace Plants.Api.Services
             await _plants.ReplaceOneAsync(m => m.Id == id, updatePlant);
         public async Task Remove(string id) =>
             await _plants.DeleteOneAsync(m => m.Id == id);
+
+   
     }
 }

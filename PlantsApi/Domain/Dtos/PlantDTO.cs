@@ -7,6 +7,6 @@
         public int Age { get; set; }
         public string? Shop { get; set; }
         public DateTime? Finsert { get; set; }=DateTime.Now;
-        public byte[]? ContentImage { get; set; }
+        public IFormFile? ContentImage { get; set; }
     }
 }

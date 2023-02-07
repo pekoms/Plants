@@ -20,6 +20,8 @@ builder.Services.Configure<PlantsDatabaseSettings>(builder.Configuration.GetSect
 builder.Services.AddScoped<IUserService,UserService>();
 builder.Services.AddScoped<IPlantService, PlantService>();
 builder.Services.AddScoped<IPlantRecordService, PlantRecordService>();
+builder.Services.AddScoped<IUtilsService, UtilsService>();
+
 
 var app = builder.Build();
 

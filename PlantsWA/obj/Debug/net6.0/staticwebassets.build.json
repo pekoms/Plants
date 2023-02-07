@@ -1,15 +1,15 @@
 {
   "Version": 1,
-  "Hash": "04gZExr86pP7OR8BkYjXnFZsd9TSbBZ07sS8se9JlOc=",
-  "Source": "PlantsWA",
+  "Hash": "J5AUsHTLFTPBp3EG79O/CX93YbL3DXMcuhMCE9OBzlw=",
+  "Source": "Plants.WA",
   "BasePath": "/",
   "Mode": "Root",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],
   "DiscoveryPatterns": [
     {
-      "Name": "PlantsWA\\wwwroot",
-      "Source": "PlantsWA",
+      "Name": "Plants.WA\\wwwroot",
+      "Source": "Plants.WA",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\wwwroot\\",
       "BasePath": "/",
       "Pattern": "**"
@@ -18,7 +18,7 @@
   "Assets": [
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\_framework\\blazor.boot.json",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -35,7 +35,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\_framework\\blazor.webassembly.js",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -52,7 +52,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\_framework\\dotnet.6.0.10.c7oxyd0quv.js",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -69,7 +69,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\_framework\\dotnet.timezones.blat",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -86,7 +86,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\_framework\\dotnet.wasm",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -103,7 +103,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\_framework\\icudt.dat",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -120,7 +120,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\_framework\\icudt_CJK.dat",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -137,7 +137,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\_framework\\icudt_EFIGS.dat",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -154,7 +154,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\_framework\\icudt_no_CJK.dat",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -171,7 +171,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Authorization.dll",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -188,7 +188,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Components.dll",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -205,7 +205,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Components.Forms.dll",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -222,7 +222,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Components.Web.dll",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -239,7 +239,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Components.WebAssembly.dll",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -256,7 +256,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Metadata.dll",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -273,7 +273,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.CSharp.dll",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -290,7 +290,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.Extensions.Configuration.Abstractions.dll",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -307,7 +307,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.Extensions.Configuration.Binder.dll",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -324,7 +324,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.Extensions.Configuration.dll",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -341,7 +341,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.Extensions.Configuration.FileExtensions.dll",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -358,7 +358,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.Extensions.Configuration.Json.dll",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -375,7 +375,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.Extensions.DependencyInjection.Abstractions.dll",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -392,7 +392,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.Extensions.DependencyInjection.dll",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -409,7 +409,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.Extensions.FileProviders.Abstractions.dll",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -426,7 +426,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.Extensions.FileProviders.Physical.dll",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -443,7 +443,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.Extensions.FileSystemGlobbing.dll",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -460,7 +460,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.Extensions.Logging.Abstractions.dll",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -477,7 +477,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.Extensions.Logging.dll",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -494,7 +494,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.Extensions.Options.dll",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -511,7 +511,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.Extensions.Primitives.dll",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -528,7 +528,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.JSInterop.dll",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -545,7 +545,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.JSInterop.WebAssembly.dll",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -562,7 +562,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.VisualBasic.Core.dll",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -579,7 +579,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.VisualBasic.dll",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -596,7 +596,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.Win32.Primitives.dll",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -613,7 +613,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.Win32.Registry.dll",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -630,7 +630,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\_framework\\mscorlib.dll",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -647,7 +647,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\_framework\\netstandard.dll",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -663,12 +663,12 @@
       "OriginalItemSpec": "C:\\Users\\aleja\\.nuget\\packages\\microsoft.netcore.app.runtime.mono.browser-wasm\\6.0.10\\runtimes\\browser-wasm\\lib\\net6.0\\netstandard.dll"
     },
     {
-      "Identity": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\_framework\\PlantsWA.dll",
-      "SourceId": "PlantsWA",
+      "Identity": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Plants.WA.dll",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
-      "RelativePath": "_framework/PlantsWA.dll",
+      "RelativePath": "_framework/Plants.WA.dll",
       "AssetKind": "Build",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -677,15 +677,15 @@
       "AssetTraitValue": "runtime",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "obj\\Debug\\net6.0\\PlantsWA.dll"
+      "OriginalItemSpec": "obj\\Debug\\net6.0\\Plants.WA.dll"
     },
     {
-      "Identity": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\_framework\\PlantsWA.pdb",
-      "SourceId": "PlantsWA",
+      "Identity": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Plants.WA.pdb",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
-      "RelativePath": "_framework/PlantsWA.pdb",
+      "RelativePath": "_framework/Plants.WA.pdb",
       "AssetKind": "Build",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -694,11 +694,11 @@
       "AssetTraitValue": "symbol",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "obj\\Debug\\net6.0\\PlantsWA.pdb"
+      "OriginalItemSpec": "obj\\Debug\\net6.0\\Plants.WA.pdb"
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.AppContext.dll",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -715,7 +715,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Buffers.dll",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -732,7 +732,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Collections.Concurrent.dll",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -749,7 +749,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Collections.dll",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -766,7 +766,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Collections.Immutable.dll",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -783,7 +783,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Collections.NonGeneric.dll",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -800,7 +800,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Collections.Specialized.dll",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -817,7 +817,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.ComponentModel.Annotations.dll",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -834,7 +834,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.ComponentModel.DataAnnotations.dll",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -851,7 +851,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.ComponentModel.dll",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -868,7 +868,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.ComponentModel.EventBasedAsync.dll",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -885,7 +885,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.ComponentModel.Primitives.dll",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -902,7 +902,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.ComponentModel.TypeConverter.dll",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -919,7 +919,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Configuration.dll",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -936,7 +936,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Console.dll",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -953,7 +953,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Core.dll",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -970,7 +970,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Data.Common.dll",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -987,7 +987,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Data.DataSetExtensions.dll",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -1004,7 +1004,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Data.dll",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -1021,7 +1021,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Diagnostics.Contracts.dll",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -1038,7 +1038,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Diagnostics.Debug.dll",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -1055,7 +1055,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Diagnostics.DiagnosticSource.dll",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -1072,7 +1072,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Diagnostics.FileVersionInfo.dll",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -1089,7 +1089,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Diagnostics.Process.dll",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -1106,7 +1106,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Diagnostics.StackTrace.dll",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -1123,7 +1123,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Diagnostics.TextWriterTraceListener.dll",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -1140,7 +1140,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Diagnostics.Tools.dll",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -1157,7 +1157,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Diagnostics.TraceSource.dll",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -1174,7 +1174,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Diagnostics.Tracing.dll",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -1191,7 +1191,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.dll",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -1208,7 +1208,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Drawing.dll",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -1225,7 +1225,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Drawing.Primitives.dll",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -1242,7 +1242,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Dynamic.Runtime.dll",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -1259,7 +1259,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Formats.Asn1.dll",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -1276,7 +1276,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Globalization.Calendars.dll",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -1293,7 +1293,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Globalization.dll",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -1310,7 +1310,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Globalization.Extensions.dll",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -1327,7 +1327,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.IO.Compression.Brotli.dll",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -1344,7 +1344,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.IO.Compression.dll",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -1361,7 +1361,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.IO.Compression.FileSystem.dll",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -1378,7 +1378,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.IO.Compression.ZipFile.dll",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -1395,7 +1395,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.IO.dll",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -1412,7 +1412,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.IO.FileSystem.AccessControl.dll",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -1429,7 +1429,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.IO.FileSystem.dll",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -1446,7 +1446,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.IO.FileSystem.DriveInfo.dll",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -1463,7 +1463,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.IO.FileSystem.Primitives.dll",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -1480,7 +1480,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.IO.FileSystem.Watcher.dll",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -1497,7 +1497,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.IO.IsolatedStorage.dll",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -1514,7 +1514,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.IO.MemoryMappedFiles.dll",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -1531,7 +1531,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.IO.Pipelines.dll",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -1548,7 +1548,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.IO.Pipes.AccessControl.dll",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -1565,7 +1565,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.IO.Pipes.dll",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -1582,7 +1582,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.IO.UnmanagedMemoryStream.dll",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -1599,7 +1599,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Linq.dll",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -1616,7 +1616,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Linq.Expressions.dll",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -1633,7 +1633,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Linq.Parallel.dll",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -1650,7 +1650,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Linq.Queryable.dll",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -1667,7 +1667,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Memory.dll",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -1684,7 +1684,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Net.dll",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -1701,7 +1701,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Net.Http.dll",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -1718,7 +1718,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Net.Http.Json.dll",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -1735,7 +1735,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Net.HttpListener.dll",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -1752,7 +1752,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Net.Mail.dll",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -1769,7 +1769,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Net.NameResolution.dll",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -1786,7 +1786,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Net.NetworkInformation.dll",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -1803,7 +1803,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Net.Ping.dll",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -1820,7 +1820,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Net.Primitives.dll",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -1837,7 +1837,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Net.Quic.dll",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -1854,7 +1854,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Net.Requests.dll",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -1871,7 +1871,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Net.Security.dll",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -1888,7 +1888,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Net.ServicePoint.dll",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -1905,7 +1905,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Net.Sockets.dll",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -1922,7 +1922,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Net.WebClient.dll",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -1939,7 +1939,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Net.WebHeaderCollection.dll",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -1956,7 +1956,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Net.WebProxy.dll",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -1973,7 +1973,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Net.WebSockets.Client.dll",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -1990,7 +1990,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Net.WebSockets.dll",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -2007,7 +2007,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Numerics.dll",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -2024,7 +2024,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Numerics.Vectors.dll",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -2041,7 +2041,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.ObjectModel.dll",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -2058,7 +2058,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Private.CoreLib.dll",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -2075,7 +2075,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Private.DataContractSerialization.dll",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -2092,7 +2092,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Private.Runtime.InteropServices.JavaScript.dll",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -2109,7 +2109,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Private.Uri.dll",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -2126,7 +2126,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Private.Xml.dll",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -2143,7 +2143,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Private.Xml.Linq.dll",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -2160,7 +2160,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Reflection.DispatchProxy.dll",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -2177,7 +2177,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Reflection.dll",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -2194,7 +2194,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Reflection.Emit.dll",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -2211,7 +2211,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Reflection.Emit.ILGeneration.dll",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -2228,7 +2228,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Reflection.Emit.Lightweight.dll",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -2245,7 +2245,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Reflection.Extensions.dll",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -2262,7 +2262,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Reflection.Metadata.dll",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -2279,7 +2279,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Reflection.Primitives.dll",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -2296,7 +2296,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Reflection.TypeExtensions.dll",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -2313,7 +2313,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Resources.Reader.dll",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -2330,7 +2330,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Resources.ResourceManager.dll",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -2347,7 +2347,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Resources.Writer.dll",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -2364,7 +2364,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Runtime.CompilerServices.Unsafe.dll",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -2381,7 +2381,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Runtime.CompilerServices.VisualC.dll",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -2398,7 +2398,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Runtime.dll",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -2415,7 +2415,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Runtime.Extensions.dll",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -2432,7 +2432,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Runtime.Handles.dll",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -2449,7 +2449,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Runtime.InteropServices.dll",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -2466,7 +2466,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Runtime.InteropServices.RuntimeInformation.dll",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -2483,7 +2483,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Runtime.Intrinsics.dll",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -2500,7 +2500,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Runtime.Loader.dll",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -2517,7 +2517,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Runtime.Numerics.dll",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -2534,7 +2534,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Runtime.Serialization.dll",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -2551,7 +2551,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Runtime.Serialization.Formatters.dll",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -2568,7 +2568,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Runtime.Serialization.Json.dll",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -2585,7 +2585,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Runtime.Serialization.Primitives.dll",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -2602,7 +2602,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Runtime.Serialization.Xml.dll",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -2619,7 +2619,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Security.AccessControl.dll",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -2636,7 +2636,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Security.Claims.dll",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -2653,7 +2653,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Security.Cryptography.Algorithms.dll",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -2670,7 +2670,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Security.Cryptography.Cng.dll",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -2687,7 +2687,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Security.Cryptography.Csp.dll",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -2704,7 +2704,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Security.Cryptography.Encoding.dll",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -2721,7 +2721,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Security.Cryptography.OpenSsl.dll",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -2738,7 +2738,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Security.Cryptography.Primitives.dll",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -2755,7 +2755,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Security.Cryptography.X509Certificates.dll",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -2772,7 +2772,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Security.dll",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -2789,7 +2789,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Security.Principal.dll",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -2806,7 +2806,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Security.Principal.Windows.dll",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -2823,7 +2823,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Security.SecureString.dll",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -2840,7 +2840,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.ServiceModel.Web.dll",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -2857,7 +2857,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.ServiceProcess.dll",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -2874,7 +2874,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Text.Encoding.CodePages.dll",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -2891,7 +2891,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Text.Encoding.dll",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -2908,7 +2908,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Text.Encoding.Extensions.dll",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -2925,7 +2925,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Text.Encodings.Web.dll",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -2942,7 +2942,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Text.Json.dll",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -2959,7 +2959,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Text.RegularExpressions.dll",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -2976,7 +2976,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Threading.Channels.dll",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -2993,7 +2993,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Threading.dll",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -3010,7 +3010,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Threading.Overlapped.dll",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -3027,7 +3027,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Threading.Tasks.Dataflow.dll",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -3044,7 +3044,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Threading.Tasks.dll",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -3061,7 +3061,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Threading.Tasks.Extensions.dll",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -3078,7 +3078,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Threading.Tasks.Parallel.dll",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -3095,7 +3095,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Threading.Thread.dll",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -3112,7 +3112,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Threading.ThreadPool.dll",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -3129,7 +3129,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Threading.Timer.dll",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -3146,7 +3146,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Transactions.dll",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -3163,7 +3163,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Transactions.Local.dll",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -3180,7 +3180,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.ValueTuple.dll",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -3197,7 +3197,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Web.dll",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -3214,7 +3214,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Web.HttpUtility.dll",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -3231,7 +3231,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Windows.dll",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -3248,7 +3248,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Xml.dll",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -3265,7 +3265,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Xml.Linq.dll",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -3282,7 +3282,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Xml.ReaderWriter.dll",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -3299,7 +3299,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Xml.Serialization.dll",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -3316,7 +3316,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Xml.XDocument.dll",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -3333,7 +3333,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Xml.XmlDocument.dll",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -3350,7 +3350,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Xml.XmlSerializer.dll",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -3367,7 +3367,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Xml.XPath.dll",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -3384,7 +3384,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Xml.XPath.XDocument.dll",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -3401,7 +3401,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\_framework\\WindowsBase.dll",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -3418,7 +3418,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\obj\\Debug\\net6.0\\build-gz\\+8GxEQaK.gz",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -3435,7 +3435,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\obj\\Debug\\net6.0\\build-gz\\+Ar0KEzn.gz",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -3452,7 +3452,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\obj\\Debug\\net6.0\\build-gz\\+c4vWJNz.gz",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -3469,7 +3469,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\obj\\Debug\\net6.0\\build-gz\\+C4ZV1tL.gz",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -3486,7 +3486,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\obj\\Debug\\net6.0\\build-gz\\+GjsyNxI.gz",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -3503,7 +3503,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\obj\\Debug\\net6.0\\build-gz\\+iQLmUD1.gz",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -3520,7 +3520,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\obj\\Debug\\net6.0\\build-gz\\+Pl5NiI+.gz",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -3537,7 +3537,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\obj\\Debug\\net6.0\\build-gz\\+u1fNWqF.gz",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -3554,7 +3554,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\obj\\Debug\\net6.0\\build-gz\\11AkTsZN.gz",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -3571,7 +3571,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\obj\\Debug\\net6.0\\build-gz\\1ha6KJn5.gz",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -3588,7 +3588,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\obj\\Debug\\net6.0\\build-gz\\1j7jFE0B.gz",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -3605,7 +3605,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\obj\\Debug\\net6.0\\build-gz\\1jfCVjPD.gz",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -3622,7 +3622,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\obj\\Debug\\net6.0\\build-gz\\1pwMX1g5.gz",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -3639,7 +3639,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\obj\\Debug\\net6.0\\build-gz\\1sbjfaJT.gz",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -3656,7 +3656,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\obj\\Debug\\net6.0\\build-gz\\2+T4LkK3.gz",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -3673,7 +3673,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\obj\\Debug\\net6.0\\build-gz\\2ASz4hg4.gz",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -3690,7 +3690,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\obj\\Debug\\net6.0\\build-gz\\3922ped6.gz",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -3707,7 +3707,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\obj\\Debug\\net6.0\\build-gz\\3BCDMNIi.gz",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -3724,7 +3724,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\obj\\Debug\\net6.0\\build-gz\\3cyvwEdH.gz",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -3741,7 +3741,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\obj\\Debug\\net6.0\\build-gz\\3QARXNqT.gz",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -3758,7 +3758,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\obj\\Debug\\net6.0\\build-gz\\3S2vJiJ4.gz",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -3775,7 +3775,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\obj\\Debug\\net6.0\\build-gz\\4k+bD3jy.gz",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -3792,7 +3792,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\obj\\Debug\\net6.0\\build-gz\\55oc+DDc.gz",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -3809,7 +3809,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\obj\\Debug\\net6.0\\build-gz\\5gMGEj6u.gz",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -3826,7 +3826,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\obj\\Debug\\net6.0\\build-gz\\5w7hKQpQ.gz",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -3843,7 +3843,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\obj\\Debug\\net6.0\\build-gz\\6tJtEwfk.gz",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -3860,7 +3860,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\obj\\Debug\\net6.0\\build-gz\\6v5CLiCh.gz",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -3877,7 +3877,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\obj\\Debug\\net6.0\\build-gz\\71O0Z8+g.gz",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -3894,7 +3894,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\obj\\Debug\\net6.0\\build-gz\\71Q+7OrS.gz",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -3911,7 +3911,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\obj\\Debug\\net6.0\\build-gz\\7Ha3b2LQ.gz",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -3928,7 +3928,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\obj\\Debug\\net6.0\\build-gz\\7Qq9L9rW.gz",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -3945,7 +3945,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\obj\\Debug\\net6.0\\build-gz\\7uWW0sz0.gz",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -3962,7 +3962,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\obj\\Debug\\net6.0\\build-gz\\7y+pp4MJ.gz",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -3979,7 +3979,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\obj\\Debug\\net6.0\\build-gz\\7YAywyYZ.gz",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -3996,7 +3996,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\obj\\Debug\\net6.0\\build-gz\\85sZZunN.gz",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -4013,7 +4013,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\obj\\Debug\\net6.0\\build-gz\\8NWnc+JC.gz",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -4030,7 +4030,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\obj\\Debug\\net6.0\\build-gz\\8rI9qIj8.gz",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -4047,7 +4047,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\obj\\Debug\\net6.0\\build-gz\\8YlDaI+a.gz",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -4064,7 +4064,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\obj\\Debug\\net6.0\\build-gz\\8ylYvZ1+.gz",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -4081,7 +4081,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\obj\\Debug\\net6.0\\build-gz\\9HQx8Uoh.gz",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -4098,7 +4098,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\obj\\Debug\\net6.0\\build-gz\\9lRLicZN.gz",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -4115,7 +4115,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\obj\\Debug\\net6.0\\build-gz\\9Nd1HsIt.gz",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -4132,7 +4132,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\obj\\Debug\\net6.0\\build-gz\\9QNq1Dp3.gz",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -4148,8 +4148,25 @@
       "OriginalItemSpec": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Resources.Writer.dll"
     },
     {
+      "Identity": "E:\\GitHub\\Plants\\PlantsWA\\obj\\Debug\\net6.0\\build-gz\\9uha0Rd7.gz",
+      "SourceId": "Plants.WA",
+      "SourceType": "Computed",
+      "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Plants.WA.pdb.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "RelatedAsset": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Plants.WA.pdb",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Plants.WA.pdb"
+    },
+    {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\obj\\Debug\\net6.0\\build-gz\\AG4Sl6dc.gz",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -4166,7 +4183,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\obj\\Debug\\net6.0\\build-gz\\ARgUv4Ho.gz",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -4183,7 +4200,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\obj\\Debug\\net6.0\\build-gz\\asHlWK4R.gz",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -4200,7 +4217,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\obj\\Debug\\net6.0\\build-gz\\b1CPTwB6.gz",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -4217,7 +4234,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\obj\\Debug\\net6.0\\build-gz\\b2a5lK5w.gz",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -4234,7 +4251,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\obj\\Debug\\net6.0\\build-gz\\bA+8Hv+7.gz",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -4251,7 +4268,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\obj\\Debug\\net6.0\\build-gz\\BJiptYJd.gz",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -4268,7 +4285,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\obj\\Debug\\net6.0\\build-gz\\Bk0ylGdA.gz",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -4285,7 +4302,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\obj\\Debug\\net6.0\\build-gz\\Bn5qcgMg.gz",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -4302,7 +4319,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\obj\\Debug\\net6.0\\build-gz\\bR9t0fPY.gz",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -4319,7 +4336,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\obj\\Debug\\net6.0\\build-gz\\BuxHblmJ.gz",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -4336,7 +4353,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\obj\\Debug\\net6.0\\build-gz\\BwowxWn9.gz",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -4353,7 +4370,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\obj\\Debug\\net6.0\\build-gz\\C06LAeff.gz",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -4370,7 +4387,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\obj\\Debug\\net6.0\\build-gz\\c7Ocm+wN.gz",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -4387,7 +4404,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\obj\\Debug\\net6.0\\build-gz\\cIcQav4C.gz",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -4404,7 +4421,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\obj\\Debug\\net6.0\\build-gz\\Cj+KRL2F.gz",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -4421,7 +4438,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\obj\\Debug\\net6.0\\build-gz\\ClgxnQB4.gz",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -4438,7 +4455,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\obj\\Debug\\net6.0\\build-gz\\CRNTfkDq.gz",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -4455,7 +4472,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\obj\\Debug\\net6.0\\build-gz\\CTdSoAPv.gz",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -4472,7 +4489,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\obj\\Debug\\net6.0\\build-gz\\DkmEaBwv.gz",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -4489,7 +4506,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\obj\\Debug\\net6.0\\build-gz\\Dv+9NpgC.gz",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -4506,7 +4523,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\obj\\Debug\\net6.0\\build-gz\\e+BibzbC.gz",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -4523,7 +4540,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\obj\\Debug\\net6.0\\build-gz\\E3tarUUb.gz",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -4540,7 +4557,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\obj\\Debug\\net6.0\\build-gz\\E5507s3h.gz",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -4557,7 +4574,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\obj\\Debug\\net6.0\\build-gz\\E8gKZCQz.gz",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -4574,7 +4591,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\obj\\Debug\\net6.0\\build-gz\\Ebg+0NrJ.gz",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -4591,7 +4608,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\obj\\Debug\\net6.0\\build-gz\\esUbBKKA.gz",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -4608,7 +4625,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\obj\\Debug\\net6.0\\build-gz\\FkTuGcHO.gz",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -4625,7 +4642,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\obj\\Debug\\net6.0\\build-gz\\FlayadAc.gz",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -4642,7 +4659,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\obj\\Debug\\net6.0\\build-gz\\fLUsgP9G.gz",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -4659,7 +4676,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\obj\\Debug\\net6.0\\build-gz\\FNFFDwPw.gz",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -4676,7 +4693,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\obj\\Debug\\net6.0\\build-gz\\fNOm86s+.gz",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -4693,7 +4710,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\obj\\Debug\\net6.0\\build-gz\\fqyB16y6.gz",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -4710,7 +4727,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\obj\\Debug\\net6.0\\build-gz\\fTtdPB22.gz",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -4727,7 +4744,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\obj\\Debug\\net6.0\\build-gz\\FVmtuxcw.gz",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -4744,7 +4761,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\obj\\Debug\\net6.0\\build-gz\\Fx9yT6IE.gz",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -4761,7 +4778,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\obj\\Debug\\net6.0\\build-gz\\g7N8aAVr.gz",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -4778,7 +4795,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\obj\\Debug\\net6.0\\build-gz\\GPu+W1Ev.gz",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -4795,7 +4812,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\obj\\Debug\\net6.0\\build-gz\\GWQ2o+n4.gz",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -4812,7 +4829,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\obj\\Debug\\net6.0\\build-gz\\H6+zpRMD.gz",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -4829,7 +4846,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\obj\\Debug\\net6.0\\build-gz\\hDmxMSXE.gz",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -4845,25 +4862,8 @@
       "OriginalItemSpec": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Globalization.Extensions.dll"
     },
     {
-      "Identity": "E:\\GitHub\\Plants\\PlantsWA\\obj\\Debug\\net6.0\\build-gz\\Hksj58gT.gz",
-      "SourceId": "PlantsWA",
-      "SourceType": "Computed",
-      "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
-      "BasePath": "/",
-      "RelativePath": "_framework/PlantsWA.pdb.gz",
-      "AssetKind": "Build",
-      "AssetMode": "All",
-      "AssetRole": "Alternative",
-      "RelatedAsset": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\_framework\\PlantsWA.pdb",
-      "AssetTraitName": "Content-Encoding",
-      "AssetTraitValue": "gzip",
-      "CopyToOutputDirectory": "PreserveNewest",
-      "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\_framework\\PlantsWA.pdb"
-    },
-    {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\obj\\Debug\\net6.0\\build-gz\\hpuKZK5L.gz",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -4880,7 +4880,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\obj\\Debug\\net6.0\\build-gz\\HSjfQVHr.gz",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -4897,7 +4897,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\obj\\Debug\\net6.0\\build-gz\\I5UydVXD.gz",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -4914,7 +4914,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\obj\\Debug\\net6.0\\build-gz\\icHH8M+E.gz",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -4931,7 +4931,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\obj\\Debug\\net6.0\\build-gz\\IEfA93dJ.gz",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -4948,7 +4948,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\obj\\Debug\\net6.0\\build-gz\\iKtiiha9.gz",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -4965,7 +4965,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\obj\\Debug\\net6.0\\build-gz\\in94WZt0.gz",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -4982,7 +4982,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\obj\\Debug\\net6.0\\build-gz\\iULX5+pl.gz",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -4999,7 +4999,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\obj\\Debug\\net6.0\\build-gz\\IwzCHKWz.gz",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -5015,8 +5015,25 @@
       "OriginalItemSpec": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\_framework\\mscorlib.dll"
     },
     {
+      "Identity": "E:\\GitHub\\Plants\\PlantsWA\\obj\\Debug\\net6.0\\build-gz\\iyoraeW+.gz",
+      "SourceId": "Plants.WA",
+      "SourceType": "Computed",
+      "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Plants.WA.dll.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "RelatedAsset": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Plants.WA.dll",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Plants.WA.dll"
+    },
+    {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\obj\\Debug\\net6.0\\build-gz\\Jn6bTxYA.gz",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -5033,7 +5050,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\obj\\Debug\\net6.0\\build-gz\\JrikKwfZ.gz",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -5050,7 +5067,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\obj\\Debug\\net6.0\\build-gz\\k3cNm6tW.gz",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -5067,7 +5084,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\obj\\Debug\\net6.0\\build-gz\\K3IriF3o.gz",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -5084,7 +5101,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\obj\\Debug\\net6.0\\build-gz\\KB1d4M06.gz",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -5101,7 +5118,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\obj\\Debug\\net6.0\\build-gz\\KdU++r7d.gz",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -5118,7 +5135,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\obj\\Debug\\net6.0\\build-gz\\kEU+Q85Z.gz",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -5135,7 +5152,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\obj\\Debug\\net6.0\\build-gz\\ki1Ag2D0.gz",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -5152,7 +5169,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\obj\\Debug\\net6.0\\build-gz\\kLNXyXSb.gz",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -5169,7 +5186,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\obj\\Debug\\net6.0\\build-gz\\kRn7Nz+r.gz",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -5186,7 +5203,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\obj\\Debug\\net6.0\\build-gz\\KzPmqH5h.gz",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -5203,7 +5220,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\obj\\Debug\\net6.0\\build-gz\\LBAp2t2m.gz",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -5220,7 +5237,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\obj\\Debug\\net6.0\\build-gz\\lcgqka6S.gz",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -5237,7 +5254,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\obj\\Debug\\net6.0\\build-gz\\lctyU7WH.gz",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -5254,7 +5271,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\obj\\Debug\\net6.0\\build-gz\\lHSmsSqk.gz",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -5271,7 +5288,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\obj\\Debug\\net6.0\\build-gz\\LkT626Mt.gz",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -5288,7 +5305,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\obj\\Debug\\net6.0\\build-gz\\lL5WIhEM.gz",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -5305,7 +5322,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\obj\\Debug\\net6.0\\build-gz\\LOwVBsIx.gz",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -5322,7 +5339,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\obj\\Debug\\net6.0\\build-gz\\LqXBnc+B.gz",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -5339,7 +5356,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\obj\\Debug\\net6.0\\build-gz\\M07T1zEX.gz",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -5356,7 +5373,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\obj\\Debug\\net6.0\\build-gz\\M7IPaPkZ.gz",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -5373,7 +5390,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\obj\\Debug\\net6.0\\build-gz\\M7ZPp6rj.gz",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -5390,7 +5407,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\obj\\Debug\\net6.0\\build-gz\\ME9LDfdc.gz",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -5407,7 +5424,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\obj\\Debug\\net6.0\\build-gz\\mhqQC0Sy.gz",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -5424,7 +5441,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\obj\\Debug\\net6.0\\build-gz\\mnxTjS0f.gz",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -5441,7 +5458,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\obj\\Debug\\net6.0\\build-gz\\MoKBegw+.gz",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -5458,7 +5475,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\obj\\Debug\\net6.0\\build-gz\\moRs9BXJ.gz",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -5475,7 +5492,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\obj\\Debug\\net6.0\\build-gz\\MRshFgif.gz",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -5492,7 +5509,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\obj\\Debug\\net6.0\\build-gz\\mSoJv2Je.gz",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -5509,7 +5526,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\obj\\Debug\\net6.0\\build-gz\\My5WgF2r.gz",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -5526,7 +5543,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\obj\\Debug\\net6.0\\build-gz\\Nf5R8o+G.gz",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -5543,7 +5560,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\obj\\Debug\\net6.0\\build-gz\\ngIQzZue.gz",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -5560,7 +5577,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\obj\\Debug\\net6.0\\build-gz\\NOhQ9NPK.gz",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -5577,7 +5594,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\obj\\Debug\\net6.0\\build-gz\\Nq1HzVhD.gz",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -5594,7 +5611,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\obj\\Debug\\net6.0\\build-gz\\o8O7Hak9.gz",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -5611,7 +5628,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\obj\\Debug\\net6.0\\build-gz\\oixDLF6T.gz",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -5628,7 +5645,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\obj\\Debug\\net6.0\\build-gz\\oVpqYK1b.gz",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -5645,7 +5662,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\obj\\Debug\\net6.0\\build-gz\\oX73gnSn.gz",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -5662,7 +5679,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\obj\\Debug\\net6.0\\build-gz\\pFu8jMer.gz",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -5679,7 +5696,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\obj\\Debug\\net6.0\\build-gz\\pYamNAQv.gz",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -5696,7 +5713,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\obj\\Debug\\net6.0\\build-gz\\q1zPpd0L.gz",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -5712,25 +5729,8 @@
       "OriginalItemSpec": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Security.dll"
     },
     {
-      "Identity": "E:\\GitHub\\Plants\\PlantsWA\\obj\\Debug\\net6.0\\build-gz\\q9Rj6s5A.gz",
-      "SourceId": "PlantsWA",
-      "SourceType": "Computed",
-      "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
-      "BasePath": "/",
-      "RelativePath": "_framework/PlantsWA.dll.gz",
-      "AssetKind": "Build",
-      "AssetMode": "All",
-      "AssetRole": "Alternative",
-      "RelatedAsset": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\_framework\\PlantsWA.dll",
-      "AssetTraitName": "Content-Encoding",
-      "AssetTraitValue": "gzip",
-      "CopyToOutputDirectory": "PreserveNewest",
-      "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\_framework\\PlantsWA.dll"
-    },
-    {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\obj\\Debug\\net6.0\\build-gz\\QNNFxvOk.gz",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -5747,7 +5747,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\obj\\Debug\\net6.0\\build-gz\\QRdNXeGH.gz",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -5764,7 +5764,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\obj\\Debug\\net6.0\\build-gz\\QsKnZY5i.gz",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -5781,7 +5781,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\obj\\Debug\\net6.0\\build-gz\\QTsbwJgE.gz",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -5798,7 +5798,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\obj\\Debug\\net6.0\\build-gz\\Rcx9bXJ6.gz",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -5815,7 +5815,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\obj\\Debug\\net6.0\\build-gz\\RD+1lWLX.gz",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -5832,7 +5832,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\obj\\Debug\\net6.0\\build-gz\\reJlN1mf.gz",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -5849,7 +5849,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\obj\\Debug\\net6.0\\build-gz\\RizQHSNc.gz",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -5866,7 +5866,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\obj\\Debug\\net6.0\\build-gz\\Rslda4to.gz",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -5883,7 +5883,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\obj\\Debug\\net6.0\\build-gz\\rUcVUUxM.gz",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -5900,7 +5900,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\obj\\Debug\\net6.0\\build-gz\\Rur6bwy9.gz",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -5917,7 +5917,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\obj\\Debug\\net6.0\\build-gz\\ruwi9PWc.gz",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -5934,7 +5934,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\obj\\Debug\\net6.0\\build-gz\\Rv1psqxN.gz",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -5951,7 +5951,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\obj\\Debug\\net6.0\\build-gz\\RyOuU+v3.gz",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -5968,7 +5968,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\obj\\Debug\\net6.0\\build-gz\\s+LMJAdJ.gz",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -5985,7 +5985,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\obj\\Debug\\net6.0\\build-gz\\Suz66u4h.gz",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -6002,7 +6002,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\obj\\Debug\\net6.0\\build-gz\\SX0PfQAn.gz",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -6019,7 +6019,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\obj\\Debug\\net6.0\\build-gz\\T5ivKtcQ.gz",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -6036,7 +6036,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\obj\\Debug\\net6.0\\build-gz\\tgF86Oos.gz",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -6053,7 +6053,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\obj\\Debug\\net6.0\\build-gz\\TjZFmeaN.gz",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -6070,7 +6070,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\obj\\Debug\\net6.0\\build-gz\\Tlrq+0+d.gz",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -6087,7 +6087,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\obj\\Debug\\net6.0\\build-gz\\tymgw2zk.gz",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -6104,7 +6104,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\obj\\Debug\\net6.0\\build-gz\\u4NIZZ0U.gz",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -6121,7 +6121,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\obj\\Debug\\net6.0\\build-gz\\u84x4QI9.gz",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -6138,7 +6138,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\obj\\Debug\\net6.0\\build-gz\\U9NWEWNt.gz",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -6155,7 +6155,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\obj\\Debug\\net6.0\\build-gz\\ubxEGYLf.gz",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -6172,7 +6172,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\obj\\Debug\\net6.0\\build-gz\\UgrpjPxd.gz",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -6189,7 +6189,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\obj\\Debug\\net6.0\\build-gz\\uictu7cv.gz",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -6206,7 +6206,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\obj\\Debug\\net6.0\\build-gz\\ul+QIhWi.gz",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -6223,7 +6223,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\obj\\Debug\\net6.0\\build-gz\\UNaRDe3T.gz",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -6240,7 +6240,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\obj\\Debug\\net6.0\\build-gz\\UQDxMOk8.gz",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -6257,7 +6257,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\obj\\Debug\\net6.0\\build-gz\\uYdCn24R.gz",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -6274,7 +6274,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\obj\\Debug\\net6.0\\build-gz\\V3cqRbgu.gz",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -6291,7 +6291,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\obj\\Debug\\net6.0\\build-gz\\v8IOJfgp.gz",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -6308,7 +6308,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\obj\\Debug\\net6.0\\build-gz\\V9IDYWqb.gz",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -6325,7 +6325,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\obj\\Debug\\net6.0\\build-gz\\VEU5IPXt.gz",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -6342,7 +6342,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\obj\\Debug\\net6.0\\build-gz\\vGWWCUvw.gz",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -6359,7 +6359,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\obj\\Debug\\net6.0\\build-gz\\vMO6Qb0u.gz",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -6376,7 +6376,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\obj\\Debug\\net6.0\\build-gz\\vQbeRfdR.gz",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -6393,7 +6393,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\obj\\Debug\\net6.0\\build-gz\\w5XPTHfa.gz",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -6410,7 +6410,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\obj\\Debug\\net6.0\\build-gz\\w96+qghD.gz",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -6427,7 +6427,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\obj\\Debug\\net6.0\\build-gz\\WhTx8NOT.gz",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -6444,7 +6444,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\obj\\Debug\\net6.0\\build-gz\\WRnXz7in.gz",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -6461,7 +6461,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\obj\\Debug\\net6.0\\build-gz\\WS4laTcN.gz",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -6478,7 +6478,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\obj\\Debug\\net6.0\\build-gz\\x0hlXlB8.gz",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -6495,7 +6495,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\obj\\Debug\\net6.0\\build-gz\\X2uvVTmR.gz",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -6512,7 +6512,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\obj\\Debug\\net6.0\\build-gz\\X8X81tO1.gz",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -6529,7 +6529,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\obj\\Debug\\net6.0\\build-gz\\XjmCIWHi.gz",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -6546,7 +6546,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\obj\\Debug\\net6.0\\build-gz\\XJNbUt7+.gz",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -6563,7 +6563,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\obj\\Debug\\net6.0\\build-gz\\XpS4iAPE.gz",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -6580,7 +6580,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\obj\\Debug\\net6.0\\build-gz\\xRNN+gaP.gz",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -6597,7 +6597,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\obj\\Debug\\net6.0\\build-gz\\xw4W+C+9.gz",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -6614,7 +6614,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\obj\\Debug\\net6.0\\build-gz\\ybGb2uEy.gz",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -6631,7 +6631,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\obj\\Debug\\net6.0\\build-gz\\YCvrMqjc.gz",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -6648,7 +6648,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\obj\\Debug\\net6.0\\build-gz\\ydS+56kr.gz",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -6665,7 +6665,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\obj\\Debug\\net6.0\\build-gz\\yH3bDdUa.gz",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -6682,7 +6682,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\obj\\Debug\\net6.0\\build-gz\\yraDDnXG.gz",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -6699,7 +6699,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\obj\\Debug\\net6.0\\build-gz\\yzm+VnbN.gz",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -6716,7 +6716,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\obj\\Debug\\net6.0\\build-gz\\YZrBxNxD.gz",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -6733,7 +6733,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\obj\\Debug\\net6.0\\build-gz\\zAn5VOlp.gz",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -6750,7 +6750,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\obj\\Debug\\net6.0\\build-gz\\ZDhn0Vi2.gz",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -6767,7 +6767,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\obj\\Debug\\net6.0\\build-gz\\ZSBfXwYu.gz",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -6784,7 +6784,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\obj\\Debug\\net6.0\\build-gz\\zyj45yzx.gz",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -6800,12 +6800,12 @@
       "OriginalItemSpec": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Private.CoreLib.dll"
     },
     {
-      "Identity": "E:\\GitHub\\Plants\\PlantsWA\\obj\\Debug\\net6.0\\scopedcss\\bundle\\PlantsWA.styles.css",
-      "SourceId": "PlantsWA",
+      "Identity": "E:\\GitHub\\Plants\\PlantsWA\\obj\\Debug\\net6.0\\scopedcss\\bundle\\Plants.WA.styles.css",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\obj\\Debug\\net6.0\\scopedcss\\bundle\\",
       "BasePath": "/",
-      "RelativePath": "PlantsWA.styles.css",
+      "RelativePath": "Plants.WA.styles.css",
       "AssetKind": "All",
       "AssetMode": "CurrentProject",
       "AssetRole": "Primary",
@@ -6814,15 +6814,15 @@
       "AssetTraitValue": "ApplicationBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "E:\\GitHub\\Plants\\PlantsWA\\obj\\Debug\\net6.0\\scopedcss\\bundle\\PlantsWA.styles.css"
+      "OriginalItemSpec": "E:\\GitHub\\Plants\\PlantsWA\\obj\\Debug\\net6.0\\scopedcss\\bundle\\Plants.WA.styles.css"
     },
     {
-      "Identity": "E:\\GitHub\\Plants\\PlantsWA\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\PlantsWA.bundle.scp.css",
-      "SourceId": "PlantsWA",
+      "Identity": "E:\\GitHub\\Plants\\PlantsWA\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\Plants.WA.bundle.scp.css",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\",
       "BasePath": "/",
-      "RelativePath": "PlantsWA.bundle.scp.css",
+      "RelativePath": "Plants.WA.bundle.scp.css",
       "AssetKind": "All",
       "AssetMode": "Reference",
       "AssetRole": "Primary",
@@ -6831,11 +6831,11 @@
       "AssetTraitValue": "ProjectBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "E:\\GitHub\\Plants\\PlantsWA\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\PlantsWA.bundle.scp.css"
+      "OriginalItemSpec": "E:\\GitHub\\Plants\\PlantsWA\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\Plants.WA.bundle.scp.css"
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\obj\\Debug\\net6.0\\service-worker\\service-worker.js",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\obj\\Debug\\net6.0\\service-worker\\",
       "BasePath": "/",
@@ -6852,7 +6852,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\obj\\Debug\\net6.0\\service-worker\\service-worker.published.js",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\obj\\Debug\\net6.0\\service-worker\\",
       "BasePath": "/",
@@ -6869,7 +6869,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\obj\\Debug\\net6.0\\service-worker-assets.js",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -6886,7 +6886,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\obj\\Debug\\net6.0\\service-worker-assets.js.build",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Computed",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -6903,7 +6903,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\wwwroot\\css\\app.css",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Discovered",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\wwwroot\\",
       "BasePath": "/",
@@ -6920,7 +6920,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Discovered",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\wwwroot\\",
       "BasePath": "/",
@@ -6937,7 +6937,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Discovered",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\wwwroot\\",
       "BasePath": "/",
@@ -6954,7 +6954,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\wwwroot\\css\\open-iconic\\font\\css\\open-iconic-bootstrap.min.css",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Discovered",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\wwwroot\\",
       "BasePath": "/",
@@ -6971,7 +6971,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.eot",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Discovered",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\wwwroot\\",
       "BasePath": "/",
@@ -6988,7 +6988,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.otf",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Discovered",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\wwwroot\\",
       "BasePath": "/",
@@ -7005,7 +7005,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.svg",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Discovered",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\wwwroot\\",
       "BasePath": "/",
@@ -7022,7 +7022,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.ttf",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Discovered",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\wwwroot\\",
       "BasePath": "/",
@@ -7039,7 +7039,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.woff",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Discovered",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\wwwroot\\",
       "BasePath": "/",
@@ -7056,7 +7056,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\wwwroot\\css\\open-iconic\\FONT-LICENSE",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Discovered",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\wwwroot\\",
       "BasePath": "/",
@@ -7073,7 +7073,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\wwwroot\\css\\open-iconic\\ICON-LICENSE",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Discovered",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\wwwroot\\",
       "BasePath": "/",
@@ -7090,7 +7090,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\wwwroot\\css\\open-iconic\\README.md",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Discovered",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\wwwroot\\",
       "BasePath": "/",
@@ -7107,7 +7107,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\wwwroot\\favicon.ico",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Discovered",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\wwwroot\\",
       "BasePath": "/",
@@ -7124,7 +7124,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\wwwroot\\icon-192.png",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Discovered",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\wwwroot\\",
       "BasePath": "/",
@@ -7141,7 +7141,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\wwwroot\\icon-512.png",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Discovered",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\wwwroot\\",
       "BasePath": "/",
@@ -7158,7 +7158,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\wwwroot\\index.html",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Discovered",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\wwwroot\\",
       "BasePath": "/",
@@ -7175,7 +7175,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\wwwroot\\manifest.json",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Discovered",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\wwwroot\\",
       "BasePath": "/",
@@ -7192,7 +7192,7 @@
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\wwwroot\\sample-data\\weather.json",
-      "SourceId": "PlantsWA",
+      "SourceId": "Plants.WA",
       "SourceType": "Discovered",
       "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\wwwroot\\",
       "BasePath": "/",

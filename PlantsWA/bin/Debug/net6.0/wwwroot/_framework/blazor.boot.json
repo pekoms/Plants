@@ -2,7 +2,7 @@
   "cacheBootResources": true,
   "config": [ ],
   "debugBuild": true,
-  "entryAssembly": "PlantsWA",
+  "entryAssembly": "Plants.WA",
   "icuDataMode": 0,
   "linkerEnabled": false,
   "resources": {
@@ -196,13 +196,13 @@
       "mscorlib.dll": "sha256-SboUbkX8s5RVQGtnN5Q67MBZW0I\/P3aeEMENJq8gv8M=",
       "netstandard.dll": "sha256-lZ8L5iiSghlvyt2ie2YdBYAtJbVa4mvpvBX3W9ihjLc=",
       "System.Private.CoreLib.dll": "sha256-jECkJy2Sjpl59QEL3nO3p8nwKGXvnJpXaKQF\/+MTw04=",
-      "PlantsWA.dll": "sha256-TkVitFUy7paTIVp9FTePVF4hjpC+VatHmiwFeEnGqI0="
+      "Plants.WA.dll": "sha256-3lTxXxjo+VOoEEUNL5dueeSPyfNoSaJZcXgMtkYd1sI="
     },
     "extensions": null,
     "lazyAssembly": null,
     "libraryInitializers": null,
     "pdb": {
-      "PlantsWA.pdb": "sha256-2Ljg4htK+C6IMb\/Q3j0b0rAyHjInmod+0mnNbI0HjSk="
+      "Plants.WA.pdb": "sha256-5dMCkfaxdcQLM56N\/kmXois31pZsAMftv+NeuLzMpkE="
     },
     "runtime": {
       "dotnet.6.0.10.c7oxyd0quv.js": "sha256-KtM3Wrooexmrt5NmqvZfWoDPtNIe6wZqLopR6ToqUPg=",

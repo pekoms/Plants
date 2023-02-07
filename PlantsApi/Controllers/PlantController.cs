@@ -10,11 +10,12 @@ namespace Plants.Api.Controllers
     public class PlantController : ControllerBase
     {
         private IPlantService _plantService;
+        private IUtilsService _utilsService;    
 
-        public PlantController(IPlantService plantService)
+        public PlantController(IPlantService plantService, IUtilsService utilsService)
         {
             _plantService = plantService;
-
+            _utilsService = utilsService;
         }
 
         // GET: UserController
@@ -41,15 +42,17 @@ namespace Plants.Api.Controllers
         public async Task<ActionResult> CreatePlant([FromForm] PlantDTO newPlantDTO, CancellationToken cancellationToken)
         {
             var newPlant = new Plant { Name = newPlantDTO.Name,
-                                       Specie = newPlantDTO.Specie,
-                                       Age=newPlantDTO.Age,
-                                       Shop=newPlantDTO.Shop,
-                                       Finsert=newPlantDTO.Finsert,
-                                       ContentImage=newPlantDTO.ContentImage 
-                                      };
+                Specie = newPlantDTO.Specie,
+                Age = newPlantDTO.Age,
+                Shop = newPlantDTO.Shop,
+                Finsert = newPlantDTO.Finsert,
+                ContentImage = await _utilsService.GetImageFromFile(newPlantDTO.ContentImage)
+        };
             await _plantService.Create(newPlant);
             return Ok(newPlant);
         }
+
+       
 
         // POST: UserController/Edit/5
         [HttpPut("{id}", Name = "UpdateDetailedPlant")]

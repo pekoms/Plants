@@ -74,7 +74,7 @@
     },
     {
       "hash": "sha256-+AUmGi9g6QYzhyIWfQ+G8yrC\/LxgH1kNpvd3Tfiae9A=",
-      "url": "PlantsWA.styles.css"
+      "url": "Plants.WA.styles.css"
     },
     {
       "hash": "sha256-gbA+AujHUUBawZgIGQVo3vLdHlkaD7QLRM0dStUecSM=",
@@ -861,21 +861,21 @@
       "url": "_framework\/icudt_no_CJK.dat"
     },
     {
-      "hash": "sha256-TkVitFUy7paTIVp9FTePVF4hjpC+VatHmiwFeEnGqI0=",
-      "url": "_framework\/PlantsWA.dll"
-    },
-    {
-      "hash": "sha256-2Ljg4htK+C6IMb\/Q3j0b0rAyHjInmod+0mnNbI0HjSk=",
-      "url": "_framework\/PlantsWA.pdb"
-    },
-    {
       "hash": "sha256-xbodEx8SfFjQwcIT9kTWPiIKFbpZEXVvF1mQEx0KlPU=",
       "url": "_framework\/blazor.webassembly.js"
     },
     {
       "hash": "sha256-UWpXC3iuE7mTpYukkY9stFgw8JctqTHGbZqle2AfJoo=",
       "url": "_framework\/blazor.boot.json"
+    },
+    {
+      "hash": "sha256-3lTxXxjo+VOoEEUNL5dueeSPyfNoSaJZcXgMtkYd1sI=",
+      "url": "_framework\/Plants.WA.dll"
+    },
+    {
+      "hash": "sha256-5dMCkfaxdcQLM56N\/kmXois31pZsAMftv+NeuLzMpkE=",
+      "url": "_framework\/Plants.WA.pdb"
     }
   ],
-  "version": "kriq4W3e"
+  "version": "vBR5A\/iT"
 };
