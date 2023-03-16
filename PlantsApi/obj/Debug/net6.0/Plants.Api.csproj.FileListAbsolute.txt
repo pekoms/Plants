@@ -6,12 +6,18 @@ E:\GitHub\Plants\PlantsApi\bin\Debug\net6.0\Plants.Api.runtimeconfig.json
 E:\GitHub\Plants\PlantsApi\bin\Debug\net6.0\Plants.Api.dll
 E:\GitHub\Plants\PlantsApi\bin\Debug\net6.0\Plants.Api.pdb
 E:\GitHub\Plants\PlantsApi\bin\Debug\net6.0\DnsClient.dll
+E:\GitHub\Plants\PlantsApi\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
 E:\GitHub\Plants\PlantsApi\bin\Debug\net6.0\Microsoft.Extensions.Configuration.Abstractions.dll
 E:\GitHub\Plants\PlantsApi\bin\Debug\net6.0\Microsoft.Extensions.Configuration.Binder.dll
 E:\GitHub\Plants\PlantsApi\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
 E:\GitHub\Plants\PlantsApi\bin\Debug\net6.0\Microsoft.Extensions.Options.dll
 E:\GitHub\Plants\PlantsApi\bin\Debug\net6.0\Microsoft.Extensions.Options.ConfigurationExtensions.dll
 E:\GitHub\Plants\PlantsApi\bin\Debug\net6.0\Microsoft.Extensions.Primitives.dll
+E:\GitHub\Plants\PlantsApi\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
+E:\GitHub\Plants\PlantsApi\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
+E:\GitHub\Plants\PlantsApi\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.dll
+E:\GitHub\Plants\PlantsApi\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+E:\GitHub\Plants\PlantsApi\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
 E:\GitHub\Plants\PlantsApi\bin\Debug\net6.0\Microsoft.OpenApi.dll
 E:\GitHub\Plants\PlantsApi\bin\Debug\net6.0\MongoDB.Bson.dll
 E:\GitHub\Plants\PlantsApi\bin\Debug\net6.0\MongoDB.Driver.dll
@@ -22,6 +28,7 @@ E:\GitHub\Plants\PlantsApi\bin\Debug\net6.0\Snappier.dll
 E:\GitHub\Plants\PlantsApi\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
 E:\GitHub\Plants\PlantsApi\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 E:\GitHub\Plants\PlantsApi\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+E:\GitHub\Plants\PlantsApi\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
 E:\GitHub\Plants\PlantsApi\bin\Debug\net6.0\ZstdSharp.dll
 E:\GitHub\Plants\PlantsApi\bin\Debug\net6.0\runtimes\linux\native\libmongocrypt.so
 E:\GitHub\Plants\PlantsApi\bin\Debug\net6.0\runtimes\osx\native\libmongocrypt.dylib
@@ -42,10 +49,3 @@ E:\GitHub\Plants\PlantsApi\obj\Debug\net6.0\refint\Plants.Api.dll
 E:\GitHub\Plants\PlantsApi\obj\Debug\net6.0\Plants.Api.pdb
 E:\GitHub\Plants\PlantsApi\obj\Debug\net6.0\Plants.Api.genruntimeconfig.cache
 E:\GitHub\Plants\PlantsApi\obj\Debug\net6.0\ref\Plants.Api.dll
-E:\GitHub\Plants\PlantsApi\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
-E:\GitHub\Plants\PlantsApi\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
-E:\GitHub\Plants\PlantsApi\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
-E:\GitHub\Plants\PlantsApi\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.dll
-E:\GitHub\Plants\PlantsApi\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
-E:\GitHub\Plants\PlantsApi\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
-E:\GitHub\Plants\PlantsApi\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll

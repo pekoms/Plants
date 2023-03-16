@@ -9,6 +9,10 @@ namespace Plants.Api.Domain.Entities
         public string Id { get; set; } = Guid.NewGuid().ToString();
         [BsonRepresentation(MongoDB.Bson.BsonType.String)]
         public string PlantId { get; set; }
+        [BsonRepresentation(MongoDB.Bson.BsonType.String)]
+        public string UserId { get; set; }
+        [BsonRepresentation(MongoDB.Bson.BsonType.Int32)]
+        public int Votes { get; set; }
         [BsonRepresentation(MongoDB.Bson.BsonType.Boolean)]
         public bool IsNominated { get; set; }
         [BsonRepresentation(MongoDB.Bson.BsonType.Boolean)]
@@ -19,13 +23,13 @@ namespace Plants.Api.Domain.Entities
         public bool IsTranplanted { get; set; }
         [BsonRepresentation(MongoDB.Bson.BsonType.Boolean)]
         public bool IsFertilised { get; set; }
-        [BsonRepresentation(MongoDB.Bson.BsonType.Int32)]
+        [BsonRepresentation(MongoDB.Bson.BsonType.Boolean)]
         public bool FertiliserQuantity { get; set; }
         [BsonRepresentation(MongoDB.Bson.BsonType.String)]
         public string Observation { get; set; } = "";
         [BsonRepresentation(MongoDB.Bson.BsonType.DateTime)]
         public DateTime Finsert { get; set; }
-        [BsonRepresentation(MongoDB.Bson.BsonType.Binary)]
-        public byte[]? ContentImage { get; set; }
+        [BsonRepresentation(MongoDB.Bson.BsonType.String)]
+        public string? ContentImage { get; set; }
     }
 }
