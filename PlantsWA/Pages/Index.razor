@@ -1,30 +1,57 @@
 ﻿@page "/"
-@using Radzen.Blazor
+@inject NavigationManager NavigationManager
 
-<PageTitle>Index</PageTitle>
-
-<h1>Hello, world!</h1>
-
-Logeate en Planter
-
-<div class="container-fluid">
-    <div class="row px-3">
-        <div class="col-md-4 p-3">
-            <RadzenCard>
-                <RadzenText TextStyle="TextStyle.Subtitle2" TagName="TagName.H3">Password</RadzenText>
-                <RadzenPassword Change=@(args => OnChange(args, "Password")) Class="w-100" />
-            </RadzenCard>
-        </div>      
+<div class="container h-100">
+    <div class="row align-items-center h-100">
+        <div class="col-md-6 mx-auto">
+            <div class="card">
+                <div class="card-body">
+                    <h3 class="card-title text-center">Iniciar sesión</h3>
+                    <form>
+                        <div class="form-group">
+                            <label for="inputEmail">Correo electrónico</label>
+                            <input type="email" class="form-control" id="inputEmail" placeholder="Ingresa tu correo electrónico">
+                        </div>
+                        <div class="form-group">
+                            <label for="inputPassword">Contraseña</label>
+                            <input type="password" class="form-control" id="inputPassword" placeholder="Ingresa tu contraseña">
+                        </div>
+                        <div class="text-center" style="margin-top: 1rem;">
+                            <button type="button" class="btn btn-primary" @onclick="IniciarSesion">Iniciar sesión</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
 
 
 
 @code {
-  
+    private Usuario usuario = new Usuario();
 
-    void OnChange(string value, string name)
+    private void IniciarSesion()
     {
-        
+        if (usuario.CorreoElectronico == "admin@example.com" && usuario.Contrasena == "password")
+        {
+            // Iniciar sesión exitosamente
+            Console.WriteLine("Iniciando sesión...");
+         
+        }
+        else
+        {
+            // Mostrar mensaje de error
+            Console.WriteLine("Correo electrónico o contraseña incorrectos.");
+        }
+        NavigationManager.NavigateTo("main");
+    }
+
+ 
+
+    private class Usuario
+    {
+        public string CorreoElectronico { get; set; }
+        public string Contrasena { get; set; }
     }
 }

@@ -1,0 +1,69 @@
+﻿@inherits LayoutComponentBase
+
+@if (Cards != null && Cards.Any())
+{
+    <div class="card-deck">
+        @foreach (var card in Cards)
+        {
+            <div class="card">
+                <img class="card-img-top" src="@card.ImageUrl" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">@card.Title</h5>
+                    <p class="card-text">@card.Description</p>
+                </div>
+                @if (!string.IsNullOrEmpty(card.Footer))
+                {
+                    <div class="card-footer">
+                        <small class="text-muted">@card.Footer</small>
+                    </div>
+                }
+                @if(card.Editable==true)
+                {
+                    <div>
+                        <button type="button" class="btn btn-danger btn-lg btn-block" @onclick="DeleteCard">Eliminar</button>
+                        <button type="button" class="btn btn-success btn-lg btn-block" @onclick="EditarCard">Editar</button>
+
+                    </div>
+                }
+               
+            </div>
+        }
+    </div>
+}
+else
+{
+    <p>No hay elementos para mostrar</p>
+}
+
+@code {
+    [Parameter]
+    public List<Card> Cards { get; set; } = new List<Card>();
+    Card cardPlus = new Card() { Title = "New Card" , Editable=false};
+
+
+    public class Card
+    {
+        public string ImageUrl { get; set; }
+        public string Title { get; set; }
+        public string Description { get; set; }
+        public string Footer { get; set; }
+        public bool Editable { get; set; }
+    }
+
+   
+
+    protected override void OnParametersSet()
+    {
+        Cards.Add(cardPlus);
+    }
+
+    private void DeleteCard()
+    {
+
+    }
+
+    private void EditarCard()
+    {
+
+    }
+}

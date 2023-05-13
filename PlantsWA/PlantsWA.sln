@@ -7,7 +7,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Plants.WA", "Plants.WA.cspr
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Plants.Api", "..\PlantsApi\Plants.Api.csproj", "{6D6F041E-7874-4ED5-90C5-E225D100EC3F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Plants.UnitTest", "..\Plants.UnitTest\Plants.UnitTest.csproj", "{3E4E4F44-E312-4F2C-9F78-6033FA6E576D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Plants.UnitTest", "..\Plants.UnitTest\Plants.UnitTest.csproj", "{3E4E4F44-E312-4F2C-9F78-6033FA6E576D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

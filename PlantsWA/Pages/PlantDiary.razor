@@ -1,0 +1,43 @@
+﻿@page "/plantDiary"
+
+<div class="row">
+    @foreach (var data in diary)
+    {
+        <div class="col-sm-4">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">@data.Title</h5>
+                    <p class="card-text">@data.Content</p>
+                </div>
+            </div>
+        </div>
+    }
+</div>
+
+@code {
+    [Parameter]
+    public List<Diary> diary { get; set; } = new List<Diary>();
+
+    //[Inject]
+    //public ICardService CardService { get; set; }
+
+    protected override void OnParametersSet()
+    {
+        //Cards = await CardService.GetCards();
+        Diary diary1 = new Diary { Title = "1", Content = "1" };
+        Diary diary2 = new Diary { Title = "2", Content = "2" };
+        Diary diary3 = new Diary { Title = "3", Content = "3" };
+        diary.Add(diary1);
+        diary.Add(diary2);
+        diary.Add(diary3);
+
+
+    }
+
+    public class Diary
+    {
+        public int PlantRecordId{ get; set; }
+        public string Title { get; set; }
+        public string Content { get; set; }
+    }
+}

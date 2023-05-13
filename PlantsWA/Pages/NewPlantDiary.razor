@@ -1,0 +1,34 @@
+﻿@page "/newPlantDiary"
+@inject NavigationManager NavigationManager
+<h3>NewPlantDiary</h3>
+<form>
+    <div class="form-group">
+        <label for="inputNombre">Nombre:</label>
+        <input type="text" class="form-control" id="inputNombre" @bind="@Nombre">
+    </div>
+    <div class="form-group">
+        <label for="inputEmail">Email:</label>
+        <input type="email" class="form-control" id="inputEmail" @bind="@Email">
+    </div>
+    <div class="form-group">
+        <label for="inputTelefono">Teléfono:</label>
+        <input type="tel" class="form-control" id="inputTelefono" @bind="@Telefono">
+    </div>
+    <div class="form-group">
+        <label for="inputMensaje">Mensaje:</label>
+        <textarea class="form-control" id="inputMensaje" rows="5" @bind="@Mensaje"></textarea>
+    </div>
+    <button type="button" class="btn btn-primary" @onclick="@Enviar">Enviar</button>
+</form>
+
+@code {
+    private string Nombre { get; set; }
+    private string Email { get; set; }
+    private string Telefono { get; set; }
+    private string Mensaje { get; set; }
+
+    private void Enviar()
+    {
+        NavigationManager.NavigateTo("plantRecord");
+    }
+}

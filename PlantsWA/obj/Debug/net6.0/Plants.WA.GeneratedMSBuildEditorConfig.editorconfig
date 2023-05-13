@@ -26,8 +26,28 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXgucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/GitHub/Plants/PlantsWA/Shared/SurveyPrompt.razor]
-build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXFN1cnZleVByb21wdC5yYXpvcg==
+[E:/GitHub/Plants/PlantsWA/Pages/Main.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTWFpbi5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/GitHub/Plants/PlantsWA/Pages/NewPlantDiary.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTmV3UGxhbnREaWFyeS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/GitHub/Plants/PlantsWA/Pages/NewPlantRecord.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTmV3UGxhbnRSZWNvcmQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/GitHub/Plants/PlantsWA/Pages/PlantDiary.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUGxhbnREaWFyeS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/GitHub/Plants/PlantsWA/Pages/PlantRecord.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUGxhbnRSZWNvcmQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/GitHub/Plants/PlantsWA/Shared/CardCollection.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXENhcmRDb2xsZWN0aW9uLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
 [E:/GitHub/Plants/PlantsWA/_Imports.razor]
