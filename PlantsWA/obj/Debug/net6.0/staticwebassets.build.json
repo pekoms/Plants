@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "T4GT1QHIfsbgCHExUyiuQXxaBhxVrkptdTq2SdCl9oo=",
+  "Hash": "n9fKP1qUS1OFyD/1AMHI5ruD64duQcdQqpUspCbEfWs=",
   "Source": "Plants.WA",
   "BasePath": "/",
   "Mode": "Root",
@@ -1273,6 +1273,23 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\aleja\\.nuget\\packages\\radzen.blazor\\4.6.6\\lib\\net6.0\\Radzen.Blazor.dll"
+    },
+    {
+      "Identity": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\_framework\\RestSharp.dll",
+      "SourceId": "Plants.WA",
+      "SourceType": "Computed",
+      "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/RestSharp.dll",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "BlazorWebAssemblyResource",
+      "AssetTraitValue": "runtime",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\aleja\\.nuget\\packages\\restsharp\\110.2.0\\lib\\net6.0\\RestSharp.dll"
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.AppContext.dll",
@@ -3533,7 +3550,7 @@
       "AssetTraitValue": "runtime",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Users\\aleja\\.nuget\\packages\\microsoft.netcore.app.runtime.mono.browser-wasm\\6.0.10\\runtimes\\browser-wasm\\lib\\net6.0\\System.Text.Encodings.Web.dll"
+      "OriginalItemSpec": "C:\\Users\\aleja\\.nuget\\packages\\system.text.encodings.web\\7.0.0\\runtimes\\browser\\lib\\net6.0\\System.Text.Encodings.Web.dll"
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Text.Json.dll",
@@ -3550,7 +3567,7 @@
       "AssetTraitValue": "runtime",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Users\\aleja\\.nuget\\packages\\microsoft.netcore.app.runtime.mono.browser-wasm\\6.0.10\\runtimes\\browser-wasm\\lib\\net6.0\\System.Text.Json.dll"
+      "OriginalItemSpec": "C:\\Users\\aleja\\.nuget\\packages\\system.text.json\\7.0.2\\lib\\net6.0\\System.Text.Json.dll"
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Text.RegularExpressions.dll",
@@ -4435,6 +4452,23 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\_framework\\dotnet.wasm"
+    },
+    {
+      "Identity": "E:\\GitHub\\Plants\\PlantsWA\\obj\\Debug\\net6.0\\build-gz\\6qsM9f+i.gz",
+      "SourceId": "Plants.WA",
+      "SourceType": "Computed",
+      "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/RestSharp.dll.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "RelatedAsset": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\_framework\\RestSharp.dll",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\_framework\\RestSharp.dll"
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\obj\\Debug\\net6.0\\build-gz\\6tJtEwfk.gz",
@@ -6001,23 +6035,6 @@
       "OriginalItemSpec": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Runtime.Handles.dll"
     },
     {
-      "Identity": "E:\\GitHub\\Plants\\PlantsWA\\obj\\Debug\\net6.0\\build-gz\\M7IPaPkZ.gz",
-      "SourceId": "Plants.WA",
-      "SourceType": "Computed",
-      "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
-      "BasePath": "/",
-      "RelativePath": "_framework/System.Text.Json.dll.gz",
-      "AssetKind": "Build",
-      "AssetMode": "All",
-      "AssetRole": "Alternative",
-      "RelatedAsset": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Text.Json.dll",
-      "AssetTraitName": "Content-Encoding",
-      "AssetTraitValue": "gzip",
-      "CopyToOutputDirectory": "PreserveNewest",
-      "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Text.Json.dll"
-    },
-    {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\obj\\Debug\\net6.0\\build-gz\\M7ZPp6rj.gz",
       "SourceId": "Plants.WA",
       "SourceType": "Computed",
@@ -6511,23 +6528,6 @@
       "OriginalItemSpec": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.IO.dll"
     },
     {
-      "Identity": "E:\\GitHub\\Plants\\PlantsWA\\obj\\Debug\\net6.0\\build-gz\\rUcVUUxM.gz",
-      "SourceId": "Plants.WA",
-      "SourceType": "Computed",
-      "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
-      "BasePath": "/",
-      "RelativePath": "_framework/System.Text.Encodings.Web.dll.gz",
-      "AssetKind": "Build",
-      "AssetMode": "All",
-      "AssetRole": "Alternative",
-      "RelatedAsset": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Text.Encodings.Web.dll",
-      "AssetTraitName": "Content-Encoding",
-      "AssetTraitValue": "gzip",
-      "CopyToOutputDirectory": "PreserveNewest",
-      "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Text.Encodings.Web.dll"
-    },
-    {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\obj\\Debug\\net6.0\\build-gz\\Rur6bwy9.gz",
       "SourceId": "Plants.WA",
       "SourceType": "Computed",
@@ -6577,6 +6577,23 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.IO.FileSystem.dll"
+    },
+    {
+      "Identity": "E:\\GitHub\\Plants\\PlantsWA\\obj\\Debug\\net6.0\\build-gz\\Rx+ky3j4.gz",
+      "SourceId": "Plants.WA",
+      "SourceType": "Computed",
+      "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/System.Text.Encodings.Web.dll.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "RelatedAsset": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Text.Encodings.Web.dll",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Text.Encodings.Web.dll"
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\obj\\Debug\\net6.0\\build-gz\\RyOuU+v3.gz",
@@ -6951,6 +6968,23 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\_framework\\dotnet.6.0.10.c7oxyd0quv.js"
+    },
+    {
+      "Identity": "E:\\GitHub\\Plants\\PlantsWA\\obj\\Debug\\net6.0\\build-gz\\v9iojY78.gz",
+      "SourceId": "Plants.WA",
+      "SourceType": "Computed",
+      "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/System.Text.Json.dll.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "RelatedAsset": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Text.Json.dll",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Text.Json.dll"
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\obj\\Debug\\net6.0\\build-gz\\VEU5IPXt.gz",

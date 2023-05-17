@@ -768,8 +768,6 @@ E:\GitHub\Plants\PlantsWA\obj\Debug\net6.0\build-gz\u4NIZZ0U.gz
 E:\GitHub\Plants\PlantsWA\obj\Debug\net6.0\build-gz\ClgxnQB4.gz
 E:\GitHub\Plants\PlantsWA\obj\Debug\net6.0\build-gz\1ha6KJn5.gz
 E:\GitHub\Plants\PlantsWA\obj\Debug\net6.0\build-gz\E5507s3h.gz
-E:\GitHub\Plants\PlantsWA\obj\Debug\net6.0\build-gz\rUcVUUxM.gz
-E:\GitHub\Plants\PlantsWA\obj\Debug\net6.0\build-gz\M7IPaPkZ.gz
 E:\GitHub\Plants\PlantsWA\obj\Debug\net6.0\build-gz\6v5CLiCh.gz
 E:\GitHub\Plants\PlantsWA\obj\Debug\net6.0\build-gz\7Ha3b2LQ.gz
 E:\GitHub\Plants\PlantsWA\obj\Debug\net6.0\build-gz\WS4laTcN.gz
@@ -825,3 +823,9 @@ E:\GitHub\Plants\PlantsWA\obj\Debug\net6.0\Plants.WA.dll
 E:\GitHub\Plants\PlantsWA\obj\Debug\net6.0\refint\Plants.WA.dll
 E:\GitHub\Plants\PlantsWA\obj\Debug\net6.0\Plants.WA.pdb
 E:\GitHub\Plants\PlantsWA\obj\Debug\net6.0\ref\Plants.WA.dll
+E:\GitHub\Plants\PlantsWA\bin\Debug\net6.0\wwwroot\_framework\RestSharp.dll
+E:\GitHub\Plants\PlantsWA\bin\Debug\net6.0\wwwroot\_framework\RestSharp.dll.gz
+E:\GitHub\Plants\PlantsWA\bin\Debug\net6.0\RestSharp.dll
+E:\GitHub\Plants\PlantsWA\obj\Debug\net6.0\build-gz\6qsM9f+i.gz
+E:\GitHub\Plants\PlantsWA\obj\Debug\net6.0\build-gz\Rx+ky3j4.gz
+E:\GitHub\Plants\PlantsWA\obj\Debug\net6.0\build-gz\v9iojY78.gz
