@@ -1,4 +1,6 @@
-﻿namespace Plants.Api.Domain.Dtos
+﻿using Microsoft.AspNetCore.Http;
+
+namespace Plants.Api.Domain.Dtos
 {
     public class PlantRecordDTO
     {        

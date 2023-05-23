@@ -39,17 +39,17 @@ namespace Plants.Api.Controllers
         // POST: UserController/Create
 
         [HttpPost(Name = "CreatePlant")]
-        public async Task<ActionResult> CreatePlant([FromForm] PlantDTO newPlantDTO, CancellationToken cancellationToken)
+        public async Task<ActionResult> CreatePlant([FromBody] PlantDTO newPlantDTO, CancellationToken cancellationToken)
         {
-            var newPlant = new Plant { Name = newPlantDTO.Name,
-                Specie = newPlantDTO.Specie,
-                Age = newPlantDTO.Age,
-                Shop = newPlantDTO.Shop,
-                Finsert = newPlantDTO.Finsert,
-                ContentImage = await _utilsService.GetImageFromFile(newPlantDTO.ContentImage)
-        };
+            var newPlant = new Plant
+            {
+                Name = newPlantDTO.Nombre,
+                Specie = newPlantDTO.Especie,
+                Age = newPlantDTO.Edad
+
+            };
             await _plantService.Create(newPlant);
-            return Ok(newPlant);
+            return Ok();
         }
 
        

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "n9fKP1qUS1OFyD/1AMHI5ruD64duQcdQqpUspCbEfWs=",
+  "Hash": "in5hNoeRRBMcVgV2kf1uwUmpY4kcd1si1xoxGXIra/M=",
   "Source": "Plants.WA",
   "BasePath": "/",
   "Mode": "Root",
@@ -816,6 +816,23 @@
       "OriginalItemSpec": "C:\\Users\\aleja\\.nuget\\packages\\microsoft.aspnetcore.components.webassembly\\6.0.10\\lib\\net6.0\\Microsoft.AspNetCore.Components.WebAssembly.dll"
     },
     {
+      "Identity": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Http.Features.dll",
+      "SourceId": "Plants.WA",
+      "SourceType": "Computed",
+      "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.AspNetCore.Http.Features.dll",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "BlazorWebAssemblyResource",
+      "AssetTraitValue": "runtime",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\aleja\\.nuget\\packages\\microsoft.aspnetcore.http.features\\5.0.17\\lib\\net5.0\\Microsoft.AspNetCore.Http.Features.dll"
+    },
+    {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Metadata.dll",
       "SourceId": "Plants.WA",
       "SourceType": "Computed",
@@ -1190,6 +1207,23 @@
       "OriginalItemSpec": "C:\\Users\\aleja\\.nuget\\packages\\microsoft.netcore.app.runtime.mono.browser-wasm\\6.0.10\\runtimes\\browser-wasm\\lib\\net6.0\\Microsoft.Win32.Registry.dll"
     },
     {
+      "Identity": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\_framework\\MongoDB.Bson.dll",
+      "SourceId": "Plants.WA",
+      "SourceType": "Computed",
+      "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/MongoDB.Bson.dll",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "BlazorWebAssemblyResource",
+      "AssetTraitValue": "runtime",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\aleja\\.nuget\\packages\\mongodb.bson\\2.18.0\\lib\\netstandard2.1\\MongoDB.Bson.dll"
+    },
+    {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\_framework\\mscorlib.dll",
       "SourceId": "Plants.WA",
       "SourceType": "Computed",
@@ -1222,6 +1256,40 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\aleja\\.nuget\\packages\\microsoft.netcore.app.runtime.mono.browser-wasm\\6.0.10\\runtimes\\browser-wasm\\lib\\net6.0\\netstandard.dll"
+    },
+    {
+      "Identity": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Plants.Domain.dll",
+      "SourceId": "Plants.WA",
+      "SourceType": "Computed",
+      "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Plants.Domain.dll",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "BlazorWebAssemblyResource",
+      "AssetTraitValue": "runtime",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "E:\\GitHub\\Plants\\Plants.Domain\\bin\\Debug\\net6.0\\Plants.Domain.dll"
+    },
+    {
+      "Identity": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Plants.Domain.pdb",
+      "SourceId": "Plants.WA",
+      "SourceType": "Computed",
+      "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Plants.Domain.pdb",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "BlazorWebAssemblyResource",
+      "AssetTraitValue": "symbol",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "E:\\GitHub\\Plants\\Plants.Domain\\bin\\Debug\\net6.0\\Plants.Domain.pdb"
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Plants.WA.dll",
@@ -4862,6 +4930,23 @@
       "OriginalItemSpec": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Xml.XmlDocument.dll"
     },
     {
+      "Identity": "E:\\GitHub\\Plants\\PlantsWA\\obj\\Debug\\net6.0\\build-gz\\B+mwNryj.gz",
+      "SourceId": "Plants.WA",
+      "SourceType": "Computed",
+      "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Plants.Domain.pdb.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "RelatedAsset": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Plants.Domain.pdb",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Plants.Domain.pdb"
+    },
+    {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\obj\\Debug\\net6.0\\build-gz\\b1CPTwB6.gz",
       "SourceId": "Plants.WA",
       "SourceType": "Computed",
@@ -6290,6 +6375,23 @@
       "OriginalItemSpec": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.IO.Compression.dll"
     },
     {
+      "Identity": "E:\\GitHub\\Plants\\PlantsWA\\obj\\Debug\\net6.0\\build-gz\\Oor9YJd2.gz",
+      "SourceId": "Plants.WA",
+      "SourceType": "Computed",
+      "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.AspNetCore.Http.Features.dll.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "RelatedAsset": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Http.Features.dll",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Http.Features.dll"
+    },
+    {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\obj\\Debug\\net6.0\\build-gz\\oVpqYK1b.gz",
       "SourceId": "Plants.WA",
       "SourceType": "Computed",
@@ -6509,6 +6611,23 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.IO.IsolatedStorage.dll"
+    },
+    {
+      "Identity": "E:\\GitHub\\Plants\\PlantsWA\\obj\\Debug\\net6.0\\build-gz\\rOpn1zAq.gz",
+      "SourceId": "Plants.WA",
+      "SourceType": "Computed",
+      "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/MongoDB.Bson.dll.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "RelatedAsset": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\_framework\\MongoDB.Bson.dll",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\_framework\\MongoDB.Bson.dll"
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\obj\\Debug\\net6.0\\build-gz\\Rslda4to.gz",
@@ -7019,6 +7138,23 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.ComponentModel.Primitives.dll"
+    },
+    {
+      "Identity": "E:\\GitHub\\Plants\\PlantsWA\\obj\\Debug\\net6.0\\build-gz\\VjchBD2T.gz",
+      "SourceId": "Plants.WA",
+      "SourceType": "Computed",
+      "ContentRoot": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Plants.Domain.dll.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "RelatedAsset": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Plants.Domain.dll",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "E:\\GitHub\\Plants\\PlantsWA\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Plants.Domain.dll"
     },
     {
       "Identity": "E:\\GitHub\\Plants\\PlantsWA\\obj\\Debug\\net6.0\\build-gz\\vMO6Qb0u.gz",

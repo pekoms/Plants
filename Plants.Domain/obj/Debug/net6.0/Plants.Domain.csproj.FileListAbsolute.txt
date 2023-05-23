@@ -1,0 +1,12 @@
+E:\GitHub\Plants\Plants.Domain\bin\Debug\net6.0\Plants.Domain.deps.json
+E:\GitHub\Plants\Plants.Domain\bin\Debug\net6.0\Plants.Domain.dll
+E:\GitHub\Plants\Plants.Domain\bin\Debug\net6.0\Plants.Domain.pdb
+E:\GitHub\Plants\Plants.Domain\obj\Debug\net6.0\Plants.Domain.csproj.AssemblyReference.cache
+E:\GitHub\Plants\Plants.Domain\obj\Debug\net6.0\Plants.Domain.GeneratedMSBuildEditorConfig.editorconfig
+E:\GitHub\Plants\Plants.Domain\obj\Debug\net6.0\Plants.Domain.AssemblyInfoInputs.cache
+E:\GitHub\Plants\Plants.Domain\obj\Debug\net6.0\Plants.Domain.AssemblyInfo.cs
+E:\GitHub\Plants\Plants.Domain\obj\Debug\net6.0\Plants.Domain.csproj.CoreCompileInputs.cache
+E:\GitHub\Plants\Plants.Domain\obj\Debug\net6.0\Plants.Domain.dll
+E:\GitHub\Plants\Plants.Domain\obj\Debug\net6.0\refint\Plants.Domain.dll
+E:\GitHub\Plants\Plants.Domain\obj\Debug\net6.0\Plants.Domain.pdb
+E:\GitHub\Plants\Plants.Domain\obj\Debug\net6.0\ref\Plants.Domain.dll

@@ -12,6 +12,7 @@ E:\GitHub\Plants\PlantsWA\bin\Debug\net6.0\wwwroot\_framework\Microsoft.AspNetCo
 E:\GitHub\Plants\PlantsWA\bin\Debug\net6.0\wwwroot\_framework\Microsoft.AspNetCore.Components.Forms.dll
 E:\GitHub\Plants\PlantsWA\bin\Debug\net6.0\wwwroot\_framework\Microsoft.AspNetCore.Components.Web.dll
 E:\GitHub\Plants\PlantsWA\bin\Debug\net6.0\wwwroot\_framework\Microsoft.AspNetCore.Components.WebAssembly.dll
+E:\GitHub\Plants\PlantsWA\bin\Debug\net6.0\wwwroot\_framework\Microsoft.AspNetCore.Http.Features.dll
 E:\GitHub\Plants\PlantsWA\bin\Debug\net6.0\wwwroot\_framework\Microsoft.AspNetCore.Metadata.dll
 E:\GitHub\Plants\PlantsWA\bin\Debug\net6.0\wwwroot\_framework\Microsoft.CSharp.dll
 E:\GitHub\Plants\PlantsWA\bin\Debug\net6.0\wwwroot\_framework\Microsoft.Extensions.Configuration.Abstractions.dll
@@ -34,11 +35,15 @@ E:\GitHub\Plants\PlantsWA\bin\Debug\net6.0\wwwroot\_framework\Microsoft.VisualBa
 E:\GitHub\Plants\PlantsWA\bin\Debug\net6.0\wwwroot\_framework\Microsoft.VisualBasic.dll
 E:\GitHub\Plants\PlantsWA\bin\Debug\net6.0\wwwroot\_framework\Microsoft.Win32.Primitives.dll
 E:\GitHub\Plants\PlantsWA\bin\Debug\net6.0\wwwroot\_framework\Microsoft.Win32.Registry.dll
+E:\GitHub\Plants\PlantsWA\bin\Debug\net6.0\wwwroot\_framework\MongoDB.Bson.dll
 E:\GitHub\Plants\PlantsWA\bin\Debug\net6.0\wwwroot\_framework\mscorlib.dll
 E:\GitHub\Plants\PlantsWA\bin\Debug\net6.0\wwwroot\_framework\netstandard.dll
+E:\GitHub\Plants\PlantsWA\bin\Debug\net6.0\wwwroot\_framework\Plants.Domain.dll
+E:\GitHub\Plants\PlantsWA\bin\Debug\net6.0\wwwroot\_framework\Plants.Domain.pdb
 E:\GitHub\Plants\PlantsWA\bin\Debug\net6.0\wwwroot\_framework\Plants.WA.dll
 E:\GitHub\Plants\PlantsWA\bin\Debug\net6.0\wwwroot\_framework\Plants.WA.pdb
 E:\GitHub\Plants\PlantsWA\bin\Debug\net6.0\wwwroot\_framework\Radzen.Blazor.dll
+E:\GitHub\Plants\PlantsWA\bin\Debug\net6.0\wwwroot\_framework\RestSharp.dll
 E:\GitHub\Plants\PlantsWA\bin\Debug\net6.0\wwwroot\_framework\System.AppContext.dll
 E:\GitHub\Plants\PlantsWA\bin\Debug\net6.0\wwwroot\_framework\System.Buffers.dll
 E:\GitHub\Plants\PlantsWA\bin\Debug\net6.0\wwwroot\_framework\System.Collections.Concurrent.dll
@@ -225,6 +230,7 @@ E:\GitHub\Plants\PlantsWA\bin\Debug\net6.0\wwwroot\_framework\System.Buffers.dll
 E:\GitHub\Plants\PlantsWA\bin\Debug\net6.0\wwwroot\_framework\Microsoft.VisualBasic.Core.dll.gz
 E:\GitHub\Plants\PlantsWA\bin\Debug\net6.0\wwwroot\_framework\System.Security.Cryptography.Cng.dll.gz
 E:\GitHub\Plants\PlantsWA\bin\Debug\net6.0\wwwroot\_framework\dotnet.wasm.gz
+E:\GitHub\Plants\PlantsWA\bin\Debug\net6.0\wwwroot\_framework\RestSharp.dll.gz
 E:\GitHub\Plants\PlantsWA\bin\Debug\net6.0\wwwroot\_framework\Microsoft.JSInterop.WebAssembly.dll.gz
 E:\GitHub\Plants\PlantsWA\bin\Debug\net6.0\wwwroot\_framework\System.Text.RegularExpressions.dll.gz
 E:\GitHub\Plants\PlantsWA\bin\Debug\net6.0\wwwroot\_framework\System.Security.Cryptography.Primitives.dll.gz
@@ -248,6 +254,7 @@ E:\GitHub\Plants\PlantsWA\bin\Debug\net6.0\wwwroot\_framework\Plants.WA.pdb.gz
 E:\GitHub\Plants\PlantsWA\bin\Debug\net6.0\wwwroot\_framework\System.Private.Runtime.InteropServices.JavaScript.dll.gz
 E:\GitHub\Plants\PlantsWA\bin\Debug\net6.0\wwwroot\_framework\Microsoft.Extensions.Primitives.dll.gz
 E:\GitHub\Plants\PlantsWA\bin\Debug\net6.0\wwwroot\_framework\System.Xml.XmlDocument.dll.gz
+E:\GitHub\Plants\PlantsWA\bin\Debug\net6.0\wwwroot\_framework\Plants.Domain.pdb.gz
 E:\GitHub\Plants\PlantsWA\bin\Debug\net6.0\wwwroot\_framework\System.Xml.XPath.dll.gz
 E:\GitHub\Plants\PlantsWA\bin\Debug\net6.0\wwwroot\_framework\System.Runtime.Serialization.Json.dll.gz
 E:\GitHub\Plants\PlantsWA\bin\Debug\net6.0\wwwroot\_framework\System.Resources.Reader.dll.gz
@@ -317,7 +324,6 @@ E:\GitHub\Plants\PlantsWA\bin\Debug\net6.0\wwwroot\_framework\Microsoft.Extensio
 E:\GitHub\Plants\PlantsWA\bin\Debug\net6.0\wwwroot\_framework\System.Net.dll.gz
 E:\GitHub\Plants\PlantsWA\bin\Debug\net6.0\wwwroot\_framework\System.Data.Common.dll.gz
 E:\GitHub\Plants\PlantsWA\bin\Debug\net6.0\wwwroot\_framework\System.Runtime.Handles.dll.gz
-E:\GitHub\Plants\PlantsWA\bin\Debug\net6.0\wwwroot\_framework\System.Text.Json.dll.gz
 E:\GitHub\Plants\PlantsWA\bin\Debug\net6.0\wwwroot\_framework\System.Private.Xml.Linq.dll.gz
 E:\GitHub\Plants\PlantsWA\bin\Debug\net6.0\wwwroot\_framework\System.IO.Compression.ZipFile.dll.gz
 E:\GitHub\Plants\PlantsWA\bin\Debug\net6.0\wwwroot\_framework\System.Linq.Parallel.dll.gz
@@ -333,6 +339,7 @@ E:\GitHub\Plants\PlantsWA\bin\Debug\net6.0\wwwroot\_framework\System.Xml.XPath.X
 E:\GitHub\Plants\PlantsWA\bin\Debug\net6.0\wwwroot\_framework\Microsoft.VisualBasic.dll.gz
 E:\GitHub\Plants\PlantsWA\bin\Debug\net6.0\wwwroot\_framework\System.Xml.ReaderWriter.dll.gz
 E:\GitHub\Plants\PlantsWA\bin\Debug\net6.0\wwwroot\_framework\System.IO.Compression.dll.gz
+E:\GitHub\Plants\PlantsWA\bin\Debug\net6.0\wwwroot\_framework\Microsoft.AspNetCore.Http.Features.dll.gz
 E:\GitHub\Plants\PlantsWA\bin\Debug\net6.0\wwwroot\_framework\System.IO.Pipes.dll.gz
 E:\GitHub\Plants\PlantsWA\bin\Debug\net6.0\wwwroot\_framework\System.Threading.dll.gz
 E:\GitHub\Plants\PlantsWA\bin\Debug\net6.0\wwwroot\_framework\System.Net.HttpListener.dll.gz
@@ -346,11 +353,12 @@ E:\GitHub\Plants\PlantsWA\bin\Debug\net6.0\wwwroot\_framework\System.Reflection.
 E:\GitHub\Plants\PlantsWA\bin\Debug\net6.0\wwwroot\_framework\System.Net.WebHeaderCollection.dll.gz
 E:\GitHub\Plants\PlantsWA\bin\Debug\net6.0\wwwroot\_framework\System.Reflection.Emit.dll.gz
 E:\GitHub\Plants\PlantsWA\bin\Debug\net6.0\wwwroot\_framework\System.IO.IsolatedStorage.dll.gz
+E:\GitHub\Plants\PlantsWA\bin\Debug\net6.0\wwwroot\_framework\MongoDB.Bson.dll.gz
 E:\GitHub\Plants\PlantsWA\bin\Debug\net6.0\wwwroot\_framework\System.IO.dll.gz
-E:\GitHub\Plants\PlantsWA\bin\Debug\net6.0\wwwroot\_framework\System.Text.Encodings.Web.dll.gz
 E:\GitHub\Plants\PlantsWA\bin\Debug\net6.0\wwwroot\_framework\System.Numerics.dll.gz
 E:\GitHub\Plants\PlantsWA\bin\Debug\net6.0\wwwroot\_framework\System.Diagnostics.Contracts.dll.gz
 E:\GitHub\Plants\PlantsWA\bin\Debug\net6.0\wwwroot\_framework\System.IO.FileSystem.dll.gz
+E:\GitHub\Plants\PlantsWA\bin\Debug\net6.0\wwwroot\_framework\System.Text.Encodings.Web.dll.gz
 E:\GitHub\Plants\PlantsWA\bin\Debug\net6.0\wwwroot\_framework\System.Reflection.Metadata.dll.gz
 E:\GitHub\Plants\PlantsWA\bin\Debug\net6.0\wwwroot\_framework\System.ObjectModel.dll.gz
 E:\GitHub\Plants\PlantsWA\bin\Debug\net6.0\wwwroot\_framework\System.Diagnostics.FileVersionInfo.dll.gz
@@ -373,8 +381,10 @@ E:\GitHub\Plants\PlantsWA\bin\Debug\net6.0\wwwroot\_framework\System.Collections
 E:\GitHub\Plants\PlantsWA\bin\Debug\net6.0\wwwroot\_framework\netstandard.dll.gz
 E:\GitHub\Plants\PlantsWA\bin\Debug\net6.0\wwwroot\_framework\icudt_CJK.dat.gz
 E:\GitHub\Plants\PlantsWA\bin\Debug\net6.0\wwwroot\_framework\dotnet.6.0.10.c7oxyd0quv.js.gz
+E:\GitHub\Plants\PlantsWA\bin\Debug\net6.0\wwwroot\_framework\System.Text.Json.dll.gz
 E:\GitHub\Plants\PlantsWA\bin\Debug\net6.0\wwwroot\_framework\System.Diagnostics.Tools.dll.gz
 E:\GitHub\Plants\PlantsWA\bin\Debug\net6.0\wwwroot\_framework\System.ComponentModel.Primitives.dll.gz
+E:\GitHub\Plants\PlantsWA\bin\Debug\net6.0\wwwroot\_framework\Plants.Domain.dll.gz
 E:\GitHub\Plants\PlantsWA\bin\Debug\net6.0\wwwroot\_framework\Microsoft.Extensions.FileProviders.Abstractions.dll.gz
 E:\GitHub\Plants\PlantsWA\bin\Debug\net6.0\wwwroot\_framework\System.IO.FileSystem.DriveInfo.dll.gz
 E:\GitHub\Plants\PlantsWA\bin\Debug\net6.0\wwwroot\_framework\System.IO.Compression.Brotli.dll.gz
@@ -411,6 +421,7 @@ E:\GitHub\Plants\PlantsWA\bin\Debug\net6.0\Microsoft.AspNetCore.Components.dll
 E:\GitHub\Plants\PlantsWA\bin\Debug\net6.0\Microsoft.AspNetCore.Components.Forms.dll
 E:\GitHub\Plants\PlantsWA\bin\Debug\net6.0\Microsoft.AspNetCore.Components.Web.dll
 E:\GitHub\Plants\PlantsWA\bin\Debug\net6.0\Microsoft.AspNetCore.Components.WebAssembly.dll
+E:\GitHub\Plants\PlantsWA\bin\Debug\net6.0\Microsoft.AspNetCore.Http.Features.dll
 E:\GitHub\Plants\PlantsWA\bin\Debug\net6.0\Microsoft.AspNetCore.Metadata.dll
 E:\GitHub\Plants\PlantsWA\bin\Debug\net6.0\Microsoft.Extensions.Configuration.dll
 E:\GitHub\Plants\PlantsWA\bin\Debug\net6.0\Microsoft.Extensions.Configuration.Abstractions.dll
@@ -428,9 +439,13 @@ E:\GitHub\Plants\PlantsWA\bin\Debug\net6.0\Microsoft.Extensions.Options.dll
 E:\GitHub\Plants\PlantsWA\bin\Debug\net6.0\Microsoft.Extensions.Primitives.dll
 E:\GitHub\Plants\PlantsWA\bin\Debug\net6.0\Microsoft.JSInterop.dll
 E:\GitHub\Plants\PlantsWA\bin\Debug\net6.0\Microsoft.JSInterop.WebAssembly.dll
+E:\GitHub\Plants\PlantsWA\bin\Debug\net6.0\MongoDB.Bson.dll
 E:\GitHub\Plants\PlantsWA\bin\Debug\net6.0\Radzen.Blazor.dll
+E:\GitHub\Plants\PlantsWA\bin\Debug\net6.0\RestSharp.dll
 E:\GitHub\Plants\PlantsWA\bin\Debug\net6.0\System.IO.Pipelines.dll
 E:\GitHub\Plants\PlantsWA\bin\Debug\net6.0\System.Linq.Dynamic.Core.dll
+E:\GitHub\Plants\PlantsWA\bin\Debug\net6.0\System.Text.Encodings.Web.dll
+E:\GitHub\Plants\PlantsWA\bin\Debug\net6.0\System.Text.Json.dll
 E:\GitHub\Plants\PlantsWA\bin\Debug\net6.0\Microsoft.CSharp.dll
 E:\GitHub\Plants\PlantsWA\bin\Debug\net6.0\Microsoft.VisualBasic.Core.dll
 E:\GitHub\Plants\PlantsWA\bin\Debug\net6.0\Microsoft.VisualBasic.dll
@@ -564,8 +579,6 @@ E:\GitHub\Plants\PlantsWA\bin\Debug\net6.0\System.ServiceProcess.dll
 E:\GitHub\Plants\PlantsWA\bin\Debug\net6.0\System.Text.Encoding.CodePages.dll
 E:\GitHub\Plants\PlantsWA\bin\Debug\net6.0\System.Text.Encoding.Extensions.dll
 E:\GitHub\Plants\PlantsWA\bin\Debug\net6.0\System.Text.Encoding.dll
-E:\GitHub\Plants\PlantsWA\bin\Debug\net6.0\System.Text.Encodings.Web.dll
-E:\GitHub\Plants\PlantsWA\bin\Debug\net6.0\System.Text.Json.dll
 E:\GitHub\Plants\PlantsWA\bin\Debug\net6.0\System.Text.RegularExpressions.dll
 E:\GitHub\Plants\PlantsWA\bin\Debug\net6.0\System.Threading.Channels.dll
 E:\GitHub\Plants\PlantsWA\bin\Debug\net6.0\System.Threading.Overlapped.dll
@@ -604,6 +617,8 @@ E:\GitHub\Plants\PlantsWA\bin\Debug\net6.0\icudt.dat
 E:\GitHub\Plants\PlantsWA\bin\Debug\net6.0\icudt_CJK.dat
 E:\GitHub\Plants\PlantsWA\bin\Debug\net6.0\icudt_EFIGS.dat
 E:\GitHub\Plants\PlantsWA\bin\Debug\net6.0\icudt_no_CJK.dat
+E:\GitHub\Plants\PlantsWA\bin\Debug\net6.0\Plants.Domain.dll
+E:\GitHub\Plants\PlantsWA\bin\Debug\net6.0\Plants.Domain.pdb
 E:\GitHub\Plants\PlantsWA\obj\Debug\net6.0\Plants.WA.csproj.AssemblyReference.cache
 E:\GitHub\Plants\PlantsWA\obj\Debug\net6.0\Plants.WA.GeneratedMSBuildEditorConfig.editorconfig
 E:\GitHub\Plants\PlantsWA\obj\Debug\net6.0\Plants.WA.AssemblyInfoInputs.cache
@@ -615,6 +630,7 @@ E:\GitHub\Plants\PlantsWA\obj\Debug\net6.0\build-gz\uictu7cv.gz
 E:\GitHub\Plants\PlantsWA\obj\Debug\net6.0\build-gz\I5UydVXD.gz
 E:\GitHub\Plants\PlantsWA\obj\Debug\net6.0\build-gz\x0hlXlB8.gz
 E:\GitHub\Plants\PlantsWA\obj\Debug\net6.0\build-gz\KB1d4M06.gz
+E:\GitHub\Plants\PlantsWA\obj\Debug\net6.0\build-gz\Oor9YJd2.gz
 E:\GitHub\Plants\PlantsWA\obj\Debug\net6.0\build-gz\MoKBegw+.gz
 E:\GitHub\Plants\PlantsWA\obj\Debug\net6.0\build-gz\HSjfQVHr.gz
 E:\GitHub\Plants\PlantsWA\obj\Debug\net6.0\build-gz\H6+zpRMD.gz
@@ -632,9 +648,13 @@ E:\GitHub\Plants\PlantsWA\obj\Debug\net6.0\build-gz\QRdNXeGH.gz
 E:\GitHub\Plants\PlantsWA\obj\Debug\net6.0\build-gz\ARgUv4Ho.gz
 E:\GitHub\Plants\PlantsWA\obj\Debug\net6.0\build-gz\kEU+Q85Z.gz
 E:\GitHub\Plants\PlantsWA\obj\Debug\net6.0\build-gz\6tJtEwfk.gz
+E:\GitHub\Plants\PlantsWA\obj\Debug\net6.0\build-gz\rOpn1zAq.gz
 E:\GitHub\Plants\PlantsWA\obj\Debug\net6.0\build-gz\Feaci7ea.gz
+E:\GitHub\Plants\PlantsWA\obj\Debug\net6.0\build-gz\6qsM9f+i.gz
 E:\GitHub\Plants\PlantsWA\obj\Debug\net6.0\build-gz\QNNFxvOk.gz
 E:\GitHub\Plants\PlantsWA\obj\Debug\net6.0\build-gz\79cBBGFC.gz
+E:\GitHub\Plants\PlantsWA\obj\Debug\net6.0\build-gz\Rx+ky3j4.gz
+E:\GitHub\Plants\PlantsWA\obj\Debug\net6.0\build-gz\v9iojY78.gz
 E:\GitHub\Plants\PlantsWA\obj\Debug\net6.0\build-gz\BuxHblmJ.gz
 E:\GitHub\Plants\PlantsWA\obj\Debug\net6.0\build-gz\55oc+DDc.gz
 E:\GitHub\Plants\PlantsWA\obj\Debug\net6.0\build-gz\Nq1HzVhD.gz
@@ -806,6 +826,8 @@ E:\GitHub\Plants\PlantsWA\obj\Debug\net6.0\build-gz\ydS+56kr.gz
 E:\GitHub\Plants\PlantsWA\obj\Debug\net6.0\build-gz\v8IOJfgp.gz
 E:\GitHub\Plants\PlantsWA\obj\Debug\net6.0\build-gz\GWQ2o+n4.gz
 E:\GitHub\Plants\PlantsWA\obj\Debug\net6.0\build-gz\BwowxWn9.gz
+E:\GitHub\Plants\PlantsWA\obj\Debug\net6.0\build-gz\VjchBD2T.gz
+E:\GitHub\Plants\PlantsWA\obj\Debug\net6.0\build-gz\B+mwNryj.gz
 E:\GitHub\Plants\PlantsWA\obj\Debug\net6.0\build-gz\iyoraeW+.gz
 E:\GitHub\Plants\PlantsWA\obj\Debug\net6.0\build-gz\9uha0Rd7.gz
 E:\GitHub\Plants\PlantsWA\obj\Debug\net6.0\build-gz\mnxTjS0f.gz
@@ -823,9 +845,3 @@ E:\GitHub\Plants\PlantsWA\obj\Debug\net6.0\Plants.WA.dll
 E:\GitHub\Plants\PlantsWA\obj\Debug\net6.0\refint\Plants.WA.dll
 E:\GitHub\Plants\PlantsWA\obj\Debug\net6.0\Plants.WA.pdb
 E:\GitHub\Plants\PlantsWA\obj\Debug\net6.0\ref\Plants.WA.dll
-E:\GitHub\Plants\PlantsWA\bin\Debug\net6.0\wwwroot\_framework\RestSharp.dll
-E:\GitHub\Plants\PlantsWA\bin\Debug\net6.0\wwwroot\_framework\RestSharp.dll.gz
-E:\GitHub\Plants\PlantsWA\bin\Debug\net6.0\RestSharp.dll
-E:\GitHub\Plants\PlantsWA\obj\Debug\net6.0\build-gz\6qsM9f+i.gz
-E:\GitHub\Plants\PlantsWA\obj\Debug\net6.0\build-gz\Rx+ky3j4.gz
-E:\GitHub\Plants\PlantsWA\obj\Debug\net6.0\build-gz\v9iojY78.gz

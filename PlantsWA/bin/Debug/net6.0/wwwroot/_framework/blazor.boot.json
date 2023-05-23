@@ -12,6 +12,7 @@
       "Microsoft.AspNetCore.Components.Forms.dll": "sha256-uEDGfx46VmVIFGVu1clYPrq64JTRcayMUjUw1cr6Zck=",
       "Microsoft.AspNetCore.Components.Web.dll": "sha256-w22hRC5++AfKK8AS70s3daNJlRW\/viXntxDuPRM\/+AY=",
       "Microsoft.AspNetCore.Components.WebAssembly.dll": "sha256-hLMWN1JTzfCVYXQOq6G1tEFmu+D4tn+hSbJf4nG+7K4=",
+      "Microsoft.AspNetCore.Http.Features.dll": "sha256-nhDtQDkvXQUWiexwW5atxrEm6abFLbvzeVCl\/Gb5kvI=",
       "Microsoft.AspNetCore.Metadata.dll": "sha256-\/8AsKpzt2ePKd\/B1\/dolnQ2PeDqEV+rYUcJOnL4\/PXE=",
       "Microsoft.Extensions.Configuration.dll": "sha256-c8yYhfrOBLEnOBglLTu9peXSbJDwFpuT4UQiXSv28Og=",
       "Microsoft.Extensions.Configuration.Abstractions.dll": "sha256-5Otet+KKVUjNkE\/hqcNWmt75H1K2VNuKPFagpRd6Ces=",
@@ -29,6 +30,7 @@
       "Microsoft.Extensions.Primitives.dll": "sha256-jOmoWSfsdQexH\/6QCA56gR1RMEqeix2iDDUBWbpAOQI=",
       "Microsoft.JSInterop.dll": "sha256-Q4f+LWDtWpXnnYHUde+5rI1mzDPNsZKlAw2vLmj7x1I=",
       "Microsoft.JSInterop.WebAssembly.dll": "sha256-o6JgCcWyug2MjyXwx54FHRaCf1DjpJzEkG2GKhlSyL4=",
+      "MongoDB.Bson.dll": "sha256-R5X+fB1GxJyjymSSd1eZwmc1+TWneomyVfvNXt6ges8=",
       "Radzen.Blazor.dll": "sha256-dQ5SVZbpctq+CP2gn9sRoBFbuGDniQl6sN1hHtYCQow=",
       "RestSharp.dll": "sha256-9iWLm2dQbTv8oD0Ij3cOhoEsBUPbNh91FwYGzc74yZg=",
       "System.IO.Pipelines.dll": "sha256-6+E55JXedimdw1c1bDtVg4K7XuWjVWVTifH8QpfzXSY=",
@@ -199,13 +201,15 @@
       "mscorlib.dll": "sha256-SboUbkX8s5RVQGtnN5Q67MBZW0I\/P3aeEMENJq8gv8M=",
       "netstandard.dll": "sha256-lZ8L5iiSghlvyt2ie2YdBYAtJbVa4mvpvBX3W9ihjLc=",
       "System.Private.CoreLib.dll": "sha256-jECkJy2Sjpl59QEL3nO3p8nwKGXvnJpXaKQF\/+MTw04=",
-      "Plants.WA.dll": "sha256-NiqT0BqgZis2WH34zMlqOgXhr\/AVHDdkbJufqlB\/Uug="
+      "Plants.Domain.dll": "sha256-FD4Jg3QCORTOhEGRp9BFiCeD+U49GFR8WhtYaoeIUEI=",
+      "Plants.WA.dll": "sha256-J7gytLI8MCiXVUBwjiqu3ZKgC76rUFJKr8tqZAj9hj8="
     },
     "extensions": null,
     "lazyAssembly": null,
     "libraryInitializers": null,
     "pdb": {
-      "Plants.WA.pdb": "sha256-5a2EBHZqHtZPynx23kXJfa1Un0Nl7ELl+3mAz\/0qA8o="
+      "Plants.Domain.pdb": "sha256-ItchjHQG23hHw1r15ujgkDZQy36TeT9ymg6YrVbFoPM=",
+      "Plants.WA.pdb": "sha256-mQII25BgQoanShKmlnYTok3oE7cCnA5SOiu8htVKDC0="
     },
     "runtime": {
       "dotnet.6.0.10.c7oxyd0quv.js": "sha256-KtM3Wrooexmrt5NmqvZfWoDPtNIe6wZqLopR6ToqUPg=",

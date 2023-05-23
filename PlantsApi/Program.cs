@@ -5,6 +5,9 @@ using Plants.Infrastructure.DBSettings;
 using Plants.Services.Services;
 
 var builder = WebApplication.CreateBuilder(args);
+var MyAllowSpecificOrigins = "AnotherPolicy";
+
+
 
 // Add services to the container.
 
@@ -31,7 +34,9 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
-
+app.UseCors(
+  options => options.WithOrigins("*").AllowAnyMethod().AllowAnyHeader()
+      );
 app.UseHttpsRedirection();
 
 app.UseAuthorization();

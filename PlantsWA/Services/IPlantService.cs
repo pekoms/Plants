@@ -1,7 +1,9 @@
-﻿namespace Plants.WA.Services
+﻿using Plants.Api.Domain.Dtos;
+
+namespace Plants.WA.Services
 {
     public interface IPlantService
     {
-        public  Task Create(Object createPlantRecord);
+        public  Task Create(PlantDTO createPlantRecord);
     }
 }

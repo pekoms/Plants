@@ -1,6 +1,6 @@
-﻿@page "/newPlantRecord"
+﻿@page "/newPlantDiary"
 @inject NavigationManager NavigationManager
-<h3>NewPlantRecord</h3>
+<h3>NewPlantDiary</h3>
 <form>
     <div class="form-group">
         <label for="inputNombre">Nombre:</label>
@@ -8,160 +8,27 @@
     </div>
     <div class="form-group">
         <label for="inputEmail">Email:</label>
-        <input type="text" class="form-control" id="inputUbicacionCasa" @bind="@UbicacionCasa">
+        <input type="email" class="form-control" id="inputEmail" @bind="@Email">
     </div>
     <div class="form-group">
-        <label for="inputFechaLlegadaCasa">Fecha De Llegada A Casa:</label>
-        <input type="text" class="form-control" id="inputFechaLlegadaCasa" @bind="@FechaLlegadaCasa">
+        <label for="inputTelefono">Teléfono:</label>
+        <input type="tel" class="form-control" id="inputTelefono" @bind="@Telefono">
     </div>
-
-    <div class="form-group">
-        <label for="inputFamilia">Familia:</label>
-        <input type="text" class="form-control" id="inputFamilia" @bind="@Familia">
-    </div>
-    <div class="form-group">
-        <label for="inputOrigen">Origen:</label>
-        <input type="text" class="form-control" id="inputOrigen" @bind="@Origen">
-    </div>
-    <div class="form-group">
-        <label for="inputCaracteristicas">Caracteristicas:</label>
-        <input type="text" class="form-control" id="inputCaracteristicas" @bind="@Caracteristicas">
-    </div>
-    <div class="form-group">
-        <label for="inputHojas">Hojas:</label>
-        <input type="text" class="form-control" id="inputHojas" @bind="@Hojas">
-    </div>
-     <div class="form-group">
-        <label for="inputFlores">Flores:</label>
-        <input type="text" class="form-control" id="inputFlores" @bind="@Flores">
-    </div>
-     <div class="form-group">
-        <label for="inputEpocaFloracion">EpocaFloracion:</label>
-        <input type="text" class="form-control" id="inputEpocaFloracion" @bind="@EpocaFloracion">
-    </div>
-     <div class="form-group">
-        <label for="inputDestino">Destino:</label>
-        <input type="text" class="form-control" id="inputDestino" @bind="@Destino">
-    </div>
-     <div class="form-group">
-        <label for="inputAdaptacion">Adaptación:</label>
-        <input type="text" class="form-control" id="inputAdaptacion" @bind="@Adaptacion">
-    </div>
-     <div class="form-group">
-        <label for="inputSuelo">Suelo:</label>
-        <input type="tel" class="form-control" id="inputSuelo" @bind="@Suelo">
-    </div>
-    <div class="form-group">
-        <label for="inputLuminosidad">Luminosidad:</label>
-        <input type="tel" class="form-control" id="inputLuminosidad" @bind="@Luminosidad">
-    </div>
-    <div class="form-group">
-        <label for="inputResistenciaFrio">Resistencia Al Frio:</label>
-        <input type="tel" class="form-control" id="inputResistenciaFrio" @bind="@ResistenciaFrio">
-    </div>
-    <div class="form-group">
-        <label for="inputHumedadAmbiente">Humedad Del Ambiente:</label>
-        <input type="tel" class="form-control" id="inputHumedadAmbiente" @bind="@HumedadAmbiente">
-    </div>
-    <div class="form-group">
-        <label for="inputRiego">Riego:</label>
-        <input type="tel" class="form-control" id="inputRiego" @bind="@Riego">
-    </div>
-    <div class="form-group">
-        <label for="inputAbonos">Abonos:</label>
-        <input type="tel" class="form-control" id="inputAbonos" @bind="@Abonos">
-    </div>
-    <div class="form-group">
-        <label for="inputParasitos">Parasitos:</label>
-        <input type="tel" class="form-control" id="inputParasitos" @bind="@Parasitos">
-    </div>
-    <div class="form-group">
-        <label for="inputPropagacion">Propagacion:</label>
-        <input type="tel" class="form-control" id="inputPropagacion" @bind="@Propagacion">
-    </div>
-    <div class="form-group">
-        <label for="inputCuidados">Cuidados:</label>
-        <input type="tel" class="form-control" id="inputCuidados" @bind="@Cuidados">
-    </div>
-
-
-
-
-
-
     <div class="form-group">
         <label for="inputMensaje">Mensaje:</label>
-        <textarea class="form-control" id="inputMensaje" rows="5" @bind="@Familia"></textarea>
+        <textarea class="form-control" id="inputMensaje" rows="5" @bind="@Mensaje"></textarea>
     </div>
     <button type="button" class="btn btn-primary" @onclick="@Enviar">Enviar</button>
 </form>
 
 @code {
     private string Nombre { get; set; }
-    private string? UbicacionCasa { get; set; }
-    private string? FechaLlegadaCasa { get; set; }
-    private string? Foto { get; set; }              
-              
-    private string? Familia { get; set; }
-    private string? Origen { get; set; }
-    private string? Caracteristicas { get; set; }
-    private string? Hojas { get; set; }
-    private string? Flores { get; set; }
-    private string? EpocaFloracion { get; set; }
-    private string? Destino { get; set; }
-    private string? Adaptacion { get; set; }
-    private string? Suelo { get; set; }
-    private string? Luminosidad { get; set; }
-    private string? ResistenciaFrio { get; set; }
-    private string? HumedadAmbiente { get; set; }
-    private string? Riego { get; set; }
-    private string? Abonos { get; set; }
-    private string? Parasitos { get; set; }
-    private string? Propagacion { get; set; }
-    private string? Cuidados { get; set; }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    private string Email { get; set; }
+    private string Telefono { get; set; }
+    private string Mensaje { get; set; }
 
     private void Enviar()
     {
-        var createPlantRecord = new
-        {
-            nombre = Nombre,
-            ubicacionCasa = UbicacionCasa,
-            fechaLlegadaCasa = FechaLlegadaCasa,
-            foto = Foto,
-            familia = Familia,
-            origen = Origen,
-            caracteristicas = Caracteristicas,
-            hojas = Hojas,
-            flores = Flores,
-            epocaFloracion = EpocaFloracion,
-            destino = Destino,
-            adaptacion = Adaptacion,
-            suelo = Suelo,
-            luminosidad = Luminosidad,
-            resistenciaFrio = ResistenciaFrio,
-            humedadAmbiente = HumedadAmbiente,
-            riego = Riego,
-            abonos = Abonos,
-            parasitos = Parasitos,
-            propagacion = Propagacion,
-            cuidados = Cuidados
-
-        };
-        CrearPlantRecord(createPlantRecord);
-        NavigationManager.NavigateTo("plantRecord");
+        NavigationManager.NavigateTo("plantDiary");
     }
 }
