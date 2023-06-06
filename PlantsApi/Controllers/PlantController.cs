@@ -10,7 +10,7 @@ namespace Plants.Api.Controllers
     public class PlantController : ControllerBase
     {
         private IPlantService _plantService;
-        private IUtilsService _utilsService;    
+        private IUtilsService _utilsService;
 
         public PlantController(IPlantService plantService, IUtilsService utilsService)
         {
@@ -45,21 +45,22 @@ namespace Plants.Api.Controllers
             {
                 Name = newPlantDTO.Nombre,
                 Specie = newPlantDTO.Especie,
-                Age = newPlantDTO.Edad
+                Age = newPlantDTO.Edad,
+                OwnerId= newPlantDTO.OwnerId
 
             };
             await _plantService.Create(newPlant);
             return Ok();
         }
 
-       
+
 
         // POST: UserController/Edit/5
         [HttpPut("{id}", Name = "UpdateDetailedPlant")]
         [ValidateAntiForgeryToken]
         public async Task<ActionResult> UpdateDetailedPlant(string id, [FromBody] Plant plant, CancellationToken cancellationToken)
-        {   
-            
+        {
+
             await _plantService.Update(id, plant);
 
             return Ok(plant);
@@ -72,6 +73,16 @@ namespace Plants.Api.Controllers
             await _plantService.Remove(id);
 
             return Ok();
+        }
+
+
+        //GET: UserController/Details/5
+        [HttpGet("User")]        
+        public async Task<ActionResult<Plant>> GetDetailedPlantByUserId(string ownerId, CancellationToken cancellationToken)
+        {
+            var plants = await _plantService.GetAllPlantsByUserId(ownerId); ;
+
+            return Ok(plants);
         }
     }
 }

@@ -1,13 +1,16 @@
-﻿@page "/plantRecord"
+﻿@page "/plantRecord/{Id}"
 @inject NavigationManager NavigationManager
 <h3>Plants</h3>
 
 
 
 <button type="button" class="btn btn-danger btn-lg btn-block" @onclick="NuevoRegistro">Nueva Planta</button>
-<Plants.WA.Shared.CardCollection></Plants.WA.Shared.CardCollection>
+@*<Plants.WA.Shared.CardCollection></Plants.WA.Shared.CardCollection>*@
 
 @code {
+    [Parameter]
+    public string? Id { get; set; }
+
     private void NuevoRegistro()
     {
         NavigationManager.NavigateTo("newPlantRecord");

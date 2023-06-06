@@ -1,7 +1,11 @@
-﻿@page "/newPlantRecord"
+﻿@page "/newPlant"
 @using Plants.Api.Domain.Dtos
+
+
 @inject NavigationManager NavigationManager
 <h3>NewPlantRecord</h3>
+
+
 <form>
     <div class="form-group">
         <label for="inputNombre">Nombre:</label>
@@ -95,7 +99,19 @@
         <textarea class="form-control" id="inputMensaje" rows="5" @bind="@Familia"></textarea>
     </div>
     <button type="button" class="btn btn-primary" @onclick="@Enviar">Enviar</button>
+
+         
+        @if(spinner==true)
+        {
+        <button class="btn btn-primary" type="button" disabled>
+            <span class="spinner-grow spinner-grow-sm" role="status" aria-hidden="true"></span>
+            Creando Planta...
+        </button>
+        }    
+    
 </form>
+
+
 
 @code {
     private string Nombre { get; set; }
@@ -121,12 +137,13 @@
     private string? Propagacion { get; set; }
     private string? Cuidados { get; set; }
 
+    private bool spinner = false;
     private async void Enviar()
     {
         var createPlantRecord = new PlantDTO
         {
-            Nombre = Nombre,
-            UbicacionCasa = UbicacionCasa,
+                Nombre = Nombre,
+                UbicacionCasa = UbicacionCasa,
                 FechaLlegadaCasa = FechaLlegadaCasa,
                 Foto = Foto,
                 Familia = Familia,
@@ -145,10 +162,15 @@
                 Abonos = Abonos,
                 Parasitos = Parasitos,
                 Propagacion = Propagacion,
-                Cuidados = Cuidados
-            
-    };
-       await CrearPlantRecord(createPlantRecord);
-        NavigationManager.NavigateTo("plantRecord");
+                Cuidados = Cuidados,
+                OwnerId="ale"
+
+        };
+        await CrearPlantRecord(createPlantRecord);
+        spinner = true;
+        await Task.Delay(TimeSpan.FromSeconds(3));
+        spinner = false;
+               
+        NavigationManager.NavigateTo("Plants");
     }
 }

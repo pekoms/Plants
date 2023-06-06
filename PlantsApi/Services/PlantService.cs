@@ -29,6 +29,7 @@ namespace Plants.Api.Services
         public async Task Remove(string id) =>
             await _plants.DeleteOneAsync(m => m.Id == id);
 
-   
+        public async Task<List<Plant>> GetAllPlantsByUserId(string ownerId)=>
+            await _plants.Find(m => m.OwnerId == ownerId).ToListAsync();
     }
 }

@@ -1,8 +1,6 @@
 ﻿
+using MongoDB.Bson.IO;
 using Plants.Api.Domain.Dtos;
-using RestSharp;
-using System.Net.Http;
-using System.Net.Http.Headers;
 using System.Text;
 using System.Text.Json;
 using static System.Net.Mime.MediaTypeNames;
@@ -13,6 +11,8 @@ namespace Plants.WA.Services
     {
         private string URL = "https://localhost:7137";
         private string RESOURCE = "/api/Plant";
+        
+
 
         private readonly HttpClient _httpClient;
 
@@ -23,17 +23,8 @@ namespace Plants.WA.Services
 
         public async Task Create(PlantDTO createPlantRecord)
         {
-            var anonymo = new PlantDTO
-            {
-                Nombre = "Nombre",
-               Edad=6,
-               Especie="Arborea"
-               
-            };
-
-
-            
-            var todoItemJson = new StringContent(JsonSerializer.Serialize<PlantDTO>(anonymo),Encoding.UTF8,
+           
+            var todoItemJson = new StringContent(JsonSerializer.Serialize<PlantDTO>(createPlantRecord),Encoding.UTF8,
             Application.Json); 
 
             using var httpResponseMessage =
@@ -42,6 +33,43 @@ namespace Plants.WA.Services
             httpResponseMessage.EnsureSuccessStatusCode();
 
 
+        }
+
+        public async Task GetPlantByPlantId(string Id)
+        {
+            
+
+
+          
+
+            using var httpResponseMessage =
+                await _httpClient.GetAsync(URL + RESOURCE);
+
+            httpResponseMessage.EnsureSuccessStatusCode();
+
+
+        }
+
+        public async Task GetPlantByUserId(string Id)
+        {       
+            using var httpResponseMessage =
+                await _httpClient.GetAsync(URL + RESOURCE);
+
+            httpResponseMessage.EnsureSuccessStatusCode();
+
+
+        }
+
+        public async Task<List<PlantDTO>> GetAllPlantsByUserId(string OwnerId)
+        {
+            using var httpResponseMessage =
+              await _httpClient.GetAsync(URL + RESOURCE+"/User/?OwnerId="+OwnerId);
+
+            httpResponseMessage.EnsureSuccessStatusCode();
+            var jsonString = await httpResponseMessage.Content.ReadAsStringAsync();
+             var result= JsonSerializer.Deserialize<List<PlantDTO>>(jsonString);
+
+            return result;
         }
     }
 }

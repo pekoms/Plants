@@ -5,24 +5,25 @@ namespace Plants.Api.Domain.Dtos
 {
     public class PlantDTO
     {
-        [JsonPropertyName("Nombre")]
+        [JsonPropertyName("name")]
         public string? Nombre { get; set; }
-        [JsonPropertyName("Especie")]
-
+        [JsonPropertyName("ownerId")]
+        public string? OwnerId { get; set; }
+        [JsonPropertyName("especie")]
         public string? Especie { get; set; }
-        [JsonPropertyName("Edad")]
+        [JsonPropertyName("edad")]
 
         public int Edad { get; set; }
-        [JsonPropertyName("Shop")]
+        [JsonPropertyName("shop")]
 
         public string? Shop { get; set; }
-        [JsonPropertyName("UbicacionCasa")]
+        [JsonPropertyName("ubicacionCasa")]
 
         public string? UbicacionCasa { get; set; }
-        [JsonPropertyName("FechaLlegadaCasa")]
+        [JsonPropertyName("fechaLlegadaCasa")]
 
         public string? FechaLlegadaCasa { get; set; }
-        [JsonPropertyName("Foto")]
+        [JsonPropertyName("foto")]
 
         public string? Foto { get; set; }
 

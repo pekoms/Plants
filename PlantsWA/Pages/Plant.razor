@@ -1,43 +1,53 @@
-﻿@page "/plantDiary"
-
+﻿@page "/Plants"
+@using Plants.Api.Domain.Dtos
+@using Plants.WA.Services
+@inject NavigationManager NavigationManager
 <div class="row">
-    @foreach (var data in diary)
+    <button type="button" class="btn btn btn-success" @onclick="@NuevaPlanta">Nueva Planta</button>
+
+    @if (plants == null && plants.Any())
     {
-        <div class="col-sm-4">
-            <div class="card">
-                <div class="card-body">
-                    <h5 class="card-title">@data.Title</h5>
-                    <p class="card-text">@data.Content</p>
+        <p>Cargando datos...</p>
+    }else{
+        @foreach (var data in plants)
+        {
+            <div class="col-sm-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">@data.Nombre</h5>
+                        <p class="card-text">@data.Especie</p>
+                        <button type="button" class="btn btn-primary" @onclick="@Observar">Enviar</button>
+                    </div>
                 </div>
             </div>
-        </div>
+        }
     }
+  
+    
 </div>
 
 @code {
     [Parameter]
-    public List<Diary> diary { get; set; } = new List<Diary>();
+    public List<PlantDTO> plants { get; set; } = new List<PlantDTO>();
+    public bool dataLoaded=false;
 
-    //[Inject]
-    //public ICardService CardService { get; set; }
+    [Inject]
+    public IPlantService PlantService { get; set; }
+    
 
-    protected override void OnParametersSet()
+    protected override async Task OnInitializedAsync()
     {
-        //Cards = await CardService.GetCards();
-        Diary diary1 = new Diary { Title = "1", Content = "1" };
-        Diary diary2 = new Diary { Title = "2", Content = "2" };
-        Diary diary3 = new Diary { Title = "3", Content = "3" };
-        diary.Add(diary1);
-        diary.Add(diary2);
-        diary.Add(diary3);
-
-
+        plants = await PlantService.GetAllPlantsByUserId("ale");
+        
+    }
+    
+    private void Observar()
+    {
+        NavigationManager.NavigateTo("PlantRecord");
     }
 
-    public class Diary
+    private void NuevaPlanta()
     {
-        public int PlantRecordId{ get; set; }
-        public string Title { get; set; }
-        public string Content { get; set; }
+        NavigationManager.NavigateTo("newPlant");
     }
 }

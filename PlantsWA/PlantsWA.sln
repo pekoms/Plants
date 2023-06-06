@@ -9,7 +9,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Plants.Api", "..\PlantsApi\
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Plants.UnitTest", "..\Plants.UnitTest\Plants.UnitTest.csproj", "{3E4E4F44-E312-4F2C-9F78-6033FA6E576D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Plants.Domain", "..\Plants.Domain\Plants.Domain.csproj", "{2725CF23-E53C-461D-A6F1-46C3F599D74C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Plants.Domain", "..\Plants.Domain\Plants.Domain.csproj", "{2725CF23-E53C-461D-A6F1-46C3F599D74C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
