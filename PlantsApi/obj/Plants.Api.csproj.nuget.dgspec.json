@@ -44,6 +44,10 @@
               "target": "Package",
               "version": "[5.0.17, )"
             },
+            "Microsoft.Extensions.FileProviders.Abstractions": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
             "MongoDB.Bson": {
               "target": "Package",
               "version": "[2.18.0, )"

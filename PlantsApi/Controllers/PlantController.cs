@@ -46,7 +46,8 @@ namespace Plants.Api.Controllers
                 Name = newPlantDTO.Nombre,
                 Specie = newPlantDTO.Especie,
                 Age = newPlantDTO.Edad,
-                OwnerId= newPlantDTO.OwnerId
+                OwnerId= newPlantDTO.OwnerId,
+                Foto=newPlantDTO.Foto
 
             };
             await _plantService.Create(newPlant);

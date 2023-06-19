@@ -18,4 +18,8 @@
     <ProjectReference Include="..\Plants.Domain\Plants.Domain.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Domain\" />
+  </ItemGroup>
+
 </Project>

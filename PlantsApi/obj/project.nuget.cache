@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "rle+WRO3TuvspixyZA3QyllGhK5QMJpd6C4aHIsyoOiTocxFofoHsBfc5D6SindH1icncG+inqw29TSVzpBoMA==",
+  "dgSpecHash": "C7IOkF9q4WKFrSDOiNu+d/zj6/3Z+RmhFv1pDcM8AT047yCE40sRtknoGc5Yq/e101FPFJyPgnb3SNTkmZZE1w==",
   "success": true,
   "projectFilePath": "E:\\GitHub\\Plants\\PlantsApi\\Plants.Api.csproj",
   "expectedPackageFiles": [
@@ -12,6 +12,7 @@
     "C:\\Users\\aleja\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\7.0.0\\microsoft.extensions.configuration.abstractions.7.0.0.nupkg.sha512",
     "C:\\Users\\aleja\\.nuget\\packages\\microsoft.extensions.configuration.binder\\7.0.0\\microsoft.extensions.configuration.binder.7.0.0.nupkg.sha512",
     "C:\\Users\\aleja\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\7.0.0\\microsoft.extensions.dependencyinjection.abstractions.7.0.0.nupkg.sha512",
+    "C:\\Users\\aleja\\.nuget\\packages\\microsoft.extensions.fileproviders.abstractions\\7.0.0\\microsoft.extensions.fileproviders.abstractions.7.0.0.nupkg.sha512",
     "C:\\Users\\aleja\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\2.0.0\\microsoft.extensions.logging.abstractions.2.0.0.nupkg.sha512",
     "C:\\Users\\aleja\\.nuget\\packages\\microsoft.extensions.options\\7.0.0\\microsoft.extensions.options.7.0.0.nupkg.sha512",
     "C:\\Users\\aleja\\.nuget\\packages\\microsoft.extensions.options.configurationextensions\\7.0.0\\microsoft.extensions.options.configurationextensions.7.0.0.nupkg.sha512",

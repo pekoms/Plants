@@ -1,4 +1,4 @@
-﻿
+﻿using Microsoft.Extensions.FileProviders;
 using MongoDB.Bson.Serialization.Attributes;
 
 namespace Plants.Api.Domain.Entities
@@ -7,84 +7,82 @@ namespace Plants.Api.Domain.Entities
     {
 
         [BsonId]
-        [BsonRepresentation(MongoDB.Bson.BsonType.ObjectId)]
         public string Id { get; set; } = Guid.NewGuid().ToString();
         [BsonRepresentation(MongoDB.Bson.BsonType.String)]
         public string OwnerId { get; set; }
         [BsonRepresentation(MongoDB.Bson.BsonType.String)]
-        public string? Nombre { get; set; }
+        public string? Name { get; set; }
         [BsonRepresentation(MongoDB.Bson.BsonType.String)]
-        public string? Especie { get; set; }
+        public string? Specie { get; set; }
         [BsonRepresentation(MongoDB.Bson.BsonType.String)]
-        public int Edad { get; set; }
+        public int Age { get; set; }
         [BsonRepresentation(MongoDB.Bson.BsonType.String)]
         public string? Shop { get; set; }
         [BsonRepresentation(MongoDB.Bson.BsonType.String)]
 
-        private string? UbicacionCasa { get; set; }
+        public string? UbicacionCasa { get; set; }
         [BsonRepresentation(MongoDB.Bson.BsonType.String)]
 
-        private string? FechaLlegadaCasa { get; set; }
+        public string? FechaLlegadaCasa { get; set; }
         [BsonRepresentation(MongoDB.Bson.BsonType.String)]
 
-        private string? Foto { get; set; }
+        public string? Foto { get; set; }
         [BsonRepresentation(MongoDB.Bson.BsonType.String)]
 
 
-        private string? Familia { get; set; }
+        public string? Familia { get; set; }
         [BsonRepresentation(MongoDB.Bson.BsonType.String)]
 
-        private string? Origen { get; set; }
+        public string? Origen { get; set; }
         [BsonRepresentation(MongoDB.Bson.BsonType.String)]
 
-        private string? Caracteristicas { get; set; }
+        public string? Caracteristicas { get; set; }
         [BsonRepresentation(MongoDB.Bson.BsonType.String)]
 
-        private string? Hojas { get; set; }
+        public string? Hojas { get; set; }
         [BsonRepresentation(MongoDB.Bson.BsonType.String)]
 
-        private string? Flores { get; set; }
+        public string? Flores { get; set; }
         [BsonRepresentation(MongoDB.Bson.BsonType.String)]
 
-        private string? EpocaFloracion { get; set; }
+        public string? EpocaFloracion { get; set; }
         [BsonRepresentation(MongoDB.Bson.BsonType.String)]
 
-        private string? Destino { get; set; }
+        public string? Destino { get; set; }
         [BsonRepresentation(MongoDB.Bson.BsonType.String)]
 
-        private string? Adaptacion { get; set; }
+        public string? Adaptacion { get; set; }
         [BsonRepresentation(MongoDB.Bson.BsonType.String)]
 
-        private string? Suelo { get; set; }
+        public string? Suelo { get; set; }
         [BsonRepresentation(MongoDB.Bson.BsonType.String)]
 
-        private string? Luminosidad { get; set; }
+        public string? Luminosidad { get; set; }
         [BsonRepresentation(MongoDB.Bson.BsonType.String)]
 
-        private string? ResistenciaFrio { get; set; }
+        public string? ResistenciaFrio { get; set; }
         [BsonRepresentation(MongoDB.Bson.BsonType.String)]
 
-        private string? HumedadAmbiente { get; set; }
+        public string? HumedadAmbiente { get; set; }
         [BsonRepresentation(MongoDB.Bson.BsonType.String)]
 
-        private string? Riego { get; set; }
+        public string? Riego { get; set; }
         [BsonRepresentation(MongoDB.Bson.BsonType.String)]
 
-        private string? Abonos { get; set; }
+        public string? Abonos { get; set; }
         [BsonRepresentation(MongoDB.Bson.BsonType.String)]
 
-        private string? Parasitos { get; set; }
+        public string? Parasitos { get; set; }
         [BsonRepresentation(MongoDB.Bson.BsonType.String)]
 
-        private string? Propagacion { get; set; }
+        public string? Propagacion { get; set; }
         [BsonRepresentation(MongoDB.Bson.BsonType.String)]
 
-        private string? Cuidados { get; set; }
+        public string? Cuidados { get; set; }
         [BsonRepresentation(MongoDB.Bson.BsonType.String)]
 
-        public DateTime? Finsert { get; set; } = DateTime.Now;   
-        [BsonRepresentation(MongoDB.Bson.BsonType.String)]
+        public DateTime? Finsert { get; set; } = DateTime.Now;
+        
 
-        public string? ContentImage { get; set; }
     }
 }

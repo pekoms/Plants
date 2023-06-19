@@ -1,6 +1,5 @@
 E:\GitHub\Plants\Plants.UnitTest\bin\Debug\net6.0\testhost.dll
 E:\GitHub\Plants\Plants.UnitTest\bin\Debug\net6.0\testhost.exe
-E:\GitHub\Plants\Plants.UnitTest\bin\Debug\net6.0\Microsoft.TestPlatform.PlatformAbstractions.dll
 E:\GitHub\Plants\Plants.UnitTest\bin\Debug\net6.0\xunit.runner.visualstudio.dotnetcore.testadapter.dll
 E:\GitHub\Plants\Plants.UnitTest\bin\Debug\net6.0\xunit.runner.reporters.netcoreapp10.dll
 E:\GitHub\Plants\Plants.UnitTest\bin\Debug\net6.0\xunit.runner.utility.netcoreapp10.dll
@@ -10,6 +9,7 @@ E:\GitHub\Plants\Plants.UnitTest\bin\Debug\net6.0\Plants.UnitTest.dll
 E:\GitHub\Plants\Plants.UnitTest\bin\Debug\net6.0\Plants.UnitTest.pdb
 E:\GitHub\Plants\Plants.UnitTest\bin\Debug\net6.0\Microsoft.VisualStudio.CodeCoverage.Shim.dll
 E:\GitHub\Plants\Plants.UnitTest\bin\Debug\net6.0\Microsoft.TestPlatform.CoreUtilities.dll
+E:\GitHub\Plants\Plants.UnitTest\bin\Debug\net6.0\Microsoft.TestPlatform.PlatformAbstractions.dll
 E:\GitHub\Plants\Plants.UnitTest\bin\Debug\net6.0\Microsoft.VisualStudio.TestPlatform.ObjectModel.dll
 E:\GitHub\Plants\Plants.UnitTest\bin\Debug\net6.0\Microsoft.TestPlatform.CommunicationUtilities.dll
 E:\GitHub\Plants\Plants.UnitTest\bin\Debug\net6.0\Microsoft.TestPlatform.CrossPlatEngine.dll

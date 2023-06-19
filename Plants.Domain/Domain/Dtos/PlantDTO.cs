@@ -5,6 +5,8 @@ namespace Plants.Api.Domain.Dtos
 {
     public class PlantDTO
     {
+        [JsonPropertyName("id")]
+        public string? Id { get; set; }
         [JsonPropertyName("name")]
         public string? Nombre { get; set; }
         [JsonPropertyName("ownerId")]
@@ -24,8 +26,7 @@ namespace Plants.Api.Domain.Dtos
 
         public string? FechaLlegadaCasa { get; set; }
         [JsonPropertyName("foto")]
-
-        public string? Foto { get; set; }
+        public string? Foto{ get; set; }
 
         public string? Familia { get; set; }
         public string? Origen { get; set; }
@@ -47,6 +48,6 @@ namespace Plants.Api.Domain.Dtos
 
         public DateTime? Finsert { get; set; }=DateTime.UtcNow;
 
-        public IFormFile? ContentImage { get; set; }
+        
     }
 }

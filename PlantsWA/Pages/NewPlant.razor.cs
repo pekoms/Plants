@@ -7,6 +7,8 @@ namespace Plants.WA.Pages
     public partial class NewPlant
     {
         [Inject] private IPlantService IplantService { get; set; }
+       
+
 
         public async Task CrearPlantRecord(PlantDTO createPlant)
         {

@@ -1,8 +1,12 @@
 ﻿@page "/newPlant"
+@using Microsoft.AspNetCore.Http
 @using Plants.Api.Domain.Dtos
+@using Plants.WA.Services
+@using Plants.WA.Shared
 
 
 @inject NavigationManager NavigationManager
+<NavMenu />
 <h3>NewPlantRecord</h3>
 
 
@@ -12,8 +16,13 @@
         <input type="text" class="form-control" id="inputNombre" @bind="@Nombre">
     </div>
     <div class="form-group">
-        <label for="inputEmail">Email:</label>
-        <input type="text" class="form-control" id="inputUbicacionCasa" @bind="@UbicacionCasa">
+        <label for="inputEmail">Foto:</label>
+        <InputFile OnChange="HandleFileChange" />
+        @if (Foto != null)
+        {
+            <h4>Imagen cargada:</h4>
+            <img src="@Foto" alt="Imagen cargada" />
+        }
     </div>
     <div class="form-group">
         <label for="inputFechaLlegadaCasa">Fecha De Llegada A Casa:</label>
@@ -22,6 +31,7 @@
 
     <div class="form-group">
         <label for="inputFamilia">Familia:</label>
+       
         <input type="text" class="form-control" id="inputFamilia" @bind="@Familia">
     </div>
     <div class="form-group">
@@ -114,10 +124,12 @@
 
 
 @code {
+   
+
     private string Nombre { get; set; }
-    private string? UbicacionCasa { get; set; }
+    private string? Foto { get; set; }
     private string? FechaLlegadaCasa { get; set; }
-    private string? Foto { get; set; }              
+               
 
     private string? Familia { get; set; }
     private string? Origen { get; set; }
@@ -138,14 +150,32 @@
     private string? Cuidados { get; set; }
 
     private bool spinner = false;
+
+    private async Task HandleFileChange(InputFileChangeEventArgs e)
+    {
+        var file = e.File;
+
+        if (file != null)
+        {
+            // Leer el contenido de la imagen
+            var buffer = new byte[file.Size];
+            await file.OpenReadStream().ReadAsync(buffer);
+
+            // Convertir los datos de la imagen a base64 para mostrarla
+            Foto = $"data:{file.ContentType};base64,{Convert.ToBase64String(buffer)}";
+        }
+        else
+        {
+            Foto = null;
+        }
+    }
     private async void Enviar()
     {
         var createPlantRecord = new PlantDTO
         {
                 Nombre = Nombre,
-                UbicacionCasa = UbicacionCasa,
-                FechaLlegadaCasa = FechaLlegadaCasa,
                 Foto = Foto,
+                FechaLlegadaCasa = FechaLlegadaCasa,                
                 Familia = Familia,
                 Origen = Origen,
                 Caracteristicas = Caracteristicas,

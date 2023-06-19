@@ -14,7 +14,7 @@ namespace Plants.Api.Services
         {
             var mongoClient = new MongoClient(options.Value.ConnectionString);
             _plantsRecords = mongoClient.GetDatabase(options.Value.DatabaseName)
-                .GetCollection<PlantRecord>(options.Value.UsersCollectionName);
+                .GetCollection<PlantRecord>(options.Value.PlantsRecordsCollectionName);
         }
 
         public async Task<List<PlantRecord>> GetAllPlantRecords() =>
@@ -28,5 +28,8 @@ namespace Plants.Api.Services
         public async Task Remove(string id) =>
             await _plantsRecords.DeleteOneAsync(m => m.Id == id);
 
+        public async Task<List<PlantRecord>> GetAllPlantRecordsByPlantId(string plantId) =>       
+           await _plantsRecords.Find(m => m.PlantId == plantId).ToListAsync();
+        
     }
 }

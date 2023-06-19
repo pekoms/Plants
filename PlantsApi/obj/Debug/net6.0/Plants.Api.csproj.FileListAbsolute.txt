@@ -10,6 +10,7 @@ E:\GitHub\Plants\PlantsApi\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.
 E:\GitHub\Plants\PlantsApi\bin\Debug\net6.0\Microsoft.Extensions.Configuration.Abstractions.dll
 E:\GitHub\Plants\PlantsApi\bin\Debug\net6.0\Microsoft.Extensions.Configuration.Binder.dll
 E:\GitHub\Plants\PlantsApi\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+E:\GitHub\Plants\PlantsApi\bin\Debug\net6.0\Microsoft.Extensions.FileProviders.Abstractions.dll
 E:\GitHub\Plants\PlantsApi\bin\Debug\net6.0\Microsoft.Extensions.Options.dll
 E:\GitHub\Plants\PlantsApi\bin\Debug\net6.0\Microsoft.Extensions.Options.ConfigurationExtensions.dll
 E:\GitHub\Plants\PlantsApi\bin\Debug\net6.0\Microsoft.Extensions.Primitives.dll

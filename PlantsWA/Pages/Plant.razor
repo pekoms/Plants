@@ -1,7 +1,9 @@
 ﻿@page "/Plants"
 @using Plants.Api.Domain.Dtos
 @using Plants.WA.Services
+@using Plants.WA.Shared
 @inject NavigationManager NavigationManager
+<NavMenu />
 <div class="row">
     <button type="button" class="btn btn btn-success" @onclick="@NuevaPlanta">Nueva Planta</button>
 
@@ -16,7 +18,11 @@
                     <div class="card-body">
                         <h5 class="card-title">@data.Nombre</h5>
                         <p class="card-text">@data.Especie</p>
-                        <button type="button" class="btn btn-primary" @onclick="@Observar">Enviar</button>
+                        @if (data.Foto != null)
+                        {                            
+                            <img src="@data.Foto" alt="Imagen cargada" />
+                        }
+                        <button @onclick="()=> Observar(data.Id)" value="Send Name: @data.Id" type="button" class="btn btn-primary">Mas detalles</button>
                     </div>
                 </div>
             </div>
@@ -29,8 +35,6 @@
 @code {
     [Parameter]
     public List<PlantDTO> plants { get; set; } = new List<PlantDTO>();
-    public bool dataLoaded=false;
-
     [Inject]
     public IPlantService PlantService { get; set; }
     
@@ -41,9 +45,9 @@
         
     }
     
-    private void Observar()
+    public void Observar(string? Id)
     {
-        NavigationManager.NavigateTo("PlantRecord");
+        NavigationManager.NavigateTo($"PlantRecord/{Id}");
     }
 
     private void NuevaPlanta()

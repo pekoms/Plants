@@ -61,5 +61,14 @@ namespace Plants.Api.Controllers
 
             return Ok();
         }
+
+        //GET: UserController/Details/5
+        [HttpGet("plantId")]
+        public async Task<ActionResult<Plant>> GetDetailedPlantByPlantId(string plantId, CancellationToken cancellationToken)
+        {
+            var plants = await _plantRecordService.GetAllPlantRecordsByPlantId(plantId); ;
+
+            return Ok(plants);
+        }
     }
 }

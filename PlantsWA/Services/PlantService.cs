@@ -22,8 +22,7 @@ namespace Plants.WA.Services
         }
 
         public async Task Create(PlantDTO createPlantRecord)
-        {
-           
+        {           
             var todoItemJson = new StringContent(JsonSerializer.Serialize<PlantDTO>(createPlantRecord),Encoding.UTF8,
             Application.Json); 
 
@@ -31,25 +30,15 @@ namespace Plants.WA.Services
                 await _httpClient.PostAsync(URL+ RESOURCE, todoItemJson);
 
             httpResponseMessage.EnsureSuccessStatusCode();
-
-
         }
 
         public async Task GetPlantByPlantId(string Id)
-        {
-            
-
-
-          
-
+        {                    
             using var httpResponseMessage =
                 await _httpClient.GetAsync(URL + RESOURCE);
 
             httpResponseMessage.EnsureSuccessStatusCode();
-
-
         }
-
         public async Task GetPlantByUserId(string Id)
         {       
             using var httpResponseMessage =
@@ -59,7 +48,6 @@ namespace Plants.WA.Services
 
 
         }
-
         public async Task<List<PlantDTO>> GetAllPlantsByUserId(string OwnerId)
         {
             using var httpResponseMessage =

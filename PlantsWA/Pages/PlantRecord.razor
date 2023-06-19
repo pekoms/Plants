@@ -1,18 +1,61 @@
 ﻿@page "/plantRecord/{Id}"
+@using Plants.Api.Domain.Dtos
+@using Plants.WA.Services
+@using Plants.WA.Shared
 @inject NavigationManager NavigationManager
+<NavMenu />
 <h3>Plants</h3>
+<div class="row">
+    <button type="button" class="btn btn btn-success" @onclick="@NuevoRegistro">Editar</button>
+
+    @if (plants == null && plants.Any())
+    {
+        <p>Cargando datos...</p>
+    }
+    else
+    {
+        @foreach (var data in plants)
+        {
+            <div class="col-sm-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">@data.IsNominated</h5>
+                        <p class="card-text">@data.IsWatered</p>
+                        <button  type="button" class="btn btn-primary">Modificar</button>
+                    </div>
+                </div>
+            </div>
+        }
+    }
 
 
+</div>
 
-<button type="button" class="btn btn-danger btn-lg btn-block" @onclick="NuevoRegistro">Nueva Planta</button>
-@*<Plants.WA.Shared.CardCollection></Plants.WA.Shared.CardCollection>*@
+
+<button type="button" class="btn btn-danger btn-lg btn-block" @onclick="NuevoRegistro">Nueva Registro</button>
+
 
 @code {
     [Parameter]
+    public List<PlantRecordDTO> plants { get; set; } = new List<PlantRecordDTO>();
+    [Parameter]
     public string? Id { get; set; }
+    [Inject]
+    public IPlantRecordService PlantRecordService { get; set; }
+
+    protected override async Task OnInitializedAsync()
+    {
+        plants = await PlantRecordService.GetAllPlantsByPlantId(Id);
+
+    }
 
     private void NuevoRegistro()
     {
-        NavigationManager.NavigateTo("newPlantRecord");
+            var newPlantRecord = new PlantRecordDTO
+            {
+                PlantId = Id
+            };
+
+        NavigationManager.NavigateTo($"newPlantRecord/{Id}");
     }
 }

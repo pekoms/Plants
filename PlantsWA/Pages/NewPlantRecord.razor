@@ -1,31 +1,30 @@
-﻿@page "/newPlantRecord"
+﻿@page "/newPlantRecord/{plantId}"
+@using Plants.WA.Shared
 @inject NavigationManager NavigationManager
+<NavMenu />
 <h3>NewPlantDiary</h3>
 <form>
     <div class="form-group">
-        <label for="inputNombre">Nombre:</label>
-        <input type="text" class="form-control" id="inputNombre" @bind="@Nombre">
+        <label>
+            <input type="checkbox" @bind="@FertiliserQuantity" /> Se ha fertilizado
+        </label>
     </div>
     <div class="form-group">
-        <label for="inputEmail">Email:</label>
-        <input type="email" class="form-control" id="inputEmail" @bind="@Email">
+        <label>
+            <input type="checkbox" @bind="@IsWatered" /> Se ha regado
+        </label>
     </div>
     <div class="form-group">
-        <label for="inputTelefono">Teléfono:</label>
-        <input type="tel" class="form-control" id="inputTelefono" @bind="@Telefono">
-    </div>
-    <div class="form-group">
-        <label for="inputMensaje">Mensaje:</label>
-        <textarea class="form-control" id="inputMensaje" rows="5" @bind="@Mensaje"></textarea>
+        <label for="Observation">Observation:</label>
+        <textarea class="form-control" id="Observation" rows="5" @bind="@Observation"></textarea>
     </div>
     <button type="button" class="btn btn-primary" @onclick="@Enviar">Enviar</button>
 </form>
 
 @code {
-    private string Nombre { get; set; }
-    private string Email { get; set; }
-    private string Telefono { get; set; }
-    private string Mensaje { get; set; }
+    private string Observation { get; set; }
+    public bool IsWatered { get; set; }
+    public bool FertiliserQuantity { get; set; }
 
     private void Enviar()
     {

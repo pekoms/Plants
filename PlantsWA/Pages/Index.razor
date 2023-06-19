@@ -1,7 +1,12 @@
 ﻿@page "/"
 @inject NavigationManager NavigationManager
+@inject DataService DataService
+
+@using Plants.WA.Services
+@using Plants.WA.Shared
 
 <div class="container h-100">
+  
     <div class="row align-items-center h-100">
         <div class="col-md-6 mx-auto">
             <div class="card">
@@ -29,27 +34,34 @@
 
 
 @code {
-    private Usuario usuario = new Usuario();
+    public Usuario usuario = new Usuario();
+    [CascadingParameter]
+    public string userInfo { get; set; }
 
     private void IniciarSesion()
     {
-        if (usuario.CorreoElectronico == "admin@example.com" && usuario.Contrasena == "password")
+        if (usuario.CorreoElectronico == "ale" && usuario.Contrasena == "ale")
         {
             // Iniciar sesión exitosamente
             Console.WriteLine("Iniciando sesión...");
-         
+           
+
         }
         else
         {
             // Mostrar mensaje de error
             Console.WriteLine("Correo electrónico o contraseña incorrectos.");
+            userInfo = "ale";
         }
+      
+
         NavigationManager.NavigateTo("main");
     }
 
+
  
 
-    private class Usuario
+    public class Usuario
     {
         public string CorreoElectronico { get; set; }
         public string Contrasena { get; set; }
