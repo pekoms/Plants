@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Plants.Api.Domain.Dtos;
 using Plants.Api.Domain.Entities;
 using Plants.Api.Services;
 
@@ -37,8 +38,15 @@ namespace Plants.Api.Controllers
         // POST: PlantRecordController/Create
 
         [HttpPost(Name = "CreatePlantRecord")]
-        public async Task<ActionResult> CreatePlantRecord([FromBody] PlantRecord newPlantRecord, CancellationToken cancellationToken)
+        public async Task<ActionResult> CreatePlantRecord([FromBody] PlantRecordDTO newPlantRecordDTO, CancellationToken cancellationToken)
         {
+            var newPlantRecord = new PlantRecord
+            {
+                PlantId = newPlantRecordDTO.PlantId,
+                Observation = newPlantRecordDTO.Observation,
+                IsFertilised = newPlantRecordDTO.IsFertilised,
+                IsWatered  =   newPlantRecordDTO.IsWatered
+            };
             await _plantRecordService.Create(newPlantRecord);
             return Ok(newPlantRecord);
         }
@@ -63,8 +71,9 @@ namespace Plants.Api.Controllers
         }
 
         //GET: UserController/Details/5
-        [HttpGet("plantId")]
-        public async Task<ActionResult<Plant>> GetDetailedPlantByPlantId(string plantId, CancellationToken cancellationToken)
+
+        [HttpGet("Plant")]
+        public async Task<ActionResult<PlantRecord>> GetDetailedPlantByPlantId(string plantId, CancellationToken cancellationToken)
         {
             var plants = await _plantRecordService.GetAllPlantRecordsByPlantId(plantId); ;
 

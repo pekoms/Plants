@@ -10,7 +10,7 @@ namespace Plants.WA.Pages
        
 
 
-        public async Task CrearPlantRecord(PlantDTO createPlant)
+        public async Task CrearPlant(PlantDTO createPlant)
         {
            var response =   IplantService.Create(createPlant);
         }

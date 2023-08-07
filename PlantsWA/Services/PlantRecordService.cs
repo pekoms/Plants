@@ -63,7 +63,7 @@ namespace Plants.WA.Services
         public async Task<List<PlantRecordDTO>> GetAllPlantsByPlantId(string PlantId)
         {
             using var httpResponseMessage =
-             await _httpClient.GetAsync(URL + RESOURCE + "?PlantId=" + PlantId);
+             await _httpClient.GetAsync(URL + RESOURCE + "/Plant/?plantId=" + PlantId);
 
             httpResponseMessage.EnsureSuccessStatusCode();
             var jsonString = await httpResponseMessage.Content.ReadAsStringAsync();

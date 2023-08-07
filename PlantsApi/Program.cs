@@ -3,6 +3,8 @@ using MongoDB.Driver;
 using Plants.Api.Services;
 using Plants.Infrastructure.DBSettings;
 using Plants.Services.Services;
+using System.Text.Json;
+using System.Text.Json.Serialization;
 
 var builder = WebApplication.CreateBuilder(args);
 var MyAllowSpecificOrigins = "AnotherPolicy";
@@ -25,6 +27,22 @@ builder.Services.AddScoped<IPlantService, PlantService>();
 builder.Services.AddScoped<IPlantRecordService, PlantRecordService>();
 builder.Services.AddScoped<IUtilsService, UtilsService>();
 
+
+builder.Services
+        .AddControllers(options =>
+        {
+            options.RespectBrowserAcceptHeader = true;
+        })
+        .AddJsonOptions(options =>
+        {
+            options.JsonSerializerOptions.PropertyNameCaseInsensitive = true;
+            options.JsonSerializerOptions.WriteIndented = true;
+            options.JsonSerializerOptions.DefaultIgnoreCondition = JsonIgnoreCondition.WhenWritingNull;
+            options.JsonSerializerOptions.ReadCommentHandling = JsonCommentHandling.Skip;
+
+
+
+        });
 
 var app = builder.Build();
 

@@ -16,11 +16,17 @@
     {
         @foreach (var data in plants)
         {
+            @if (data.IsFertilised) { IsFertilisedTxt = "Si"; } else { IsFertilisedTxt = "No"; }
+            @if (data.IsWatered) { IsWateredTxt = "Si"; } else { IsWateredTxt = "No"; }
+
+    ;
+
             <div class="col-sm-4">
                 <div class="card">
                     <div class="card-body">
-                        <h5 class="card-title">@data.IsNominated</h5>
-                        <p class="card-text">@data.IsWatered</p>
+                        <p class="card-title"> Se fertilizó:  @IsFertilisedTxt</p>
+                        <p class="card-text"> Se regó: @IsWateredTxt</p>
+                        <p class="card-text">Observaciones: @data.Observation</p>
                         <button  type="button" class="btn btn-primary">Modificar</button>
                     </div>
                 </div>
@@ -42,6 +48,8 @@
     public string? Id { get; set; }
     [Inject]
     public IPlantRecordService PlantRecordService { get; set; }
+    private string IsFertilisedTxt = "";
+    private string IsWateredTxt = "";
 
     protected override async Task OnInitializedAsync()
     {
@@ -51,10 +59,7 @@
 
     private void NuevoRegistro()
     {
-            var newPlantRecord = new PlantRecordDTO
-            {
-                PlantId = Id
-            };
+           
 
         NavigationManager.NavigateTo($"newPlantRecord/{Id}");
     }

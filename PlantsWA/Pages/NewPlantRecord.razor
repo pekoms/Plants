@@ -1,4 +1,5 @@
-﻿@page "/newPlantRecord/{plantId}"
+﻿@page "/newPlantRecord/{Id}"
+@using Plants.Api.Domain.Dtos
 @using Plants.WA.Shared
 @inject NavigationManager NavigationManager
 <NavMenu />
@@ -22,12 +23,32 @@
 </form>
 
 @code {
-    private string Observation { get; set; }
+    [Parameter]
+    public string Id { get; set; }
+    private string? Observation { get; set; }
     public bool IsWatered { get; set; }
     public bool FertiliserQuantity { get; set; }
 
-    private void Enviar()
+    private bool spinner = false;
+    private async void Enviar()
     {
-        NavigationManager.NavigateTo("PlantRecord");
+        var createPlantRecord = new PlantRecordDTO
+        {
+            PlantId=Id,
+            Observation=Observation,
+            IsWatered=IsWatered,
+            FertiliserQuantity=FertiliserQuantity
+
+        };
+
+       await CrearPlantRecord(createPlantRecord);
+
+       
+        spinner = true;
+        await Task.Delay(TimeSpan.FromSeconds(3));
+        spinner = false;
+
+        NavigationManager.NavigateTo("PlantRecord/{Id}");
+
     }
 }
