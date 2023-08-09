@@ -1,0 +1,54 @@
+﻿@page "/updatePlantRecord/{Id}"
+@using Plants.Api.Domain.Dtos
+@using Plants.WA.Shared
+@inject NavigationManager NavigationManager
+<NavMenu />
+<h3>UpdatePlantDiary</h3>
+<form>
+    <div class="form-group">
+        <label>
+            <input type="checkbox" @bind="@FertiliserQuantity" /> Se ha fertilizado
+        </label>
+    </div>
+    <div class="form-group">
+        <label>
+            <input type="checkbox" @bind="@IsWatered" /> Se ha regado
+        </label>
+    </div>
+    <div class="form-group">
+        <label for="Observation">Observation:</label>
+        <textarea class="form-control" id="Observation" rows="5" @bind="@Observation"></textarea>
+    </div>
+    <button type="button" class="btn btn-primary" @onclick="@Actualizar">Actualizar</button>
+</form>
+
+@code {
+    [Parameter]
+    public string Id { get; set; }
+    private string? Observation { get; set; }
+    public bool IsWatered { get; set; }
+    public bool FertiliserQuantity { get; set; }
+
+    private bool spinner = false;
+    private async void Actualizar()
+    {
+        var createPlantRecord = new PlantRecordDTO
+        {
+            PlantId=Id,
+            Observation=Observation,
+            IsWatered=IsWatered,
+            FertiliserQuantity=FertiliserQuantity
+
+        };
+
+       await ActualizaPlantRecord(createPlantRecord);
+
+       
+        spinner = true;
+        await Task.Delay(TimeSpan.FromSeconds(3));
+        spinner = false;
+
+        NavigationManager.NavigateTo("PlantRecord/{Id}");
+
+    }
+}
