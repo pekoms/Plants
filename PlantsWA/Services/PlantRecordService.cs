@@ -78,7 +78,7 @@ namespace Plants.WA.Services
             Application.Json);
 
             using var httpResponseMessage =
-                await _httpClient.PutAsync(URL + RESOURCE, todoItemJson);
+                await _httpClient.PutAsync(URL + RESOURCE+ "/" + createPlantRecord.Id, todoItemJson);
 
             httpResponseMessage.EnsureSuccessStatusCode();
         }

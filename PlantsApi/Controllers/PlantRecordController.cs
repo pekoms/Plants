@@ -51,9 +51,8 @@ namespace Plants.Api.Controllers
             return Ok(newPlantRecord);
         }
 
-        // POST: PlantRecordController/Edit/5
-        [HttpPut("{id}", Name = "UpdateDetailedPlantRecord")]
-        [ValidateAntiForgeryToken]
+        // PUT: PlantRecordController/Edit/5
+        [HttpPut("{id}", Name = "UpdateDetailedPlantRecord")]        
         public async Task<ActionResult> UpdateDetailedPlantRecord(string id, [FromBody] PlantRecord PlantRecord, CancellationToken cancellationToken)
         {
             await _plantRecordService.Update(id, PlantRecord);

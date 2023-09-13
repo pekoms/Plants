@@ -1,43 +1,86 @@
 ﻿@page "/updatePlantRecord/{Id}"
 @using Plants.Api.Domain.Dtos
+@using Plants.WA.Services
 @using Plants.WA.Shared
 @inject NavigationManager NavigationManager
 <NavMenu />
 <h3>UpdatePlantDiary</h3>
-<form>
-    <div class="form-group">
-        <label>
-            <input type="checkbox" @bind="@FertiliserQuantity" /> Se ha fertilizado
-        </label>
-    </div>
-    <div class="form-group">
-        <label>
-            <input type="checkbox" @bind="@IsWatered" /> Se ha regado
-        </label>
-    </div>
-    <div class="form-group">
-        <label for="Observation">Observation:</label>
-        <textarea class="form-control" id="Observation" rows="5" @bind="@Observation"></textarea>
-    </div>
-    <button type="button" class="btn btn-primary" @onclick="@Actualizar">Actualizar</button>
-</form>
+<div class="row">
+    
+
+    @if (plants == null && plants.Any())
+    {
+        <p>Cargando datos...</p>
+    }
+    else
+    {
+        @foreach (var data in plants)
+        {            
+            <div class="col-sm-4">
+                <div class="card">
+                    <div class="card-body">
+                        <input type="checkbox" checked=@data.IsFertilised @onchange="e => UpdateCheckboxValue(e, ref IsWatered)" /> Se ha fertilizado
+                        <input type="checkbox" checked=@data.IsWatered @onchange="e => UpdateCheckboxValue(e, ref IsFertilised)" /> Se ha regado
+
+                        <div class="form-group">
+                            <label for="Observation">Observation:</label>
+                            <textarea class="form-control" id="Observation" rows="5" @bind="@Observation">@data.Observation</textarea>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        }
+    }
+
+
+</div>
+        <button type="button" class="btn btn-primary" @onclick="@Actualizar">Actualizar</button>
+@if (spinner == true)
+{
+    <button class="btn btn-primary" type="button" disabled>
+        <span class="spinner-grow spinner-grow-sm" role="status" aria-hidden="true"></span>
+        Actualizando Registro...
+    </button>
+}
+
 
 @code {
     [Parameter]
     public string Id { get; set; }
+    [Parameter]
+    public string UserId { get; set; }
+    public List<PlantRecordDTO> plants { get; set; } = new List<PlantRecordDTO>();
+
     private string? Observation { get; set; }
-    public bool IsWatered { get; set; }
-    public bool FertiliserQuantity { get; set; }
+    public bool IsWatered;
+    public bool IsFertilised;
 
     private bool spinner = false;
+    [Inject]
+    public IPlantRecordService PlantRecordService { get; set; }
+
+    protected override async Task OnInitializedAsync()
+    {
+        plants = await PlantRecordService.GetAllPlantsByPlantId(Id);
+        Observation = plants.FirstOrDefault().Observation;
+
+    }
+
+    private void UpdateCheckboxValue(ChangeEventArgs e, ref bool checkboxValue)
+    {
+        checkboxValue = (bool)e.Value;
+    }
     private async void Actualizar()
     {
         var createPlantRecord = new PlantRecordDTO
         {
-            PlantId=Id,
+            Id=plants.FirstOrDefault().Id,            
+            PlantId=plants.FirstOrDefault().PlantId,
+            UserId = plants.FirstOrDefault().UserId,
             Observation=Observation,
-            IsWatered=IsWatered,
-            FertiliserQuantity=FertiliserQuantity
+            IsWatered =IsWatered,
+            IsFertilised = IsFertilised
 
         };
 
@@ -48,7 +91,7 @@
         await Task.Delay(TimeSpan.FromSeconds(3));
         spinner = false;
 
-        NavigationManager.NavigateTo("PlantRecord/{Id}");
+        NavigationManager.NavigateTo($"PlantRecord/{Id}");
 
     }
 }

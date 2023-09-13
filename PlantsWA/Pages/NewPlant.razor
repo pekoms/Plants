@@ -29,7 +29,7 @@
         <input type="text" class="form-control" id="inputFechaLlegadaCasa" @bind="@FechaLlegadaCasa">
     </div>
 
-    <div class="form-group">
+   @* <div class="form-group">
         <label for="inputFamilia">Familia:</label>
        
         <input type="text" class="form-control" id="inputFamilia" @bind="@Familia">
@@ -94,20 +94,16 @@
         <label for="inputPropagacion">Propagacion:</label>
         <input type="tel" class="form-control" id="inputPropagacion" @bind="@Propagacion">
     </div>
-    <div class="form-group">
+   *@ <div class="form-group">
         <label for="inputCuidados">Cuidados:</label>
         <input type="tel" class="form-control" id="inputCuidados" @bind="@Cuidados">
     </div>
 
 
-
-
-
-
-    <div class="form-group">
+ @*   <div class="form-group">
         <label for="inputMensaje">Mensaje:</label>
         <textarea class="form-control" id="inputMensaje" rows="5" @bind="@Familia"></textarea>
-    </div>
+    </div>*@
     <button type="button" class="btn btn-primary" @onclick="@Enviar">Enviar</button>
 
          
@@ -130,23 +126,22 @@
     private string? Foto { get; set; }
     private string? FechaLlegadaCasa { get; set; }
                
-
-    private string? Familia { get; set; }
-    private string? Origen { get; set; }
-    private string? Caracteristicas { get; set; }
-    private string? Hojas { get; set; }
-    private string? Flores { get; set; }
-    private string? EpocaFloracion { get; set; }
-    private string? Destino { get; set; }
-    private string? Adaptacion { get; set; }
-    private string? Suelo { get; set; }
-    private string? Luminosidad { get; set; }
-    private string? ResistenciaFrio { get; set; }
-    private string? HumedadAmbiente { get; set; }
-    private string? Riego { get; set; }
-    private string? Abonos { get; set; }
-    private string? Parasitos { get; set; }
-    private string? Propagacion { get; set; }
+    //private string? Familia { get; set; }
+    //private string? Origen { get; set; }
+    //private string? Caracteristicas { get; set; }
+    //private string? Hojas { get; set; }
+    //private string? Flores { get; set; }
+    //private string? EpocaFloracion { get; set; }
+    //private string? Destino { get; set; }
+    //private string? Adaptacion { get; set; }
+    //private string? Suelo { get; set; }
+    //private string? Luminosidad { get; set; }
+    //private string? ResistenciaFrio { get; set; }
+    //private string? HumedadAmbiente { get; set; }
+    //private string? Riego { get; set; }
+    //private string? Abonos { get; set; }
+    //private string? Parasitos { get; set; }
+    //private string? Propagacion { get; set; }
     private string? Cuidados { get; set; }
 
     private bool spinner = false;
@@ -175,25 +170,26 @@
         {
                 Nombre = Nombre,
                 Foto = Foto,
-                FechaLlegadaCasa = FechaLlegadaCasa,                
-                Familia = Familia,
-                Origen = Origen,
-                Caracteristicas = Caracteristicas,
-                Hojas = Hojas,
-                Flores = Flores,
-                EpocaFloracion = EpocaFloracion,
-                Destino = Destino,
-                Adaptacion = Adaptacion,
-                Suelo = Suelo,
-                Luminosidad = Luminosidad,
-                ResistenciaFrio = ResistenciaFrio,
-                HumedadAmbiente = HumedadAmbiente,
-                Riego = Riego,
-                Abonos = Abonos,
-                Parasitos = Parasitos,
-                Propagacion = Propagacion,
+                FechaLlegadaCasa = FechaLlegadaCasa,  
                 Cuidados = Cuidados,
-                OwnerId="ale"
+                OwnerId = "ale"
+                //Familia = Familia,
+                //Origen = Origen,
+                //Caracteristicas = Caracteristicas,
+                //Hojas = Hojas,
+                //Flores = Flores,
+                //EpocaFloracion = EpocaFloracion,
+                //Destino = Destino,
+                //Adaptacion = Adaptacion,
+                //Suelo = Suelo,
+                //Luminosidad = Luminosidad,
+                //ResistenciaFrio = ResistenciaFrio,
+                //HumedadAmbiente = HumedadAmbiente,
+                //Riego = Riego,
+                //Abonos = Abonos,
+                //Parasitos = Parasitos,
+                //Propagacion = Propagacion,
+                
 
         };
         await CrearPlant(createPlantRecord);

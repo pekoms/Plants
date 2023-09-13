@@ -37,11 +37,12 @@
     public List<PlantDTO> plants { get; set; } = new List<PlantDTO>();
     [Inject]
     public IPlantService PlantService { get; set; }
-    
+    private string UserId = "ale";
+
 
     protected override async Task OnInitializedAsync()
     {
-        plants = await PlantService.GetAllPlantsByUserId("ale");
+        plants = await PlantService.GetAllPlantsByUserId(UserId);
         
     }
     

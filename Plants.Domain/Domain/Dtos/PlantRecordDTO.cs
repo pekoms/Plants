@@ -8,7 +8,9 @@ namespace Plants.Api.Domain.Dtos
         [JsonPropertyName("id")]
         public string Id { get; set; } = Guid.NewGuid().ToString();
         [JsonPropertyName("plantId")]
-        public string PlantId { get; set; }     
+        public string PlantId { get; set; }
+        [JsonPropertyName("userId")]
+        public string UserId { get; set; }
         [JsonPropertyName("isNominated")]
         public bool IsNominated { get; set; }
         [JsonPropertyName("isWatered")]
