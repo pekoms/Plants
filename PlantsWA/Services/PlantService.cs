@@ -32,12 +32,16 @@ namespace Plants.WA.Services
             httpResponseMessage.EnsureSuccessStatusCode();
         }
 
-        public async Task GetPlantByPlantId(string Id)
+        public async Task<List<PlantDTO>> GetPlantByPlantId(string Id)
         {                    
             using var httpResponseMessage =
                 await _httpClient.GetAsync(URL + RESOURCE);
 
             httpResponseMessage.EnsureSuccessStatusCode();
+            var jsonString = await httpResponseMessage.Content.ReadAsStringAsync();
+            var result = JsonSerializer.Deserialize<List<PlantDTO>>(jsonString);
+
+            return result;
         }
         public async Task GetPlantByUserId(string Id)
         {       

@@ -45,7 +45,10 @@ namespace Plants.Api.Controllers
                 PlantId = newPlantRecordDTO.PlantId,
                 Observation = newPlantRecordDTO.Observation,
                 IsFertilised = newPlantRecordDTO.IsFertilised,
-                IsWatered  =   newPlantRecordDTO.IsWatered
+                IsWatered = newPlantRecordDTO.IsWatered,
+                ContentImage = newPlantRecordDTO.ContentImage,
+                UserId = newPlantRecordDTO.UserId
+               
             };
             await _plantRecordService.Create(newPlantRecord);
             return Ok(newPlantRecord);

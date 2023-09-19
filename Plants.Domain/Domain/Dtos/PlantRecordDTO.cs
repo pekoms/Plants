@@ -28,6 +28,6 @@ namespace Plants.Api.Domain.Dtos
         [JsonPropertyName("fInsert")]
         public DateTime Finsert { get; set; } = DateTime.UtcNow;
         [JsonPropertyName("contentImage")]
-        public IFormFile? ContentImage { get; set; }
+        public string? ContentImage { get; set; }
     }
 }

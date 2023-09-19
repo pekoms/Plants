@@ -6,5 +6,6 @@ namespace Plants.WA.Services
     {
         public  Task Create(PlantDTO createPlant);
         public Task<List<PlantDTO>> GetAllPlantsByUserId(string OwnerId);
+        public Task<List<PlantDTO>> GetPlantByPlantId(string plantId);
     }
 }

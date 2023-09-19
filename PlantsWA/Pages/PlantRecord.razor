@@ -5,8 +5,8 @@
 @inject NavigationManager NavigationManager
 <NavMenu />
 <h3>Plants</h3>
-<div class="row">
-   
+<form>
+    <div class="form-group">
 
     @if (plants == null && plants.Any())
     {
@@ -24,27 +24,41 @@
                     <div class="card-body">
                         <p class="card-title"> Se fertilizó:  @IsFertilisedTxt</p>
                         <p class="card-text"> Se regó: @IsWateredTxt</p>
+                         @if (data.ContentImage != null)
+                        {
+                            <img src="@data.ContentImage" alt="Imagen cargada" />
+                        }
                         <p class="card-text">Observaciones: @data.Observation</p>
-                        <button type="button" class="btn btn-primary" @onclick="Modificar">Modificar</button>
+                        <button type="button" class="btn btn-primary" @onclick="()=>Modificar(data.Id)">Modificar</button>
+                        <button type="button" class="btn btn-warning" @onclick="()=>Eliminar(data.Id,data.PlantId)">Eliminar</button>
                     </div>
                 </div>
             </div>
-        }
+        }       
     }
 </div>
 <button type="button" class="btn btn-danger btn-lg btn-block" @onclick="NuevoRegistro">Nueva Registro</button>
 
-
+ @if (spinner == true)
+        {
+            <button class="btn btn-Warning" type="button" disabled>
+                <span class="spinner-grow spinner-grow-sm" role="status" aria-hidden="true"></span>
+                Borrando Registro...
+            </button>
+        }
+</form>
 @code {
-  
+
     public List<PlantRecordDTO> plants { get; set; } = new List<PlantRecordDTO>();
     [Parameter]
     public string? Id { get; set; }
-   
+
     [Inject]
     public IPlantRecordService PlantRecordService { get; set; }
     private string IsFertilisedTxt = "";
     private string IsWateredTxt = "";
+
+    private bool spinner = false;
 
     protected override async Task OnInitializedAsync()
     {
@@ -56,8 +70,17 @@
         NavigationManager.NavigateTo($"newPlantRecord/{Id}");
     }
 
-    private void Modificar()
+    private void Modificar(string recordId)
     {
-        NavigationManager.NavigateTo($"updatePlantRecord/{Id}");
+        NavigationManager.NavigateTo($"updatePlantRecord/{recordId}");
+    }
+    private async void Eliminar(string recordId,string plantId)
+    {
+        await PlantRecordService.Delete(recordId);
+
+        spinner = true;
+        await Task.Delay(TimeSpan.FromSeconds(5));
+        spinner = false;
+        NavigationManager.NavigateTo($"PlantRecord/{plantId}",true);
     }
 }

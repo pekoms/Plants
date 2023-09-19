@@ -48,6 +48,18 @@ namespace Plants.WA.Services
 
 
         }
+
+        public async Task<PlantRecordDTO> Get(string Id)
+        {
+            using var httpResponseMessage =
+              await _httpClient.GetAsync(URL + RESOURCE  +"/"+ Id);
+
+            httpResponseMessage.EnsureSuccessStatusCode();
+            var jsonString = await httpResponseMessage.Content.ReadAsStringAsync();
+            var result = JsonSerializer.Deserialize<PlantRecordDTO>(jsonString);
+
+            return result;
+        }
         public async Task<List<PlantDTO>> GetAllPlantsByUserId(string OwnerId)
         {
             using var httpResponseMessage =
@@ -79,6 +91,17 @@ namespace Plants.WA.Services
 
             using var httpResponseMessage =
                 await _httpClient.PutAsync(URL + RESOURCE+ "/" + createPlantRecord.Id, todoItemJson);
+
+            httpResponseMessage.EnsureSuccessStatusCode();
+        }
+
+        public async Task Delete(string deletePlantRecordId)
+        {
+            var todoItemJson = new StringContent(JsonSerializer.Serialize<string>(deletePlantRecordId), Encoding.UTF8,
+            Application.Json);
+
+            using var httpResponseMessage =
+                await _httpClient.DeleteAsync(URL + RESOURCE + "/" + deletePlantRecordId);
 
             httpResponseMessage.EnsureSuccessStatusCode();
         }

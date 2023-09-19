@@ -8,13 +8,22 @@
 <form>
     <div class="form-group">
         <label>
-            <input type="checkbox" @bind="@FertiliserQuantity" /> Se ha fertilizado
+            <input type="checkbox" @bind="@IsFertilised" /> Se ha fertilizado
         </label>
     </div>
     <div class="form-group">
         <label>
             <input type="checkbox" @bind="@IsWatered" /> Se ha regado
         </label>
+    </div>
+    <div class="form-group">
+        <label for="inputEmail">Foto:</label>
+        <InputFile OnChange="HandleFileChange" />
+        @if (Foto != null)
+        {
+            <h4>Imagen cargada:</h4>
+            <img src="@Foto" alt="Imagen cargada" />
+        }
     </div>
     <div class="form-group">
         <label for="Observation">Observation:</label>
@@ -25,7 +34,7 @@
     {
         <button class="btn btn-primary" type="button" disabled>
             <span class="spinner-grow spinner-grow-sm" role="status" aria-hidden="true"></span>
-            Actualizando Registro...
+            Creando Registro...
         </button>
     }
 </form>
@@ -35,19 +44,43 @@
     public string Id { get; set; }
     private string? Observation { get; set; }
     public bool IsWatered { get; set; }
-    public bool FertiliserQuantity { get; set; }
+    public bool IsFertilised { get; set; }
     private bool spinner = false;
     private string UserId { get; set; }
-    public List<PlantRecordDTO> plants { get; set; } = new List<PlantRecordDTO>();
+    public List<PlantRecordDTO> plantsRecord { get; set; } = new List<PlantRecordDTO>();
+    public List<PlantDTO> plants { get; set; } = new List<PlantDTO>();
+
+    private string? Foto { get; set; }
 
     [Inject]
     public IPlantRecordService PlantRecordService { get; set; }
+    [Inject]
+    public IPlantService PlantService { get; set; }
+
 
     protected override async Task OnInitializedAsync()
     {
-        plants = await PlantRecordService.GetAllPlantsByPlantId(Id);
-        UserId = plants.FirstOrDefault().UserId;
+        plants = await PlantService.GetPlantByPlantId(Id);
+        UserId = plants.FirstOrDefault().OwnerId;    
+    }
 
+    private async Task HandleFileChange(InputFileChangeEventArgs e)
+    {
+        var file = e.File;
+
+        if (file != null)
+        {
+            // Leer el contenido de la imagen
+            var buffer = new byte[file.Size];
+            await file.OpenReadStream().ReadAsync(buffer);
+
+            // Convertir los datos de la imagen a base64 para mostrarla
+            Foto = $"data:{file.ContentType};base64,{Convert.ToBase64String(buffer)}";
+        }
+        else
+        {
+            Foto = null;
+        }
     }
 
     private async void Enviar()
@@ -57,8 +90,9 @@
             PlantId=Id,
             Observation=Observation,
             IsWatered=IsWatered,
-            FertiliserQuantity=FertiliserQuantity,
-            UserId=UserId
+            IsFertilised = IsFertilised,
+            UserId = plants.FirstOrDefault().OwnerId,
+            ContentImage=Foto
         };
 
        await CrearPlantRecord(createPlantRecord);

@@ -8,29 +8,36 @@
 <div class="row">
     
 
-    @if (plants == null && plants.Any())
+    @if (plant == null )
     {
         <p>Cargando datos...</p>
     }
     else
     {
-        @foreach (var data in plants)
-        {            
+                 
             <div class="col-sm-4">
                 <div class="card">
                     <div class="card-body">
-                        <input type="checkbox" checked=@data.IsFertilised @onchange="e => UpdateCheckboxValue(e, ref IsWatered)" /> Se ha fertilizado
-                        <input type="checkbox" checked=@data.IsWatered @onchange="e => UpdateCheckboxValue(e, ref IsFertilised)" /> Se ha regado
-
+                        <input type="checkbox" checked=@plant.IsFertilised @onchange="e => UpdateCheckboxValue(e, ref IsWatered)" /> Se ha fertilizado
+                        <input type="checkbox" checked=@plant.IsWatered @onchange="e => UpdateCheckboxValue(e, ref IsFertilised)" /> Se ha regado
+                        <div class="form-group">
+                            <label for="inputEmail">Foto:</label>
+                            <InputFile OnChange="HandleFileChange" />
+                            @if (plant.ContentImage != null)
+                            {
+                                <h4>Imagen cargada:</h4>
+                            <img  src="@plant.ContentImage" alt="Imagen cargada" />
+                            }
+                        </div>
                         <div class="form-group">
                             <label for="Observation">Observation:</label>
-                            <textarea class="form-control" id="Observation" rows="5" @bind="@Observation">@data.Observation</textarea>
+                            <textarea class="form-control" id="Observation" rows="5" @bind="@Observation">@plant.Observation</textarea>
                         </div>
                         
                     </div>
                 </div>
             </div>
-        }
+        
     }
 
 
@@ -49,12 +56,14 @@
     [Parameter]
     public string Id { get; set; }
     [Parameter]
-    public string UserId { get; set; }
-    public List<PlantRecordDTO> plants { get; set; } = new List<PlantRecordDTO>();
+
+    public PlantRecordDTO plant { get; set; } = new PlantRecordDTO();
 
     private string? Observation { get; set; }
+    private string UserId { get; set; }
     public bool IsWatered;
     public bool IsFertilised;
+    private string? Foto { get; set; }
 
     private bool spinner = false;
     [Inject]
@@ -62,25 +71,49 @@
 
     protected override async Task OnInitializedAsync()
     {
-        plants = await PlantRecordService.GetAllPlantsByPlantId(Id);
-        Observation = plants.FirstOrDefault().Observation;
-
+        plant = await PlantRecordService.Get(Id);
+        if ( plant != null){
+            Observation = plant.Observation;
+            UserId = plant.UserId;
+        }       
     }
 
     private void UpdateCheckboxValue(ChangeEventArgs e, ref bool checkboxValue)
     {
         checkboxValue = (bool)e.Value;
     }
+
+    private async Task HandleFileChange(InputFileChangeEventArgs e)
+    {
+        var file = e.File;
+
+        if (file != null)
+        {
+            // Leer el contenido de la imagen
+            var buffer = new byte[file.Size];
+            await file.OpenReadStream().ReadAsync(buffer);
+
+            // Convertir los datos de la imagen a base64 para mostrarla
+            Foto = $"data:{file.ContentType};base64,{Convert.ToBase64String(buffer)}";
+        }
+        else
+        {
+            Foto = null;
+        }
+    }
     private async void Actualizar()
     {
+        if (Foto == null) { Foto=plant.ContentImage;};
+
         var createPlantRecord = new PlantRecordDTO
         {
-            Id=plants.FirstOrDefault().Id,            
-            PlantId=plants.FirstOrDefault().PlantId,
-            UserId = plants.FirstOrDefault().UserId,
+            Id=plant.Id,            
+            PlantId=plant.PlantId,
+            UserId = plant.UserId,
             Observation=Observation,
             IsWatered =IsWatered,
-            IsFertilised = IsFertilised
+            IsFertilised = IsFertilised,
+            ContentImage= Foto
 
         };
 
@@ -91,7 +124,7 @@
         await Task.Delay(TimeSpan.FromSeconds(3));
         spinner = false;
 
-        NavigationManager.NavigateTo($"PlantRecord/{Id}");
+        NavigationManager.NavigateTo($"PlantRecord/{plant.PlantId}");
 
     }
 }
