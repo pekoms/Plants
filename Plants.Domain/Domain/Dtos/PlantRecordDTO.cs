@@ -11,6 +11,8 @@ namespace Plants.Api.Domain.Dtos
         public string PlantId { get; set; }
         [JsonPropertyName("userId")]
         public string UserId { get; set; }
+        [JsonPropertyName("votes")]
+        public int Votes { get; set; }
         [JsonPropertyName("isNominated")]
         public bool IsNominated { get; set; }
         [JsonPropertyName("isWatered")]
