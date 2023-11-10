@@ -1,5 +1,4 @@
-﻿using Plants.Api.Controllers;
-using Plants.Api.Domain.Entities;
+﻿using Plants.Api.Domain.Entities;
 
 namespace Plants.Api.Services
 {

@@ -1,5 +1,4 @@
-﻿using Microsoft.AspNetCore.Http;
-using System.Text.Json.Serialization;
+﻿using System.Text.Json.Serialization;
 
 namespace Plants.Api.Domain.Dtos
 {
@@ -16,7 +15,7 @@ namespace Plants.Api.Domain.Dtos
         [JsonPropertyName("isNominated")]
         public bool IsNominated { get; set; }
         [JsonPropertyName("isWatered")]
-        public bool IsWatered { get; set; }   
+        public bool IsWatered { get; set; }
         [JsonPropertyName("waterQuantity")]
         public bool WaterQuantity { get; set; }
         [JsonPropertyName("isTranplanted")]

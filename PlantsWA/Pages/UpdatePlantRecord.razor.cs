@@ -10,7 +10,7 @@ namespace Plants.WA.Pages
 
 
 
-     
+
         public async Task ActualizaPlantRecord(PlantRecordDTO createPlant)
         {
             var response = IplantServiceRecord.Update(createPlant);

@@ -2,11 +2,10 @@
 using MongoDB.Driver;
 using Plants.Api.Domain.Entities;
 using Plants.Infrastructure.DBSettings;
-using System.IO.Compression;
 
 namespace Plants.Api.Services
 {
-    public class PlantService:IPlantService
+    public class PlantService : IPlantService
     {
         private readonly IMongoCollection<Plant> _plants;
 
@@ -21,15 +20,15 @@ namespace Plants.Api.Services
             await _plants.Find(_ => true).ToListAsync();
         public async Task<Plant> Get(string id) =>
             await _plants.Find(m => m.Id == id).FirstOrDefaultAsync();
-        public async Task Create(Plant newPlant)=>
+        public async Task Create(Plant newPlant) =>
             await _plants.InsertOneAsync(newPlant);
-        
+
         public async Task Update(string id, Plant updatePlant) =>
             await _plants.ReplaceOneAsync(m => m.Id == id, updatePlant);
         public async Task Remove(string id) =>
             await _plants.DeleteOneAsync(m => m.Id == id);
 
-        public async Task<List<Plant>> GetAllPlantsByUserId(string ownerId)=>
+        public async Task<List<Plant>> GetAllPlantsByUserId(string ownerId) =>
             await _plants.Find(m => m.OwnerId == ownerId).ToListAsync();
     }
 }

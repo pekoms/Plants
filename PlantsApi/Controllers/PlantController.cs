@@ -46,8 +46,8 @@ namespace Plants.Api.Controllers
                 Name = newPlantDTO.Nombre,
                 Specie = newPlantDTO.Especie,
                 Age = newPlantDTO.Edad,
-                OwnerId= newPlantDTO.OwnerId,
-                Foto=newPlantDTO.Foto
+                OwnerId = newPlantDTO.OwnerId,
+                Foto = newPlantDTO.Foto
 
             };
             await _plantService.Create(newPlant);
@@ -78,7 +78,7 @@ namespace Plants.Api.Controllers
 
 
         //GET: UserController/Details/5
-        [HttpGet("User")]        
+        [HttpGet("User")]
         public async Task<ActionResult<Plant>> GetDetailedPlantByUserId(string ownerId, CancellationToken cancellationToken)
         {
             var plants = await _plantService.GetAllPlantsByUserId(ownerId); ;

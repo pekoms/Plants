@@ -1,8 +1,11 @@
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.Extensions.Configuration;
+using Microsoft.IdentityModel.Tokens;
 using MongoDB.Driver;
 using Plants.Api.Services;
 using Plants.Infrastructure.DBSettings;
 using Plants.Services.Services;
+using System.Text;
 using System.Text.Json;
 using System.Text.Json.Serialization;
 
@@ -22,27 +25,43 @@ builder.Services.AddSingleton<IMongoClient>(s =>
 );
 builder.Services.Configure<PlantsDatabaseSettings>(builder.Configuration.GetSection("PlantsDatabaseSettings"));
 
-builder.Services.AddScoped<IUserService,UserService>();
+builder.Services.AddScoped<IUserService, UserService>();
 builder.Services.AddScoped<IPlantService, PlantService>();
 builder.Services.AddScoped<IPlantRecordService, PlantRecordService>();
 builder.Services.AddScoped<IUtilsService, UtilsService>();
 
 
-builder.Services
-        .AddControllers(options =>
+builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
+        .AddJwtBearer(options =>
         {
-            options.RespectBrowserAcceptHeader = true;
-        })
-        .AddJsonOptions(options =>
-        {
-            options.JsonSerializerOptions.PropertyNameCaseInsensitive = true;
-            options.JsonSerializerOptions.WriteIndented = true;
-            options.JsonSerializerOptions.DefaultIgnoreCondition = JsonIgnoreCondition.WhenWritingNull;
-            options.JsonSerializerOptions.ReadCommentHandling = JsonCommentHandling.Skip;
-
-
-
+            options.TokenValidationParameters = new TokenValidationParameters
+            {
+                ValidateIssuer = true,
+                ValidateAudience = true,
+                ValidateLifetime = true,
+                ValidateIssuerSigningKey = true,
+                ValidIssuer = builder.Configuration.GetSection("JwtSettings")["JwtIssuer"],
+                ValidAudience = builder.Configuration.GetSection("JwtSettings")["JwtAudience"],
+                IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(builder.Configuration.GetSection("JwtSettings")["JwtSecret"]))
+            };
         });
+
+
+builder.Services
+.AddControllers(options =>
+{
+    options.RespectBrowserAcceptHeader = true;
+})
+.AddJsonOptions(options =>
+{
+    options.JsonSerializerOptions.PropertyNameCaseInsensitive = true;
+    options.JsonSerializerOptions.WriteIndented = true;
+    options.JsonSerializerOptions.DefaultIgnoreCondition = JsonIgnoreCondition.WhenWritingNull;
+    options.JsonSerializerOptions.ReadCommentHandling = JsonCommentHandling.Skip;
+
+
+
+});
 
 var app = builder.Build();
 

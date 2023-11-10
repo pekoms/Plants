@@ -1,5 +1,4 @@
-﻿using Microsoft.AspNetCore.Http;
-using System.Text.Json.Serialization;
+﻿using System.Text.Json.Serialization;
 
 namespace Plants.Api.Domain.Dtos
 {
@@ -26,7 +25,7 @@ namespace Plants.Api.Domain.Dtos
 
         public string? FechaLlegadaCasa { get; set; }
         [JsonPropertyName("foto")]
-        public string? Foto{ get; set; }
+        public string? Foto { get; set; }
 
         //public string? Familia { get; set; }
         //public string? Origen { get; set; }
@@ -46,8 +45,8 @@ namespace Plants.Api.Domain.Dtos
         //public string? Propagacion { get; set; }
         public string? Cuidados { get; set; }
 
-        public DateTime? Finsert { get; set; }=DateTime.UtcNow;
+        public DateTime? Finsert { get; set; } = DateTime.UtcNow;
 
-        
+
     }
 }

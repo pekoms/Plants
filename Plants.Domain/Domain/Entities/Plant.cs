@@ -1,5 +1,4 @@
-﻿using Microsoft.Extensions.FileProviders;
-using MongoDB.Bson.Serialization.Attributes;
+﻿using MongoDB.Bson.Serialization.Attributes;
 
 namespace Plants.Api.Domain.Entities
 {
@@ -82,7 +81,7 @@ namespace Plants.Api.Domain.Entities
         [BsonRepresentation(MongoDB.Bson.BsonType.String)]
 
         public DateTime? Finsert { get; set; } = DateTime.Now;
-        
+
 
     }
 }

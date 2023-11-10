@@ -1,6 +1,12 @@
-﻿@page "/"
+﻿@page "/registration"
+@using Microsoft.AspNetCore.Http
+@using Plants.Api.Domain.Dtos
+@using Plants.WA.Services
+@using Plants.WA.Shared
+
+
 @inject NavigationManager NavigationManager
-@inject IJSRuntime jsr
+@inject NavigationManager NavigationManager
 
 
 @using Plants.Domain.Domain.Dtos;
@@ -13,7 +19,7 @@
         <div class="col-md-6 mx-auto">
             <div class="card">
                 <div class="card-body">
-                    <h3 class="card-title text-center">Iniciar sesión</h3>
+                    <h3 class="card-title text-center">Registrarse</h3>
                     <form>
                         <div class="form-group">
                             <label for="inputEmail">Correo electrónico</label>
@@ -24,8 +30,8 @@
                             <input type="password" class="form-control" @bind="@inputPassword" id="inputPassword" required placeholder="Ingresa tu contraseña">
                         </div>
                         <div class="text-center" style="margin-top: 1rem;">
-                            <button type="button" class="btn btn-primary" @onclick="IniciarSesion">Iniciar sesión</button>
-                            <button type="button" class="btn btn-secondary" @onclick="Registrarse">Registrarse</button>
+                            <button type="button" class="btn btn-primary" @onclick="Registrarse">Registrarse</button>
+                            <button type="button" class="btn btn-secondary" @onclick="VolverAlInicio">Volver a la pagina de Inicio</button>
                         </div>                      
                     </form>                
                   
@@ -67,10 +73,9 @@
 
     private bool invalidInput { get; set; } = false;
     private bool wrongLogin { get; set; } = false;
-    private TokenDTO jwtToken { get; set; }
 
 
-    private async void IniciarSesion()
+    private async void Registrarse()
     {
 
         if (!string.IsNullOrEmpty(inputEmail) || !string.IsNullOrEmpty(inputPassword))
@@ -79,15 +84,14 @@
                 {
                     Name = inputEmail,
                     Password = inputPassword
-                };
+                };            
 
-            jwtToken = await UserService.Login(loginUser);
-            if (!string.IsNullOrEmpty(jwtToken.token))
+            if (UserService.Create(loginUser).IsCompletedSuccessfully)
+
             {
                 // Iniciar sesión exitosamente
                 
-                await jsr.InvokeVoidAsync("localStorage.setItem", "jwtToken", jwtToken.token);
-                NavigationManager.NavigateTo("main");
+                NavigationManager.NavigateTo("/");
             }
             else
             {
@@ -103,13 +107,11 @@
         }
     }
 
-    private void Registrarse()
+    private void VolverAlInicio()
     {
-        NavigationManager.NavigateTo("registration");
+        NavigationManager.NavigateTo("/");
     }
 
 
- 
+ }
 
-    
-}

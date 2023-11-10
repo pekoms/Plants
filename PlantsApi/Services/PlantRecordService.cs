@@ -5,7 +5,7 @@ using Plants.Infrastructure.DBSettings;
 
 namespace Plants.Api.Services
 {
-    public class PlantRecordService:IPlantRecordService
+    public class PlantRecordService : IPlantRecordService
     {
 
         private readonly IMongoCollection<PlantRecord> _plantsRecords;
@@ -28,8 +28,8 @@ namespace Plants.Api.Services
         public async Task Remove(string id) =>
             await _plantsRecords.DeleteOneAsync(m => m.Id == id);
 
-        public async Task<List<PlantRecord>> GetAllPlantRecordsByPlantId(string plantId) =>       
+        public async Task<List<PlantRecord>> GetAllPlantRecordsByPlantId(string plantId) =>
            await _plantsRecords.Find(m => m.PlantId == plantId).ToListAsync();
-        
+
     }
 }

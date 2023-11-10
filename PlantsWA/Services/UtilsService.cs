@@ -2,7 +2,7 @@
 
 namespace Plants.WA.Services
 {
-    public class UtilsService:IUtilsService
+    public class UtilsService : IUtilsService
     {
         public async Task<string> GetImageFromFile(IFormFile file)
         {

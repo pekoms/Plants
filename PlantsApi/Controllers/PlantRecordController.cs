@@ -48,14 +48,14 @@ namespace Plants.Api.Controllers
                 IsWatered = newPlantRecordDTO.IsWatered,
                 ContentImage = newPlantRecordDTO.ContentImage,
                 UserId = newPlantRecordDTO.UserId
-               
+
             };
             await _plantRecordService.Create(newPlantRecord);
             return Ok(newPlantRecord);
         }
 
         // PUT: PlantRecordController/Edit/5
-        [HttpPut("{id}", Name = "UpdateDetailedPlantRecord")]        
+        [HttpPut("{id}", Name = "UpdateDetailedPlantRecord")]
         public async Task<ActionResult> UpdateDetailedPlantRecord(string id, [FromBody] PlantRecord PlantRecord, CancellationToken cancellationToken)
         {
             await _plantRecordService.Update(id, PlantRecord);
