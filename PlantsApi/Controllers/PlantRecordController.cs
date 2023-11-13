@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Plants.Api.Domain.Dtos;
 using Plants.Api.Domain.Entities;
+using Plants.Api.Infrastructure.TokenValidation;
 using Plants.Api.Services;
 
 namespace Plants.Api.Controllers
@@ -16,28 +17,24 @@ namespace Plants.Api.Controllers
             _plantRecordService = plantRecordService;
 
         }
-
-        // GET: PlantRecordController
-        [HttpGet(Name = "GetAllPlantRecords")]
+        
+        [AuthorizationAttributeGet("GetAllPlantRecords")]
         public async Task<ActionResult<List<PlantRecord>>> Get(CancellationToken cancellationToken)
         {
             var PlantRecords = await _plantRecordService.GetAllPlantRecords();
 
             return Ok(PlantRecords);
         }
-
-        //GET: PlantRecordController/Details/5
-        [HttpGet("{id}", Name = "GetDetailedPlantRecord")]
+        
+        [AuthorizationAttributeGet("{id}", Name = "GetDetailedPlantRecord")]
         public async Task<ActionResult<PlantRecord>> GetDetailedPlantRecord(string id, CancellationToken cancellationToken)
         {
             var PlantRecord = await _plantRecordService.Get(id); ;
 
             return Ok(PlantRecord);
         }
-
-        // POST: PlantRecordController/Create
-
-        [HttpPost(Name = "CreatePlantRecord")]
+       
+        [AuthorizationAttributePost("CreatePlantRecord")]
         public async Task<ActionResult> CreatePlantRecord([FromBody] PlantRecordDTO newPlantRecordDTO, CancellationToken cancellationToken)
         {
             var newPlantRecord = new PlantRecord
@@ -55,7 +52,7 @@ namespace Plants.Api.Controllers
         }
 
         // PUT: PlantRecordController/Edit/5
-        [HttpPut("{id}", Name = "UpdateDetailedPlantRecord")]
+        [AuthorizationAttributePut("{id}", Name = "UpdateDetailedPlantRecord")]
         public async Task<ActionResult> UpdateDetailedPlantRecord(string id, [FromBody] PlantRecord PlantRecord, CancellationToken cancellationToken)
         {
             await _plantRecordService.Update(id, PlantRecord);
@@ -64,7 +61,7 @@ namespace Plants.Api.Controllers
         }
 
         // Delete: PlantRecordController/Delete/5
-        [HttpDelete("{id}", Name = "DeleteDetailedPlantRecord")]
+        [AuthorizationAttributeDelete("{id}", Name = "DeleteDetailedPlantRecord")]
         public async Task<ActionResult> Delete(string id)
         {
             await _plantRecordService.Remove(id);
@@ -74,7 +71,7 @@ namespace Plants.Api.Controllers
 
         //GET: UserController/Details/5
 
-        [HttpGet("Plant")]
+        [AuthorizationAttributeGet("Plant")]
         public async Task<ActionResult<PlantRecord>> GetDetailedPlantByPlantId(string plantId, CancellationToken cancellationToken)
         {
             var plants = await _plantRecordService.GetAllPlantRecordsByPlantId(plantId); ;

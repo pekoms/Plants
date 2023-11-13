@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Plants.Api.Domain.Entities;
+using Plants.Api.Infrastructure.TokenValidation;
 using Plants.Api.Services;
 using Plants.Domain.Domain.Dtos;
 using System.IdentityModel.Tokens.Jwt;
@@ -25,7 +26,7 @@ namespace Plants.Api.Controllers
         }
 
         // GET: UserController
-        [HttpGet(Name = "GetAllUsers")]
+        [AuthorizationAttributeGet("GetAllUsers")]
         public async Task<ActionResult<List<User>>> Get(CancellationToken cancellationToken)
         {
             var users = await _userService.GetAllUsers();
@@ -34,15 +35,59 @@ namespace Plants.Api.Controllers
         }
 
         //GET: UserController/Details/5
-        [HttpGet("{id}", Name = "GetDetailedUser")]
+        [AuthorizationAttributeGet("{id}", Name = "GetDetailedUser")]
         public async Task<ActionResult<User>> GetDetailedUser(string id, CancellationToken cancellationToken)
         {
             var user = await _userService.Get(id); ;
 
             return Ok(user);
         }
+              
+        
+        [AuthorizationAttributePut("{id}", Name = "UpdateDetailedUser")]        
+        public async Task<ActionResult> UpdateDetailedUser(string id, [FromBody] UserDTO user, CancellationToken cancellationToken)
+        {
+            var userUpdate = await _userService.Get(id);
+            await _userService.Update(id, userUpdate);
 
-        // POST: UserController/Create
+            return Ok(user);
+        }
+        
+        [AuthorizationAttributeDelete("{id}", Name = "DeleteDetailedUser")]
+        public async Task<ActionResult> Delete(string id)
+        {
+            await _userService.Remove(id);
+
+            return Ok();
+        }
+
+        [HttpPost("Login")]
+        public async Task<IActionResult> Login([FromBody] UserDTO user, CancellationToken cancellationToken)
+        {
+           
+                // Verifica si el usuario existe            
+                var loginUser = await _userService.Get(user.Name);
+                if (loginUser == null)
+                {
+                    return Unauthorized(new UserDTO { Name=null,Password=null});
+                }
+
+                // Verifica la contraseña
+                if (await _utils.VerifyPassword(user.Password, loginUser.Password) != true)
+                {
+                    return Unauthorized(new UserDTO { Name = null, Password = null });
+                }
+
+                // Genera un token JWT
+                var token = await _utils.GenerateJwtToken(loginUser.Name);
+
+                return Ok(new
+                {
+                    token = new JwtSecurityTokenHandler().WriteToken(token),
+                    expiration = token.ValidTo
+                });            
+           
+        }
 
         [HttpPost(Name = "CreateUser")]
         public async Task<ActionResult> CreateUser([FromBody] UserDTO newUser, CancellationToken cancellationToken)
@@ -63,54 +108,6 @@ namespace Plants.Api.Controllers
 
             await _userService.Create(userRegistration);
             return Ok(userRegistration);
-        }
-
-        // POST: UserController/Edit/5
-        [HttpPut("{id}", Name = "UpdateDetailedUser")]
-        [ValidateAntiForgeryToken]
-        public async Task<ActionResult> UpdateDetailedUser(string id, [FromBody] UserDTO user, CancellationToken cancellationToken)
-        {
-            var userUpdate = await _userService.Get(id);
-            await _userService.Update(id, userUpdate);
-
-            return Ok(user);
-        }
-
-        // Delete: UserController/Delete/5
-        [HttpDelete("{id}", Name = "DeleteDetailedUser")]
-        public async Task<ActionResult> Delete(string id)
-        {
-            await _userService.Remove(id);
-
-            return Ok();
-        }
-
-        [HttpPost("Login")]
-        public async Task<IActionResult> Login([FromBody] UserDTO user, CancellationToken cancellationToken)
-        {
-           
-                // Verifica si el usuario existe            
-                var loginUser = await _userService.Get(user.Name);
-                if (loginUser == null)
-                {
-                    return Unauthorized("Credenciales incorrectas.");
-                }
-
-                // Verifica la contraseña
-                if (await _utils.VerifyPassword(user.Password, loginUser.Password) != true)
-                {
-                    return Unauthorized("Credenciales incorrectas.");
-                }
-
-                // Genera un token JWT
-                var token = await _utils.GenerateJwtToken(loginUser.Name);
-
-                return Ok(new
-                {
-                    token = new JwtSecurityTokenHandler().WriteToken(token),
-                    expiration = token.ValidTo
-                });            
-           
         }
 
 
