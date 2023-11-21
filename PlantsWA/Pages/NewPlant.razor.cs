@@ -8,11 +8,9 @@ namespace Plants.WA.Pages
     {
         [Inject] private IPlantService IplantService { get; set; }
 
-
-
         public async Task CrearPlant(PlantDTO createPlant)
         {
-            var response = IplantService.Create(createPlant);
+            var response = IplantService.Create(createPlant,token);
         }
     }
 }

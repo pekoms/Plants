@@ -45,14 +45,14 @@ namespace Plants.WA.Services
     
         }
 
-        public async Task GetPlantByPlantId(string Id)
+        public async Task GetPlantByPlantId(string Id, string token)
         {
             using var httpResponseMessage =
                 await _httpClient.GetAsync(URL + RESOURCE);
 
             httpResponseMessage.EnsureSuccessStatusCode();
         }
-        public async Task GetPlantByUserId(string Id)
+        public async Task GetPlantByUserId(string Id,string token)
         {
             using var httpResponseMessage =
                 await _httpClient.GetAsync(URL + RESOURCE);
@@ -61,7 +61,7 @@ namespace Plants.WA.Services
 
 
         }
-        public async Task<List<PlantDTO>> GetAllPlantsByUserId(string OwnerId)
+        public async Task<List<PlantDTO>> GetAllPlantsByUserId(string OwnerId,string token)
         {
             using var httpResponseMessage =
               await _httpClient.GetAsync(URL + RESOURCE + "/User/?OwnerId=" + OwnerId);

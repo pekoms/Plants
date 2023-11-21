@@ -30,6 +30,8 @@ namespace Plants.Api.Services
 
         public async Task<List<PlantRecord>> GetAllPlantRecordsByPlantId(string plantId) =>
            await _plantsRecords.Find(m => m.PlantId == plantId).ToListAsync();
-
+        public async Task<List<PlantRecord>> GetAllPlantsNominated(string userId) =>
+          await _plantsRecords.Find(m => m.UserId != userId && m.IsNominated==true).ToListAsync();
     }
 }
+

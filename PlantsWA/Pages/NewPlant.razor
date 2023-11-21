@@ -3,9 +3,9 @@
 @using Plants.Api.Domain.Dtos
 @using Plants.WA.Services
 @using Plants.WA.Shared
-
-
+@inject IJSRuntime jsr
 @inject NavigationManager NavigationManager
+
 <NavMenu />
 <h3>NewPlantRecord</h3>
 
@@ -120,12 +120,12 @@
 
 
 @code {
-   
+
 
     private string Nombre { get; set; }
     private string? Foto { get; set; }
     private string? FechaLlegadaCasa { get; set; }
-               
+
     //private string? Familia { get; set; }
     //private string? Origen { get; set; }
     //private string? Caracteristicas { get; set; }
@@ -145,6 +145,14 @@
     private string? Cuidados { get; set; }
 
     private bool spinner = false;
+    private string token;
+
+    protected override async Task OnInitializedAsync()
+    {
+        token = await jsr.InvokeAsync<string>("localStorage.getItem", "jwtToken");
+    }
+
+
 
     private async Task HandleFileChange(InputFileChangeEventArgs e)
     {

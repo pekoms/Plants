@@ -10,9 +10,9 @@ namespace Plants.WA.Pages
 
 
 
-        public async Task CrearPlantRecord(PlantRecordDTO createPlant)
+        public async Task CrearPlantRecord(PlantRecordDTO createPlant,string token)
         {
-            var response = IplantServiceRecord.Create(createPlant);
+            var response = IplantServiceRecord.Create(createPlant,token);
         }
     }
 }

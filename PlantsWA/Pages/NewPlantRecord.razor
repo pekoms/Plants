@@ -3,6 +3,8 @@
 @using Plants.WA.Services
 @using Plants.WA.Shared
 @inject NavigationManager NavigationManager
+@inject IJSRuntime jsr
+
 <NavMenu />
 <h3>NewPlantDiary</h3>
 <form>
@@ -51,6 +53,7 @@
     public List<PlantDTO> plants { get; set; } = new List<PlantDTO>();
 
     private string? Foto { get; set; }
+    private string token;
 
     [Inject]
     public IPlantRecordService PlantRecordService { get; set; }
@@ -60,7 +63,8 @@
 
     protected override async Task OnInitializedAsync()
     {
-        plants = await PlantService.GetPlantByPlantId(Id);
+        token = await jsr.InvokeAsync<string>("localStorage.getItem", "jwtToken");
+        plants = await PlantService.GetPlantByPlantId(Id,token);
         UserId = plants.FirstOrDefault().OwnerId;    
     }
 
@@ -95,7 +99,7 @@
             ContentImage=Foto
         };
 
-       await CrearPlantRecord(createPlantRecord);
+       await CrearPlantRecord(createPlantRecord,token);
 
        
         spinner = true;

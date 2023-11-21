@@ -3,6 +3,8 @@
 @using Plants.WA.Services
 @using Plants.WA.Shared
 @inject NavigationManager NavigationManager
+@inject IJSRuntime jsr
+
 <NavMenu />
 <h3>Plants</h3>
 @if (spinner == true)
@@ -66,12 +68,13 @@
     public IPlantRecordService PlantRecordService { get; set; }
     private string IsFertilisedTxt = "";
     private string IsWateredTxt = "";
-
+    private string token;
 
 
     protected override async Task OnInitializedAsync()
     {
-        plants = await PlantRecordService.GetAllPlantsByPlantId(Id);
+        token = await jsr.InvokeAsync<string>("localStorage.getItem", "jwtToken");
+        plants = await PlantRecordService.GetAllPlantsByPlantId(Id,token);
     }
 
     private void NuevoRegistro()
@@ -86,7 +89,7 @@
     private async void Eliminar(string recordId,string plantId)
     {
         spinner = true;
-        await PlantRecordService.Delete(recordId);       
+        await PlantRecordService.Delete(recordId,token);       
         await Task.Delay(TimeSpan.FromSeconds(5));
         spinner = false;
         NavigationManager.NavigateTo($"PlantRecord/{plantId}"

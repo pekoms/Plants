@@ -11,9 +11,9 @@ namespace Plants.WA.Pages
 
 
 
-        public async Task ActualizaPlantRecord(PlantRecordDTO createPlant)
+        public async Task ActualizaPlantRecord(PlantRecordDTO createPlant,string token)
         {
-            var response = IplantServiceRecord.Update(createPlant);
+            var response = IplantServiceRecord.Update(createPlant, token);
         }
     }
 }

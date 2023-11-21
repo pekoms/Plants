@@ -50,8 +50,7 @@ namespace Plants.Api.Controllers
             await _plantRecordService.Create(newPlantRecord);
             return Ok(newPlantRecord);
         }
-
-        // PUT: PlantRecordController/Edit/5
+        
         [AuthorizationAttributePut("{id}", Name = "UpdateDetailedPlantRecord")]
         public async Task<ActionResult> UpdateDetailedPlantRecord(string id, [FromBody] PlantRecord PlantRecord, CancellationToken cancellationToken)
         {
@@ -59,8 +58,7 @@ namespace Plants.Api.Controllers
 
             return Ok(PlantRecord);
         }
-
-        // Delete: PlantRecordController/Delete/5
+        
         [AuthorizationAttributeDelete("{id}", Name = "DeleteDetailedPlantRecord")]
         public async Task<ActionResult> Delete(string id)
         {
@@ -68,13 +66,20 @@ namespace Plants.Api.Controllers
 
             return Ok();
         }
-
-        //GET: UserController/Details/5
+        
 
         [AuthorizationAttributeGet("Plant")]
         public async Task<ActionResult<PlantRecord>> GetDetailedPlantByPlantId(string plantId, CancellationToken cancellationToken)
         {
             var plants = await _plantRecordService.GetAllPlantRecordsByPlantId(plantId); ;
+
+            return Ok(plants);
+        }
+
+        [AuthorizationAttributeGet("PlantsNominated")]
+        public async Task<ActionResult<PlantRecord>> GetAllPlantsNominated(string userId, CancellationToken cancellationToken)
+        {
+            var plants = await _plantRecordService.GetAllPlantsNominated(userId); ;
 
             return Ok(plants);
         }

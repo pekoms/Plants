@@ -7,7 +7,7 @@ namespace Plants.WA.Services
     {
         public Task<TokenDTO> Login(UserDTO loginUser);
         public Task Create(UserDTO loginUser);
-        public Task<List<PlantDTO>> GetAllPlantsByUserId(string OwnerId);
+        public Task<List<PlantDTO>> GetAllPlantsByUserId(string OwnerId,string tokeno);
     }
 }
 

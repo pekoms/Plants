@@ -6,6 +6,8 @@ namespace Plants.Api.Services
     {
         public Task<List<PlantRecord>> GetAllPlantRecords();
         public Task<List<PlantRecord>> GetAllPlantRecordsByPlantId(string plantId);
+        public Task<List<PlantRecord>> GetAllPlantsNominated(string userId);
+
 
         public Task<PlantRecord> Get(string id);
         public Task Create(PlantRecord newPlantRecord);

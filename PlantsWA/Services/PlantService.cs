@@ -1,4 +1,5 @@
 ﻿using Plants.Api.Domain.Dtos;
+using System.Net.Http.Headers;
 using System.Text;
 using System.Text.Json;
 using static System.Net.Mime.MediaTypeNames;
@@ -19,8 +20,9 @@ namespace Plants.WA.Services
             _httpClient = httpClient;
         }
 
-        public async Task Create(PlantDTO createPlantRecord)
+        public async Task Create(PlantDTO createPlantRecord,string token)
         {
+            _httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token);
             var todoItemJson = new StringContent(JsonSerializer.Serialize<PlantDTO>(createPlantRecord), Encoding.UTF8,
             Application.Json);
 
@@ -30,8 +32,9 @@ namespace Plants.WA.Services
             httpResponseMessage.EnsureSuccessStatusCode();
         }
 
-        public async Task<List<PlantDTO>> GetPlantByPlantId(string Id)
+        public async Task<List<PlantDTO>> GetPlantByPlantId(string Id,string token)
         {
+            _httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token);
             using var httpResponseMessage =
                 await _httpClient.GetAsync(URL + RESOURCE);
 
@@ -41,8 +44,9 @@ namespace Plants.WA.Services
 
             return result;
         }
-        public async Task GetPlantByUserId(string Id)
+        public async Task GetPlantByUserId(string Id, string token)
         {
+            _httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token);
             using var httpResponseMessage =
                 await _httpClient.GetAsync(URL + RESOURCE);
 
@@ -50,8 +54,9 @@ namespace Plants.WA.Services
 
 
         }
-        public async Task<List<PlantDTO>> GetAllPlantsByUserId(string OwnerId)
+        public async Task<List<PlantDTO>> GetAllPlantsByUserId(string OwnerId,string token)
         {
+            _httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token);
             using var httpResponseMessage =
               await _httpClient.GetAsync(URL + RESOURCE + "/User/?OwnerId=" + OwnerId);
 

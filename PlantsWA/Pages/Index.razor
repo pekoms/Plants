@@ -26,29 +26,30 @@
                         <div class="text-center" style="margin-top: 1rem;">
                             <button type="button" class="btn btn-primary" @onclick="IniciarSesion">Iniciar sesión</button>
                             <button type="button" class="btn btn-secondary" @onclick="Registrarse">Registrarse</button>
-                        </div>                      
+                        </div>
+@* 
+                        @if (invalidInput)
+                        {
+                            <div class="card text-bg-danger mb-3" style="max-width: 18rem;">
+                                <div class="card-header">Atención</div>
+                                <div class="card-body">
+                                    <p class="card-text">Correo electrónico o contraseña incorrectos 2.</p>
+                                </div>
+                            </div>
+                        }
+                        @if (wrongLogin)
+                        {
+                            <div class="card text-bg-danger mb-3" style="max-width: 18rem;">
+                                <div class="card-header">Atención</div>
+                                <div class="card-body">
+                                    <p class="card-text">Correo electrónico o contraseña incorrectos.</p>
+                                </div>
+                            </div>
+                        } *@
                     </form>                
                   
                 </div>
-                @if (invalidInput)
-                {
-
-                    <div class="card text-bg-warning mb-3" style="max-width: 18rem;">
-                        <div class="card-header">Atención</div>
-                        <div class="card-body">
-                            <p class="card-text">Los campos introducidos no son correctos.</p>
-                        </div>
-                    </div>
-                }
-                @if (wrongLogin)
-                {
-                    <div class="card text-bg-danger mb-3" style="max-width: 18rem;">
-                        <div class="card-header">Atención</div>
-                        <div class="card-body">
-                            <p class="card-text">Correo electrónico o contraseña incorrectos.</p>
-                        </div>
-                    </div>
-                }
+               
             </div>
         </div>
     </div>
@@ -57,16 +58,18 @@
 
 
 @code {
-
+    private bool invalidInput { get; set; } = false;
+    private bool wrongLogin { get; set; } = false;
     [Inject]
     public IUserService UserService { get; set; }
+    [Inject]
+    ModalService ModalService { get; set; } = default!;
     [CascadingParameter]
     public string userInfo { get; set; }
     private string inputEmail { get; set; }
     private string inputPassword { get; set; }
 
-    private bool invalidInput { get; set; } = false;
-    private bool wrongLogin { get; set; } = false;
+   
     private TokenDTO jwtToken { get; set; }
 
 
@@ -87,20 +90,41 @@
                 // Iniciar sesión exitosamente
                 
                 await jsr.InvokeVoidAsync("localStorage.setItem", "jwtToken", jwtToken.token);
+                await jsr.InvokeVoidAsync("localStorage.setItem", "name", loginUser.Name);
+
                 NavigationManager.NavigateTo("main");
             }
             else
             {
-                // Mostrar mensaje de error
-                Console.WriteLine("Correo electrónico o contraseña incorrectos.");
-                wrongLogin = true;
+                //Todo:Sacar a componente
+                var modalOption = new ModalOption
+                    {
+                        Title = "Modal title",
+                        Message = "Correo electrónico o contraseña incorrectos",
+                        Type = ModalType.Warning,
+                    };
+
+                await ModalService.ShowAsync(modalOption);
+                
             }
            
         }
         else
         {
-            invalidInput = true;
+            //Todo:Sacar a componente
+            var modalOption = new ModalOption
+                {
+                    Title = "Modal title",
+                    Message = "Campos usuario o contraseña vacio",
+                    Type = ModalType.Warning,
+                };
+
+            await ModalService.ShowAsync(modalOption);
+            
         }
+
+      
+      
     }
 
     private void Registrarse()
