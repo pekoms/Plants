@@ -11,5 +11,8 @@ namespace Plants.Api.Domain.Entities
         [BsonRepresentation(MongoDB.Bson.BsonType.String)]
         public string? Password { get; set; }
 
+        [BsonRepresentation(MongoDB.Bson.BsonType.String)]
+        public string? Email { get; set; }
+
     }
 }

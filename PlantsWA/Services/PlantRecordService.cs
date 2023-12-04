@@ -94,7 +94,7 @@ namespace Plants.WA.Services
         {
             _httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token);
             using var httpResponseMessage =
-             await _httpClient.GetAsync(URL + RESOURCE + "/Plant/?plantId=" + UserId);
+             await _httpClient.GetAsync(URL + RESOURCE + "/PlantsNominated?userId=" + UserId);
 
             httpResponseMessage.EnsureSuccessStatusCode();
             var jsonString = await httpResponseMessage.Content.ReadAsStringAsync();

@@ -2,70 +2,122 @@
 @using Plants.Api.Domain.Dtos
 @using Plants.WA.Services
 @using Plants.WA.Shared
+@using System.ComponentModel.DataAnnotations;
 @inject NavigationManager NavigationManager
 @inject IJSRuntime jsr
 
-<NavMenu />
-<h3>NewPlantDiary</h3>
-<form>
-    <div class="form-group">
-        <label>
-            <input type="checkbox" @bind="@IsFertilised" /> Se ha fertilizado
-        </label>
-    </div>
-    <div class="form-group">
-        <label>
-            <input type="checkbox" @bind="@IsWatered" /> Se ha regado
-        </label>
-    </div>
-    <div class="form-group">
-        <label for="inputEmail">Foto:</label>
-        <InputFile OnChange="HandleFileChange" />
-        @if (Foto != null)
+<MudText Align="Align.Center" Typo="Typo.h4">Crear Registro Planta</MudText>
+<MudItem xs="6" sm="6" md="6" lg="6" xl="6" xxl="6" Class="mx-auto pa-6">
+    <MudCard Elevation="3">
+<MudFileUpload T="IBrowserFile" Accept=".png, .jpg" FilesChanged="UploadFiles2" MaximumFileCount="100">
+    <ButtonTemplate>
+        <MudButton HtmlTag="label"
+                   Variant="Variant.Filled"
+                   Color="Color.Primary"
+                   StartIcon="@Icons.Material.Filled.CloudUpload"
+                   for="@context.Id">
+            Only image files
+        </MudButton>
+    </ButtonTemplate>
+</MudFileUpload>
+        @if (files != null)
         {
-            <h4>Imagen cargada:</h4>
-            <img src="@Foto" alt="Imagen cargada" />
+            <MudList>
+                @foreach (var file in files)
+                {
+                    <MudListItem Icon="@Icons.Material.Filled.AttachFile">
+                        @file.Name <code>@file.Size bytes</code>
+                    </MudListItem>
+                }
+            </MudList>
         }
-    </div>
-    <div class="form-group">
-        <label for="Observation">Observation:</label>
-        <textarea class="form-control" id="Observation" rows="5" @bind="@Observation"></textarea>
-    </div>
-    <button type="button" class="btn btn-primary" @onclick="@Enviar">Enviar</button>
+
+    <EditForm Model="@model" OnValidSubmit="OnValidSubmit">
+        <DataAnnotationsValidator />
+       
+           
+                <MudCardContent>
+                    <MudCheckBox Label="Fue regada?" @bind-Checked="model.IsWatered" Color="Color.Primary"></MudCheckBox>
+                    <MudCheckBox Label="Fue fertilizada?" @bind-Checked="model.IsFertilised" Color="Color.Primary"></MudCheckBox>
+                    <MudTextField Variant="Variant.Outlined" Label="Observaciones" HelperText="Observaciones"
+                    @bind-Value="model.Observation" For="@(() => model.Observation)" />
+                    @*  <MudTextField Label="Password" HelperText="Introduzca su contraseña" Class="mt-3"
+                @bind-Value="model.Password" For="@(() => model.Password)" /> *@
+
+                </MudCardContent>
+                <MudCardActions>
+                    <MudButton OnClick="@(()=>Crear())" ButtonType="ButtonType.Submit" Variant="Variant.Filled" Color="Color.Secondary" Class="mx-2">Crear</MudButton>
+                <MudButton OnClick="@(()=>Resetear())" ButtonType="ButtonType.Submit" Variant="Variant.Filled" Color="Color.Secondary" Class="mx-2">Reset</MudButton>
+                </MudCardActions>
+        
+    </EditForm>
+    </MudCard>
+</MudItem>
+<MudContainer Class="d-flex justify-end flex-grow-1 gap-4 mt-1">
+    <MudFab Color="Color.Tertiary" StartIcon="@Icons.Material.Filled.ArrowBack" Size="Size.Large" OnClick="@(()=>BackToRecord())" />        
+    <LoggoutBtn></LoggoutBtn>
+</MudContainer>
+    @if (success == true)
+    {
+        <MudAlert Severity="Severity.Success">Se ha autenticado actualizado el registro correctamente</MudAlert>
+    }
+    @if (error == true)
+    {
+        <MudAlert Severity="Severity.Error" Variant="Variant.Filled">Ha ocurrido un error inesperado. Intentelo mas tarde</MudAlert>
+    }
+    @if (loading)
+    {
+        <MudProgressLinear Color="Color.Secondary" Indeterminate="true" Class="my-7" />
+    }
     @if (spinner == true)
     {
-        <button class="btn btn-primary" type="button" disabled>
-            <span class="spinner-grow spinner-grow-sm" role="status" aria-hidden="true"></span>
-            Creando Registro...
-        </button>
+        <MudProgressLinear Color="Color.Secondary" Indeterminate="true" Class="my-7" />
+
     }
-</form>
+
 
 @code {
     [Parameter]
     public string Id { get; set; }
-    private string? Observation { get; set; }
-    public bool IsWatered { get; set; }
-    public bool IsFertilised { get; set; }
-    private bool spinner = false;
-    private string UserId { get; set; }
+
     public List<PlantRecordDTO> plantsRecord { get; set; } = new List<PlantRecordDTO>();
     public List<PlantDTO> plants { get; set; } = new List<PlantDTO>();
-
+    public PlantRecordCreateForm model { get; set; } = new PlantRecordCreateForm();
     private string? Foto { get; set; }
     private string token;
+    private string _ownerId;
+
+    private bool loading = false;
+    private bool error = false;
+    private bool success = false;
+    private bool spinner = false;
+    IList<IBrowserFile> files = new List<IBrowserFile>();
 
     [Inject]
     public IPlantRecordService PlantRecordService { get; set; }
     [Inject]
     public IPlantService PlantService { get; set; }
 
+    public class PlantRecordCreateForm
+    {
+        [Required]
+        public string ContentImage { get; set; }
+
+        [Required]
+        public string Observation { get; set; }
+        [Required]
+        public bool IsWatered { get; set; }
+
+        [Required]
+        public bool IsFertilised { get; set; }
+    }
 
     protected override async Task OnInitializedAsync()
     {
-        token = await jsr.InvokeAsync<string>("localStorage.getItem", "jwtToken");
-        plants = await PlantService.GetPlantByPlantId(Id,token);
-        UserId = plants.FirstOrDefault().OwnerId;    
+
+        token = await jsr.InvokeAsync<string>("localStorage.getItem", "jwtToken");  
+        _ownerId = await jsr.InvokeAsync<string>("localStorage.getItem", "name");
+
     }
 
     private async Task HandleFileChange(InputFileChangeEventArgs e)
@@ -87,26 +139,57 @@
         }
     }
 
-    private async void Enviar()
+    private async void Crear()
     {
-        var createPlantRecord = new PlantRecordDTO
+        try
         {
-            PlantId=Id,
-            Observation=Observation,
-            IsWatered=IsWatered,
-            IsFertilised = IsFertilised,
-            UserId = plants.FirstOrDefault().OwnerId,
-            ContentImage=Foto
-        };
+            var createPlantRecord = new PlantRecordDTO
+                {
+                    PlantId = Id,
+                    Observation = model.Observation,
+                    IsWatered = model.IsWatered,
+                    IsFertilised = model.IsFertilised,
+                    UserId = _ownerId,
+                    ContentImage = Foto
+                };
 
-       await CrearPlantRecord(createPlantRecord,token);
+            await CrearPlantRecord(createPlantRecord, token);
 
-       
-        spinner = true;
-        await Task.Delay(TimeSpan.FromSeconds(3));
-        spinner = false;
 
+            spinner = true;
+            await Task.Delay(TimeSpan.FromSeconds(3));
+            spinner = false;
+
+            NavigationManager.NavigateTo($"PlantRecord/{Id}");
+        }catch(Exception ex)
+        {
+
+        }
+
+
+    }
+    private async void Resetear()
+    {
+        model.IsFertilised = false;
+        model.Observation = string.Empty;
+
+        files.Clear();
+
+    }
+    private async void BackToRecord()
+    {
         NavigationManager.NavigateTo($"PlantRecord/{Id}");
+    }
 
+
+    private void UploadFiles2(IBrowserFile file)
+    {
+        files.Add(file);
+        //TODO upload the files to the server
+    }
+    private void OnValidSubmit(EditContext context)
+    {
+        success = true;
+        StateHasChanged();
     }
 }

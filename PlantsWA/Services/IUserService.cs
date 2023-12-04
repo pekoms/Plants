@@ -6,7 +6,7 @@ namespace Plants.WA.Services
     public interface IUserService
     {
         public Task<TokenDTO> Login(UserDTO loginUser);
-        public Task Create(UserDTO loginUser);
+        public Task<HttpResponseMessage> Create(UserDTO loginUser);
         public Task<List<PlantDTO>> GetAllPlantsByUserId(string OwnerId,string tokeno);
     }
 }

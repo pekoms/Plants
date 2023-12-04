@@ -1,0 +1,16 @@
+﻿@using Plants.WA.Services;
+@inject NavigationManager NavigationManager
+@inject SharedStateService SharedState;
+
+<MudFab Color="Color.Tertiary" StartIcon="@Icons.Material.Filled.ExitToApp" Size="Size.Large" OnClick="@(()=>Logout())" />
+
+
+@code {
+    private async void Logout()
+    {
+        await jsr.InvokeAsync<string>("localStorage.removeItem", "jwtToken");
+        await jsr.InvokeAsync<string>("localStorage.removeItem", "name");
+        SharedState.ActualizarValor(false);
+        NavigationManager.NavigateTo("/");
+    }
+}

@@ -8,5 +8,7 @@ namespace Plants.Domain.Domain.Dtos
         public string? Name { get; set; }
         [JsonPropertyName("password")]
         public string? Password { get; set; }
+        [JsonPropertyName("email")]
+        public string? Email { get; set; }
     }
 }

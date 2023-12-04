@@ -2,72 +2,77 @@
 @using Plants.Api.Domain.Dtos
 @using Plants.WA.Services
 @using Plants.WA.Shared
+@using System.ComponentModel.DataAnnotations;
 @inject NavigationManager NavigationManager
 @inject IJSRuntime jsr
 
-<NavMenu />
-<h3>UpdatePlantDiary</h3>
-<div class="row">
+
     
+    <MudText Align="Align.Center" Typo="Typo.h4">Actualizar Planta</MudText>
+
+ 
 
     @if (plant == null )
     {
-        <p>Cargando datos...</p>
-    }
+        <MudProgressLinear Color="Color.Secondary" Indeterminate="true" Class="my-7" />
+    }   
     else
     {
                  
-            <div class="col-sm-4">
-                <div class="card">
-                    <div class="card-body">
-                        <input type="checkbox" checked=@plant.IsFertilised @onchange="e => UpdateCheckboxValue(e, ref IsWatered)" /> Se ha fertilizado
-                        <input type="checkbox" checked=@plant.IsWatered @onchange="e => UpdateCheckboxValue(e, ref IsFertilised)" /> Se ha regado
-                        <div class="form-group">
-                            <label for="inputEmail">Foto:</label>
-                            <InputFile OnChange="HandleFileChange" />
-                            @if (plant.ContentImage != null)
-                            {
-                                <h4>Imagen cargada:</h4>
-                            <img  src="@plant.ContentImage" alt="Imagen cargada" />
-                            }
-                        </div>
-                        <div class="form-group">
-                            <label for="Observation">Observation:</label>
-                            <textarea class="form-control" id="Observation" rows="5" @bind="@Observation">@plant.Observation</textarea>
-                        </div>
-                        
-                    </div>
-                </div>
-            </div>
-        
+            <EditForm Model="@model" OnValidSubmit="OnValidSubmit">
+        <DataAnnotationsValidator />
+        <MudItem xs="6" sm="6" md="6" lg="6" xl="6" xxl="6" Class="mx-auto pa-6">                        
+                <MudCard Elevation="3">
+                <MudCardMedia Image="@model.ContentImage" Height="300" />
+                    <MudCardContent>                        
+                        <MudCheckBox Label="Fue regada?" @bind-Checked="model.IsWatered" Color="Color.Primary"></MudCheckBox>
+                    <MudCheckBox Label="Fue fertilizada?" @bind-Checked="model.IsFertilised" Color="Color.Primary"></MudCheckBox>
+                    <MudTextField Variant="Variant.Outlined" Label="Observaciones" HelperText="Observaciones"
+                        @bind-Value="model.Observation" For="@(() => model.Observation)" />
+                       @*  <MudTextField Label="Password" HelperText="Introduzca su contraseña" Class="mt-3"
+                        @bind-Value="model.Password" For="@(() => model.Password)" /> *@
+
+                    </MudCardContent>
+                    <MudCardActions>                        
+                        <MudButton OnClick="@(()=>Actualizar())" ButtonType="ButtonType.Submit" Variant="Variant.Filled" Color="Color.Secondary" Class="mx-2">Actualizar</MudButton>
+                    </MudCardActions>
+                </MudCard>               
+        </MudItem>
+    </EditForm>
+    <MudContainer Class="d-flex justify-end flex-grow-1 gap-4 mt-1">
+        <MudFab Color="Color.Tertiary" StartIcon="@Icons.Material.Filled.ArrowBack" Size="Size.Large" OnClick="@(()=>BackToRecord())" />
+        <LoggoutBtn></LoggoutBtn>
+    </MudContainer>
+    @if (success == true)
+    {
+        <MudAlert Severity="Severity.Success">Se ha autenticado actualizado el registro correctamente</MudAlert>
     }
+    @if (error == true)
+    {
+        <MudAlert Severity="Severity.Error"  Variant="Variant.Filled">Ha ocurrido un error inesperado. Intentelo mas tarde</MudAlert>
+    }
+    @if (loading)
+    {
+        <MudProgressLinear Color="Color.Secondary" Indeterminate="true" Class="my-7" />
+    }
+    @if (spinner == true)
+    {
+        <MudProgressLinear Color="Color.Secondary" Indeterminate="true" Class="my-7" />
 
-
-</div>
-        <button type="button" class="btn btn-primary" @onclick="@Actualizar">Actualizar</button>
-@if (spinner == true)
-{
-    <button class="btn btn-primary" type="button" disabled>
-        <span class="spinner-grow spinner-grow-sm" role="status" aria-hidden="true"></span>
-        Actualizando Registro...
-    </button>
-}
-
+    }
+    }
 
 @code {
     [Parameter]
     public string Id { get; set; }
     [Parameter]
-
     public PlantRecordDTO plant { get; set; } = new PlantRecordDTO();
-
-    private string? Observation { get; set; }
-    private string UserId { get; set; }
-    public bool IsWatered;
-    public bool IsFertilised;
-    private string? Foto { get; set; }
+    public UpdatePlantRecordForm model { get; set; } = new UpdatePlantRecordForm();
 
     private bool spinner = false;
+    private bool loading = false;
+    private bool error = false;
+    private bool success = false;
 
     private string token;
     [Inject]
@@ -76,60 +81,74 @@
     protected override async Task OnInitializedAsync()
     {
         token = await jsr.InvokeAsync<string>("localStorage.getItem", "jwtToken");
+        
         plant = await PlantRecordService.Get(Id,token);
         if ( plant != null){
-            Observation = plant.Observation;
-            UserId = plant.UserId;
+            model.Observation = plant.Observation;
+            model.ContentImage = plant.ContentImage;
+            model.IsWatered = plant.IsWatered;
+            model.IsFertilised = plant.IsFertilised;
         }       
     }
 
-    private void UpdateCheckboxValue(ChangeEventArgs e, ref bool checkboxValue)
+    public class UpdatePlantRecordForm
     {
-        checkboxValue = (bool)e.Value;
+        [Required]            
+        public string ContentImage { get; set; }
+
+        [Required]            
+        public string Observation { get; set; }
+        [Required]            
+        public bool IsWatered { get; set; }
+
+        [Required]            
+        public bool IsFertilised { get; set; }
     }
 
-    private async Task HandleFileChange(InputFileChangeEventArgs e)
-    {
-        var file = e.File;
-
-        if (file != null)
-        {
-            // Leer el contenido de la imagen
-            var buffer = new byte[file.Size];
-            await file.OpenReadStream().ReadAsync(buffer);
-
-            // Convertir los datos de la imagen a base64 para mostrarla
-            Foto = $"data:{file.ContentType};base64,{Convert.ToBase64String(buffer)}";
-        }
-        else
-        {
-            Foto = null;
-        }
-    }
     private async void Actualizar()
     {
-        if (Foto == null) { Foto=plant.ContentImage;};
 
-        var createPlantRecord = new PlantRecordDTO
+        try
         {
-            Id=plant.Id,            
-            PlantId=plant.PlantId,
-            UserId = plant.UserId,
-            Observation=Observation,
-            IsWatered =IsWatered,
-            IsFertilised = IsFertilised,
-            ContentImage= Foto
+            var updatePlantRecord = new PlantRecordDTO
+                {
+                    Id = plant.Id,
+                    PlantId = plant.PlantId,
+                    UserId = plant.UserId,
+                    Observation = model.Observation,
+                    IsWatered = model.IsWatered,
+                    IsFertilised = model.IsFertilised,
+                    ContentImage=plant.ContentImage,
+                    
 
-        };
+                };
 
-       await ActualizaPlantRecord(createPlantRecord,token);
+            await ActualizaPlantRecord(updatePlantRecord, token);
 
-       
-        spinner = true;
-        await Task.Delay(TimeSpan.FromSeconds(3));
-        spinner = false;
+            spinner = true;
+            await Task.Delay(TimeSpan.FromSeconds(3));
+            spinner = false;
 
-        NavigationManager.NavigateTo($"PlantRecord/{plant.PlantId}");
+            NavigationManager.NavigateTo($"PlantRecord/{plant.PlantId}");
+        }
+        catch(Exception ex)
+        {
+            error = true;
+        }
+
 
     }
-}
+
+    private async void BackToRecord()
+    {
+        NavigationManager.NavigateTo($"PlantRecord/{Id}");
+    }
+
+        private void OnValidSubmit(EditContext context)
+        {
+            success = true;
+            StateHasChanged();
+        }
+
+
+    }

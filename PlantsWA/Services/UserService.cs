@@ -20,15 +20,15 @@ namespace Plants.WA.Services
             _httpClient = httpClient;
         }
 
-        public async Task Create(UserDTO loginUser)
+        public async Task<HttpResponseMessage> Create(UserDTO loginUser)
         {
             var todoItemJson = new StringContent(JsonSerializer.Serialize<UserDTO>(loginUser), Encoding.UTF8,
             Application.Json);
 
             using var httpResponseMessage =
-                await _httpClient.PostAsync(URL + RESOURCE, todoItemJson);
+                await _httpClient.PostAsync(URL + RESOURCE+"dshfsdkj", todoItemJson);
 
-            httpResponseMessage.EnsureSuccessStatusCode();
+            return httpResponseMessage.EnsureSuccessStatusCode();
         }
 
         public async Task<TokenDTO> Login(UserDTO loginUser)

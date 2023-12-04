@@ -5,34 +5,43 @@
 @inject NavigationManager NavigationManager
 @inject IJSRuntime jsr
 
-<NavMenu />
-<div class="row">
-    <button type="button" class="btn btn btn-success" @onclick="@NuevaPlanta">Nueva Planta</button>
 
+
+    
+<MudText Align="Align.Center" Typo="Typo.h4">Mis Plantas</MudText>
+<MudPaper Class="pa-16 ma-2" Elevation="3">
     @if (plants == null && plants.Any())
     {
-        <p>Cargando datos...</p>
+        <MudProgressLinear Color="Color.Secondary" Indeterminate="true" Class="my-7" />
     }else{
+
         @foreach (var data in plants)
-        {
-            <div class="col-sm-4">
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">@data.Nombre</h5>
-                        <p class="card-text">@data.Especie</p>
-                        @if (data.Foto != null)
-                        {                            
-                            <img src="@data.Foto" alt="Imagen cargada" />
-                        }
-                        <button @onclick="()=> Observar(data.Id)" value="Send Name: @data.Id" type="button" class="btn btn-primary">Mas detalles</button>
-                    </div>
-                </div>
-            </div>
+        {      
+          <MudStack Justify="Justify.Center" Row="true">
+          <MudCard Class="mx-auto pa-6">
+            <MudCardMedia Image="@data.Foto" Height="300" />
+            <MudCardContent>
+                <MudText Typo="Typo.h5">@data.Nombre</MudText>
+                <MudText Typo="Typo.body2">@data.Especie.</MudText>                
+            </MudCardContent>
+            <MudCardActions>
+                <MudButton OnClick="@(()=>Observar(data.Id))" Variant="Variant.Text" Color="Color.Primary">Observar</MudButton>                
+            </MudCardActions>
+        </MudCard>
+        </MudStack>
         }
+        <MudContainer Class="d-flex justify-start">
+            <MudFab OnClick="@(()=>NuevaPlanta())" Color="Color.Secondary" StartIcon="@Icons.Material.Filled.Add" Size="Size.Large" />
+        </MudContainer>
     }
+    
+    </MudPaper>
+<MudContainer Class="d-flex justify-end flex-grow-1 gap-4 mt-1">
+   <LoggoutBtn></LoggoutBtn>
+</MudContainer>
   
     
-</div>
+
 
 @code {
     [Parameter]

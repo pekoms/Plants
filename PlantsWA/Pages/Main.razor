@@ -2,77 +2,106 @@
 @using Plants.Api.Domain.Dtos;
 @using Plants.WA.Services;
 @using Plants.WA.Shared
+@inject NavigationManager NavigationManager
 
-
-<NavMenu />
-<div class="container d-flex align-items-center justify-content-center" style="height: 100vh;">
-    
-    <div class="card text-center">
-        <h2>Plantas del dia</h2>
-        <div class="card-body">
-             @if (plants.Any()==false)
-        {
-                <p>Cargando datos...</p>
+<MudText Align="Align.Center" Typo="Typo.h4">Plantas del día</MudText>
+<MudPaper Class="pa-16 ma-2" Elevation="3">    
+    <MudCarousel Class="mud-width-full" Style="height:600px;" @ref="_carousel" @bind-SelectedIndex="index" ShowArrows="@arrows" ShowBullets="@bullets" AutoCycle="@autocycle" TData="PlantRecordDTO">
+        @{            
+            @if(!_source.Any())
+            {
+                <MudCarouselItem Transition="transition" Color="@Color.Secondary" Class="mx-auto my-auto">
+                  
+                    <MudProgressLinear Color="Color.Primary" Size="Size.Large" Indeterminate="true" />
+             </MudCarouselItem>
             }
             else
-            {               
-                    
-                <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img class="d-block w-100" src="..." alt=@plant.Id>
-                        </div>                      
-                    </div>                   
-                    <a class="carousel-control-next" role="button" data-slide="next" @onclick="()=>Like(plant)">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Next</span>
-                    </a>
-                </div>
-            }
-        </div>
-    </div>
-</div>
+            {
+                @foreach (var item in _source)
+                {                                        
+                    <MudCarouselItem Transition="transition" Color="@Color.Secondary">
+                        <div class="d-flex flex-column flex-grow-1 gap-4" style="height:100%;">
+                            <MudImage Src="@item.ContentImage" Width="332" Height="250" Alt="" Elevation="25" Class="mx-auto my-auto rounded-lg ma-4" />
+                            <MudText Class="mx-auto my-auto">@item.Id</MudText>                                                            
+                        </div>
+                    </MudCarouselItem>                    
+                }
+            }                       
+        }       
+    </MudCarousel>
+    <MudPaper  Class="d-flex justify-center flex-grow-1 gap-4 ma-2" Elevation="0">
+        <MudFab Color="Color.Warning" StartIcon="@Icons.Material.Filled.ThumbDown" Size="Size.Large" OnClick="@(()=>Dislike())" />
+        <MudFab Color="Color.Success" StartIcon="@Icons.Material.Filled.ThumbUp"  Size="Size.Large" OnClick="@(()=>Like())" />
+    </MudPaper>
+</MudPaper>
+<MudContainer Class="d-flex justify-end flex-grow-1 gap-4 mt-1">
+    <LoggoutBtn></LoggoutBtn>
+</MudContainer>
 
 @code {
+    private string token;
+    private string user;
+    public int index = 0;
+    private bool arrows = true;
+    private bool bullets = false;
+    private bool enableSwipeGesture = true;
+    private bool autocycle = false;
+    private Transition transition = Transition.Slide;    
+
     [Inject]
     private IPlantRecordService PlantRecordService { get; set; }
 
-    private List<PlantRecordDTO> plants { get; set; } = new List<PlantRecordDTO>();
-    private PlantRecordDTO plant { get; set; } = new PlantRecordDTO();
-    private string token;
+    private List<PlantRecordDTO> _source { get; set; } = new List<PlantRecordDTO>();
+    private PlantRecordDTO plant { get; set; } = new PlantRecordDTO();  
+    private MudCarousel<PlantRecordDTO> _carousel;    
+    private PlantRecordDTO _currentPlant;
 
 
     protected override async Task OnInitializedAsync()
     {
         token = await jsr.InvokeAsync<string>("localStorage.getItem", "jwtToken");
-        plants = await PlantRecordService.GetAllPlantsByPlantId("f2217c4a-cbf1-40f7-9883-ef89df250823",token);
-        plant = plants.FirstOrDefault();
-    }
+        user = await jsr.InvokeAsync<string>("localStorage.getItem", "name");
 
-    private void Like(PlantRecordDTO plantRecord)
+        _source = await PlantRecordService.GetAllPlantsNominated(user, token);        
+
+        StateHasChanged();
+        await Task.Delay(5000);
+    } 
+
+    private async void Like()
     {
+        var plantRecord = GetFromIndex();
         plantRecord.Votes = plantRecord.Votes +1;
-        PlantRecordService.Update(plantRecord,token);
-        plants.Remove(plantRecord);
-        if (plants.Any())
-        {
-            plant = plants.FirstOrDefault();
-        }
+        await PlantRecordService.Update(plantRecord,token);
+        _source.Remove(plantRecord);  
+        StateHasChanged();
+        await Task.Delay(5000);
     }
-    private void Dislike(PlantRecordDTO plantRecord)
+    private async void Dislike()
     {
+        var plantRecord = GetFromIndex();
         if (plantRecord.Votes >= 1)
         {
             plantRecord.Votes = plantRecord.Votes - 1;
-            PlantRecordService.Update(plantRecord,token);
-        }
+            await PlantRecordService.Update(plantRecord,token);
+        }        
+        _source.Remove(plantRecord); 
+        StateHasChanged();
+        await Task.Delay(5000);
+    }
 
-        
-        plants.Remove(plantRecord);
-        if (plants.Any())
+    private PlantRecordDTO GetFromIndex()
+    {
+        var insideIndex = 0;
+        foreach( var item in _source)
         {
-            plant = plants.FirstOrDefault();
+            if (insideIndex==index)
+            {
+                return item;
+            }
+            insideIndex = ++insideIndex;
         }
-       
+        
+        return null;
     }
 }

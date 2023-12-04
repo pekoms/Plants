@@ -5,58 +5,50 @@
 @inject NavigationManager NavigationManager
 @inject IJSRuntime jsr
 
-<NavMenu />
-<h3>Plants</h3>
-@if (spinner == true)
-{
-    <button class="btn btn-Warning" type="button" disabled>
-        <span class="spinner-grow spinner-grow-sm" role="status" aria-hidden="true"></span>
-        Borrando Registro...
-    </button>
-}
-<form>
-   
-    <div class="form-group">
+<MudText Align="Align.Center" Typo="Typo.h4">Paginas de Plantas</MudText>
+
+
         @if (plants == null && plants.Any())
         {
-            <p>Cargando datos...</p>
+            <MudProgressLinear Color="Color.Secondary" Indeterminate="true" Class="my-7" />
         }
         else
-        {
+{
+      <MudContainer Class="d-flex justify-start">
+        <MudFab OnClick="@(()=>NuevoRegistro())" Color="Color.Secondary" StartIcon="@Icons.Material.Filled.Add" Size="Size.Large" />
+         </MudContainer>
+    <MudPaper Class="d-flex align-center flex-grow-1 gap-4" Elevation="3">
+            
             @foreach (var data in plants)
             {
-                @if (data.IsFertilised) { IsFertilisedTxt = "Si"; } else { IsFertilisedTxt = "No"; }
-                @if (data.IsWatered) { IsWateredTxt = "Si"; } else { IsWateredTxt = "No"; }
-
-                <div class="col-sm-4">
-                    <div class="card">
-                        <div class="card-body">
-                            <p class="card-title"> Se fertilizó:  @IsFertilisedTxt</p>
-                            <p class="card-text"> Se regó: @IsWateredTxt</p>
-                            @if (data.ContentImage != null)
-                            {
-                                <img src="@data.ContentImage" alt="Imagen cargada" />
-                            }
-                            <p class="card-text">Observaciones: @data.Observation</p>
-                            <button type="button" class="btn btn-primary" @onclick="()=>Modificar(data.Id)">Modificar</button>
-                            <button type="button" class="btn btn-warning" @onclick="()=>Eliminar(data.Id,data.PlantId)">Eliminar</button>
-                            @if (spinner == true)
-                            {
-                                <button class="btn btn-Warning" type="button" disabled>
-                                    <span class="spinner-grow spinner-grow-sm" role="status" aria-hidden="true"></span>
-                                    Borrando Registro...
-                                </button>
-                            }
-                        </div>
-                    </div>
-                </div>
-            }
+             <MudStack Justify="Justify.Center" Row="true">
+                  <MudCard Class="mx-auto pa-6">
+                    <MudCardMedia Image="@data.ContentImage" Height="300" />
+                    <MudCardContent>
+                        @* <MudText Typo="Typo.h5"> @IsFertilisedTxt</MudText> *@
+                        <MudText Typo="Typo.body2">@data.Finsert</MudText>
+                    </MudCardContent>
+                    <MudCardActions>
+                        <MudIconButton Icon="@Icons.Material.Outlined.Edit" />
+                        <MudButton OnClick="@(()=>Modificar(data.Id))" Variant="Variant.Text" Color="Color.Surface">Observar</MudButton>
+                        <MudIconButton Icon="@Icons.Material.Outlined.Remove" Color="Color.Inherit" />
+                        <MudButton OnClick="@(()=>Eliminar(data.Id,data.PlantId))" Variant="Variant.Text" Color="Color.Warning">Observar</MudButton>
+                    </MudCardActions>
+                    </MudCard>
+                </MudStack>                                                  
+            }    
+        @if (spinner == true)
+        {
+            <MudAlert Severity="Severity.Success">Borrando Registro...</MudAlert>
+            <MudProgressLinear Color="Color.Secondary" Indeterminate="true" Class="my-7" />
         }
-    </div>
-    
-    <button type="button" class="btn btn-danger btn-lg btn-block" @onclick="NuevoRegistro">Nueva Registro</button>       
-    
-</form>
+       
+        </MudPaper>
+        }
+
+      
+        
+
 
 @code {
     private bool spinner = false;
@@ -65,9 +57,7 @@
     public string? Id { get; set; }
 
     [Inject]
-    public IPlantRecordService PlantRecordService { get; set; }
-    private string IsFertilisedTxt = "";
-    private string IsWateredTxt = "";
+    public IPlantRecordService PlantRecordService { get; set; }    
     private string token;
 
 

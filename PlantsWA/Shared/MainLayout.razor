@@ -1,20 +1,46 @@
-﻿@inherits LayoutComponentBase
+﻿@using Plants.WA.Services;
+@inherits LayoutComponentBase
+@inject SharedStateService SharedState;
 
-<div class="page">
-    <div class="sidebar">        
-            
-    </div>
+<MudDialogProvider />
+<MudSnackbarProvider />
+<MudThemeProvider/>
 
-    <main>
-        <div class="top-row px-4">
-            
-            <link rel="stylesheet" href="../Styles/styles.css" />
-        </div>
+<MudLayout>
+    <MudAppBar Elevation="1">
+        <MudIconButton Icon="@Icons.Material.Filled.Menu" Color="Color.Inherit" Edge="Edge.Start" OnClick="@((e) => DrawerToggle())" />
+        <MudSpacer />
+        <MudIconButton Icon="@Icons.Material.Filled.Nature" Color="Color.Inherit" Edge="Edge.End" />
+    </MudAppBar>
+    <MudDrawer @bind-Open="_drawerOpen" Elevation="2">
+        <MudDrawerHeader>
+            <MudText Typo="Typo.h5" Class="mt-1">Planter</MudText>
+        </MudDrawerHeader>
+        @if (SharedState.ObtenerValor())
+        {
+            <MudNavMenu>
+                <MudText Typo="Typo.h6" Class="px-4">Menu</MudText>
+                    <MudText Typo="Typo.body2" Class="px-4 mud-text-secondary"></MudText>
+                    <MudDivider Class="my-2" />
+                <MudNavLink Href="/main">Votaciones</MudNavLink>
+                <MudNavLink Href="/Plants">Mis Plantas</MudNavLink>                  
+                </MudNavMenu>
+            }
+        
+    </MudDrawer>
+    <MudMainContent>
+        @Body
+    </MudMainContent>
+</MudLayout>
 
-        <article class="content px-4">
-            @Body
-        </article>
-    </main>
-</div>
+@code {
+    bool _drawerOpen = true;
+    public bool _logged=false;    
+    
+    void DrawerToggle()
+    {
+        _drawerOpen = !_drawerOpen;
+    }
+}
 
 

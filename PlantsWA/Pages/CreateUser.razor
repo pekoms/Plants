@@ -1,110 +1,115 @@
 ﻿@page "/registration"
 @using Microsoft.AspNetCore.Http
 @using Plants.Api.Domain.Dtos
-@using Plants.WA.Services
-@using Plants.WA.Shared
-
-
-@inject NavigationManager NavigationManager
-@inject NavigationManager NavigationManager
-
-
 @using Plants.Domain.Domain.Dtos;
 @using Plants.WA.Services
 @using Plants.WA.Shared
+@inject NavigationManager NavigationManager
+@using System.ComponentModel.DataAnnotations
+@using System.Text.RegularExpressions;
 
-<div class="container h-100">
-  
-    <div class="row align-items-center h-100">
-        <div class="col-md-6 mx-auto">
-            <div class="card">
-                <div class="card-body">
-                    <h3 class="card-title text-center">Registrarse</h3>
-                    <form>
-                        <div class="form-group">
-                            <label for="inputEmail">Correo electrónico</label>
-                            <input type="email" class="form-control" @bind="@inputEmail" id="inputEmail"  required placeholder="Ingresa tu correo electrónico">
-                        </div>
-                        <div class="form-group">
-                            <label for="inputPassword">Contraseña</label>
-                            <input type="password" class="form-control" @bind="@inputPassword" id="inputPassword" required placeholder="Ingresa tu contraseña">
-                        </div>
-                        <div class="text-center" style="margin-top: 1rem;">
-                            <button type="button" class="btn btn-primary" @onclick="Registrarse">Registrarse</button>
-                            <button type="button" class="btn btn-secondary" @onclick="VolverAlInicio">Volver a la pagina de Inicio</button>
-                        </div>                      
-                    </form>                
-                  
+<MudText Align="Align.Center" Typo="Typo.h4">Registrarse</MudText>
+<MudItem xs="12" sm="7" Class="mx-auto pa-6">
+        <MudPaper Class="pa-4" Elevation="3">
+            <MudForm @ref="form" @bind-IsValid="@success" @bind-Errors="@errors">
+            <MudTextField T="string" Label="Username" Required="true" RequiredError="User name is required!" @ref="inputUserName" />
+            <MudTextField T="string" Label="Email" Required="true" RequiredError="Email is required!" @ref="inputEmail"
+                              Validation="@(new EmailAddressAttribute() {ErrorMessage = "The email address is invalid"})" />
+            <MudTextField T=" string" Label="Password" HelperText="Choose a strong password" @ref="inputPassword"
+                              InputType="InputType.Password"
+                              Validation="@(new Func<string, IEnumerable<string>>(PasswordStrength))" Required="true"
+                              RequiredError="Password is required!"  />
+                <MudTextField T="string"
+                              Label="Password" HelperText="Repeat the password" InputType="InputType.Password"
+                              Validation="@(new Func<string, string>(PasswordMatch))" />
+                <div class="d-flex">
+                    <MudRadioGroup T="string" Required="true" RequiredError="Account type is required!">
+                        <MudRadio Option="@("Personal")">Personal</MudRadio>
+                        <MudRadio Option="@("Professional")">Professional</MudRadio>
+                    </MudRadioGroup>
                 </div>
-                @if (invalidInput)
-                {
-
-                    <div class="card text-bg-warning mb-3" style="max-width: 18rem;">
-                        <div class="card-header">Atención</div>
-                        <div class="card-body">
-                            <p class="card-text">Los campos introducidos no son correctos.</p>
-                        </div>
-                    </div>
-                }
-                @if (wrongLogin)
-                {
-                    <div class="card text-bg-danger mb-3" style="max-width: 18rem;">
-                        <div class="card-header">Atención</div>
-                        <div class="card-body">
-                            <p class="card-text">Correo electrónico o contraseña incorrectos.</p>
-                        </div>
-                    </div>
-                }
-            </div>
-        </div>
-    </div>
-</div>
-
-
+                <div class="d-flex align-center justify-space-between">
+                    <MudCheckBox T="bool" Required="true" RequiredError="You must agree" Label="I agree!" />
+                <MudButton Variant="Variant.Filled" Color="Color.Primary" Disabled="@(!success)" Class="ml-auto" OnClick="@(()=>Registrarse())">Registrarse</MudButton>
+                </div>
+            </MudForm>
+        </MudPaper>
+        <MudPaper Class="pa-4 mt-4" Elevation="3">
+        <MudButton Variant="Variant.Filled" Color="Color.Primary" DisableElevation="true" OnClick="@(()=>form.Validate())">Validate</MudButton>
+            <MudButton Variant="Variant.Filled" Color="Color.Secondary" DisableElevation="true" OnClick="@(()=>form.ResetAsync())" Class="mx-2">Reset</MudButton>
+            <MudButton Variant="Variant.Filled" DisableElevation="true" OnClick="@(()=>form.ResetValidation())">Reset Validation</MudButton>
+        </MudPaper>
+    <MudContainer Class="d-flex justify-end flex-grow-1 gap-4 mt-1">
+        <MudFab Href="/" Color="Color.Tertiary" StartIcon="@Icons.Material.Filled.ArrowBack" Size="Size.Large" />
+        </MudContainer>
+    </MudItem>
+@if (error == true)
+{    
+    <MudAlert Severity="Severity.Error" Variant="Variant.Filled">Ha ocurrido un error inesperado. Intentelo mas tarde</MudAlert>
+}
 
 @code {
 
     [Inject]
     public IUserService UserService { get; set; }
-    [CascadingParameter]
-    public string userInfo { get; set; }
-    private string inputEmail { get; set; }
-    private string inputPassword { get; set; }
+    [Inject] private IDialogService DialogService { get; set; }
 
-    private bool invalidInput { get; set; } = false;
-    private bool wrongLogin { get; set; } = false;
+    MudTextField<string?> inputUserName { get; set; }
+    MudTextField<string?> inputEmail { get; set; }
+    MudTextField<string?> inputPassword { get; set; }
 
+    bool success=false;
+    bool error = false;
+
+    string[] errors = { };    
+    MudForm form;
 
     private async void Registrarse()
     {
-
-        if (!string.IsNullOrEmpty(inputEmail) || !string.IsNullOrEmpty(inputPassword))
+        try
         {
             var loginUser = new UserDTO
                 {
-                    Name = inputEmail,
-                    Password = inputPassword
-                };            
-
-            if (UserService.Create(loginUser).IsCompletedSuccessfully)
-
+                    Name = inputEmail.Text,
+                    Email = inputEmail.Text,
+                    Password = inputPassword.Text
+                };
+            var result = await UserService.Create(loginUser);
+            if (result.IsSuccessStatusCode)
             {
-                // Iniciar sesión exitosamente
-                
-                NavigationManager.NavigateTo("/");
+                // Registro exitoso
+                bool? dialog = await DialogService.ShowMessageBox(
+               "Genial",
+               "Se ha registrado correctamente",
+               yesText: "OK");
+
+                StateHasChanged();
+                if (dialog == true)
+                {
+                    NavigationManager.NavigateTo("/");
+                }
+                else
+                {
+                    await form.ResetAsync();
+                    error = true;    
+                    StateHasChanged();
+                    await Task.Delay(5000);
+                    error = false;   
+                    StateHasChanged();
+                }
+
             }
-            else
-            {
-                // Mostrar mensaje de error
-                Console.WriteLine("Correo electrónico o contraseña incorrectos.");
-                wrongLogin = true;
-            }
-           
         }
-        else
+        catch
         {
-            invalidInput = true;
+            await form.ResetAsync();
+            error = true;   
+            StateHasChanged();
+            await Task.Delay(5000);
+            error = false;  
+            StateHasChanged();
         }
+
     }
 
     private void VolverAlInicio()
@@ -112,6 +117,31 @@
         NavigationManager.NavigateTo("/");
     }
 
+ 
+   
 
- }
+    private IEnumerable<string> PasswordStrength(string pw)
+    {
+        if (string.IsNullOrWhiteSpace(pw))
+        {
+            yield return "Password is required!";
+            yield break;
+        }
+        if (pw.Length < 8)
+            yield return "Password must be at least of length 8";
+        if (!Regex.IsMatch(pw, @"[A-Z]"))
+            yield return "Password must contain at least one capital letter";
+        if (!Regex.IsMatch(pw, @"[a-z]"))
+            yield return "Password must contain at least one lowercase letter";
+        if (!Regex.IsMatch(pw, @"[0-9]"))
+            yield return "Password must contain at least one digit";
+    }
+
+    private string PasswordMatch(string arg)
+    {
+        if (inputPassword.Value != arg)
+            return "Passwords don't match";
+        return null;
+    }
+}
 
