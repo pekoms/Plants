@@ -4,6 +4,8 @@ using Plants.WA;
 using Plants.WA.Services;
 using MudBlazor.Services;
 
+
+
 var builder = WebAssemblyHostBuilder.CreateDefault(args);
 builder.RootComponents.Add<App>("#app");
 builder.RootComponents.Add<HeadOutlet>("head::after");
@@ -15,9 +17,10 @@ builder.Services.AddTransient<IPlantRecordService, PlantRecordService>();
 builder.Services.AddTransient<IUserService, UserService>();
 builder.Services.AddSingleton<SharedStateService>();
 
+
 builder.Services.AddMudServices();
 
-
+    
 
 
 

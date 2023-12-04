@@ -9,6 +9,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="BlazorCaptcha" Version="1.2.3" />
     <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly" Version="6.0.16" />
     <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.DevServer" Version="6.0.10" />
     <PackageReference Include="Microsoft.Extensions.Configuration" Version="7.0.0" />
@@ -28,7 +29,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Plants.Domain\Plants.Domain.csproj" />
+    <ProjectReference Include="..\Plants.Domain\Plants.Domain.csproj" />	
   </ItemGroup>
 
 </Project>

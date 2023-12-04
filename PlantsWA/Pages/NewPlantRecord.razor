@@ -9,13 +9,14 @@
 <MudText Align="Align.Center" Typo="Typo.h4">Crear Registro Planta</MudText>
 <MudItem xs="6" sm="6" md="6" lg="6" xl="6" xxl="6" Class="mx-auto pa-6">
     <MudCard Elevation="3">
-<MudFileUpload T="IBrowserFile" Accept=".png, .jpg" FilesChanged="UploadFiles2" MaximumFileCount="100">
+<MudFileUpload T="IBrowserFile" Accept=".png, .jpg" FilesChanged="UploadFiles2" MaximumFileCount="100" >
     <ButtonTemplate>
         <MudButton HtmlTag="label"
                    Variant="Variant.Filled"
                    Color="Color.Primary"
                    StartIcon="@Icons.Material.Filled.CloudUpload"
-                   for="@context.Id">
+                   for="@context.Id"
+                           Class="mx-2 mt-2">
             Only image files
         </MudButton>
     </ButtonTemplate>
@@ -25,7 +26,7 @@
             <MudList>
                 @foreach (var file in files)
                 {
-                    <MudListItem Icon="@Icons.Material.Filled.AttachFile">
+                    <MudListItem Icon="@Icons.Material.Filled.AttachFile" Class="mx-2">
                         @file.Name <code>@file.Size bytes</code>
                     </MudListItem>
                 }

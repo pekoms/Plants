@@ -3,10 +3,12 @@
 @inject IJSRuntime jsr
 
 
+
 @using Plants.Domain.Domain.Dtos;
-@using Plants.WA.Services
-@using Plants.WA.Shared
-@using System.ComponentModel.DataAnnotations
+@using Plants.WA.Services;
+@using Plants.WA.Shared;
+@using System.ComponentModel.DataAnnotations;
+
 
 <MudText Align="Align.Center" Typo="Typo.h4">Autenticación</MudText>
         <EditForm Model="@model" OnValidSubmit="OnValidSubmit">
@@ -27,6 +29,8 @@
                         </MudCard>
                     </MudItem>                
         </EditForm>
+
+        <Captcha  CharNumber="@CaptchaLetters" />
        
         @if (success == true)
         {
@@ -55,6 +59,9 @@
     bool _drawerOpen = true;
     private bool loading = false;
     private bool error = false;
+
+    private string Captcha = "";
+    private int CaptchaLetters = 5;
 
     RegisterAccountForm model = new RegisterAccountForm();
     bool success;

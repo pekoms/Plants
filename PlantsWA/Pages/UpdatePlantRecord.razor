@@ -81,18 +81,21 @@
     protected override async Task OnInitializedAsync()
     {
         token = await jsr.InvokeAsync<string>("localStorage.getItem", "jwtToken");
-        
+
         plant = await PlantRecordService.Get(Id,token);
         if ( plant != null){
             model.Observation = plant.Observation;
             model.ContentImage = plant.ContentImage;
             model.IsWatered = plant.IsWatered;
             model.IsFertilised = plant.IsFertilised;
+            model.PlantId = plant.PlantId;
         }       
     }
 
     public class UpdatePlantRecordForm
     {
+        public string PlantId { get; set; }
+
         [Required]            
         public string ContentImage { get; set; }
 
@@ -141,7 +144,7 @@
 
     private async void BackToRecord()
     {
-        NavigationManager.NavigateTo($"PlantRecord/{Id}");
+        NavigationManager.NavigateTo($"PlantRecord/{model.PlantId}");
     }
 
         private void OnValidSubmit(EditContext context)
