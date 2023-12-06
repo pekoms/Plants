@@ -18,16 +18,30 @@
 </head>
 
 <body>
+    <script>
+        function recaptchaReady() {
+            console.log("llego")
+            grecaptcha.ready(function () {
+                grecaptcha.execute("6LfiXicpAAAAAAbAXl8KOHSCs_ZhA9ldpHyi6bQ_", { action: 'submit' }).then(function (token) {
+                    DotNet.invokeMethodAsync("Plants.WA", "RecaptchaCallback", token);
+                });
+            });
+        }
+    </script>
     <div id="app">Loading...</div>
-
+    <MudProgressLinear Color="Color.Secondary" Indeterminate="true" Class="my-7" />
     <div id="blazor-error-ui">
         An unhandled error has occurred.
         <a href="" class="reload">Reload</a>
         <a class="dismiss">🗙</a>
     </div>
+
     <script src="_framework/blazor.webassembly.js"></script>
     <script src="_content/MudBlazor/MudBlazor.min.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js?render=6LfiXicpAAAAAAbAXl8KOHSCs_ZhA9ldpHyi6bQ_"></script>
     <script>navigator.serviceWorker.register('service-worker.js');</script>
+
+
 </body>
 
 </html>

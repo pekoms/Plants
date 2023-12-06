@@ -1,0 +1,38 @@
+﻿@using Plants.WA.Services;
+@inject IJSRuntime jsr
+
+<button @onclick="EjecutarRecaptcha">Ejecutar reCAPTCHA</button>
+
+@code {
+    // [Parameter]
+    // string _token{ get; set; }
+    // [Parameter]
+    // public string MensajeHijo { get; set; }
+    // [Parameter]
+    // public EventCallback<string> onMensajeCambiado { get; set; }
+
+
+
+    private string dataKey = "6LfiXicpAAAAAAbAXl8KOHSCs_ZhA9ldpHyi6bQ_";
+
+   private async Task EjecutarRecaptcha()
+    {
+        await jsr.InvokeVoidAsync("recaptchaReady");
+    }
+
+    [JSInvokable]
+    public static void RecaptchaCallback(string token)
+    {
+        // Lógica para manejar el token de reCAPTCHA en el lado de Blazor
+        Console.WriteLine($"Token de reCAPTCHA: {token}");
+    }
+    // private  async Task VerificarCaptcha(string token)
+    // {
+    //     await _captchaService.Verify(token);
+    //     // Cambia el mensaje y dispara el evento al componente padre
+    //     MensajeHijo = "Nuevo mensaje desde el hijo";
+    //     OnMensajeCambiado.InvokeAsync(MensajeHijo);
+
+        
+    // }   
+}

@@ -30,7 +30,12 @@
                     </MudItem>                
         </EditForm>
 
-        <Captcha  CharNumber="@CaptchaLetters" />
+      
+
+        @* <ReCaptcha MensajeHijo=@mensajeDesdePadre onMensajeCambiado="ManejarMensajeCambiado"></ReCaptcha> *@
+
+        <ReCaptcha ></ReCaptcha>
+
        
         @if (success == true)
         {
@@ -51,21 +56,30 @@
     [Inject] 
     private IDialogService DialogService { get; set; }
     [Inject]
+    public ICaptchaService _captchaService { get; set; }
+    [Inject]
     SharedStateService SharedState { get; set; }
     [CascadingParameter]
     public MainLayout Layout { get; set; }
 
+    // private string mensajeDesdePadre = "Hola desde el padre";
+
+    // // Este método se llama cuando el evento en el componente Hijo es disparado
+    // private async void ManejarMensajeCambiado(string nuevoMensaje)
+    // {
+    //     Console.WriteLine($"Mensaje cambiado en el componente hijo: {nuevoMensaje}");
+    //     await _captchaService.Verify(nuevoMensaje);
+    // }
+
     private TokenDTO jwtToken { get; set; }
     bool _drawerOpen = true;
     private bool loading = false;
-    private bool error = false;
-
-    private string Captcha = "";
-    private int CaptchaLetters = 5;
-
-    RegisterAccountForm model = new RegisterAccountForm();
+    private bool error = false;   
     bool success;
-
+    string dataKey = "6LfiXicpAAAAAAbAXl8KOHSCs_ZhA9ldpHyi6bQ_";
+    bool captchaSucces = false;
+    RegisterAccountForm model = new RegisterAccountForm();
+  
     public class RegisterAccountForm
     {
         [Required]
@@ -81,6 +95,8 @@
     {
         try
         {
+             Type t = typeof(System.Data.DataSet);
+             string s = t.Assembly.FullName.ToString();
             var loginUser = new UserDTO
                 {
                     Name = model.Username,
