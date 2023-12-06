@@ -1,7 +1,9 @@
-﻿namespace Plants.Api.Services
+﻿using Plants.Domain.Domain.Dtos;
+
+namespace Plants.Api.Services
 {
     public interface ICaptchaService
     {
-         Task<bool>  VerifyGoogleCaptcha(string secretKey, string recaptchaToken);
+         Task<CaptchaResponseDTO>  VerifyGoogleCaptcha(string secretKey, string recaptchaToken);
     }
 }

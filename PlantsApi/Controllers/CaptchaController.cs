@@ -31,21 +31,11 @@ namespace Plants.Api.Controllers
 
         [HttpPost("verifyCaptcha")]
         public async Task<ActionResult> VerifyCaptcha([FromBody] string recaptchaToken)
-        {
-            // Lógica para verificar el CAPTCHA en el lado del servidor
+        {            
             var secretKey = _config.GetSection("Captcha")["SecretKey"];
-            var isCaptchaValid = await _captchaService.VerifyGoogleCaptcha(secretKey,recaptchaToken);
+            var captchaResponse = await _captchaService.VerifyGoogleCaptcha(secretKey,recaptchaToken);
 
-            if (isCaptchaValid)
-            {
-                // CAPTCHA válido, realiza las acciones necesarias
-                return Ok(new { message = "CAPTCHA válido" });
-            }
-            else
-            {
-                // CAPTCHA no válido, devuelve un mensaje de error
-                return BadRequest(new { message = "CAPTCHA no válido" });
-            }
+            return Ok(captchaResponse);
         }
 
     }

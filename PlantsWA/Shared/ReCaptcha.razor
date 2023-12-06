@@ -1,38 +1,54 @@
 ﻿@using Plants.WA.Services;
 @inject IJSRuntime jsr
 
-<button @onclick="EjecutarRecaptcha">Ejecutar reCAPTCHA</button>
 
 @code {
-    // [Parameter]
-    // string _token{ get; set; }
-    // [Parameter]
-    // public string MensajeHijo { get; set; }
-    // [Parameter]
-    // public EventCallback<string> onMensajeCambiado { get; set; }
+    private static ReCaptcha _instancia;
 
+  // Constructor privado para evitar instanciación externa
 
+    public static ReCaptcha Instancia
+    {
+        get
+        {
+            if (_instancia == null)
+            {
+                _instancia = new ReCaptcha();
+            }
+            return _instancia;
+        }
+    }
+    [Parameter]
+    public string newToken { get; set; }
+    [Parameter]
+    public EventCallback<string> onTokenChange { get; set; }
+
+    private static string _token { get; set; } = "";
 
     private string dataKey = "6LfiXicpAAAAAAbAXl8KOHSCs_ZhA9ldpHyi6bQ_";
 
-   private async Task EjecutarRecaptcha()
+    protected override async Task OnInitializedAsync()
     {
         await jsr.InvokeVoidAsync("recaptchaReady");
-    }
+    } 
 
-    [JSInvokable]
-    public static void RecaptchaCallback(string token)
-    {
-        // Lógica para manejar el token de reCAPTCHA en el lado de Blazor
-        Console.WriteLine($"Token de reCAPTCHA: {token}");
-    }
-    // private  async Task VerificarCaptcha(string token)
+    // [JSInvokable]
+    // public async static void RecaptchaCallback(string token)
     // {
-    //     await _captchaService.Verify(token);
-    //     // Cambia el mensaje y dispara el evento al componente padre
-    //     MensajeHijo = "Nuevo mensaje desde el hijo";
-    //     OnMensajeCambiado.InvokeAsync(MensajeHijo);
+    //     // Lógica para manejar el token de reCAPTCHA en el lado de Blazor
 
-        
-    // }   
+    //     _token = token;
+    //     if (!string.IsNullOrEmpty(_token))
+    //     {
+    //         Instancia.CambiarMensaje();
+    //         Console.WriteLine($"Token de reCAPTCHA: {token}");
+           
+    //     }
+    // }
+
+    public async void CambiarMensaje()
+    {       
+            await onTokenChange.InvokeAsync(_token);        
+    }
+
 }

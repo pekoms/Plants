@@ -1,8 +1,7 @@
-﻿using Plants.Api.Domain.Dtos;
-using static System.Net.Mime.MediaTypeNames;
-using System.Net.Http.Headers;
+﻿using static System.Net.Mime.MediaTypeNames;
 using System.Text.Json;
 using System.Text;
+using Plants.Domain.Domain.Dtos;
 
 namespace Plants.WA.Services
 {
@@ -10,7 +9,7 @@ namespace Plants.WA.Services
     {
 
         private string URL = "https://localhost:7137";
-        private string RESOURCE = "/api/Captcha";
+        private string RESOURCE = "/api/Captcha/verifyCaptcha";
 
 
 
@@ -21,7 +20,7 @@ namespace Plants.WA.Services
             _httpClient = httpClient;
         }
 
-        public async Task<string> Verify(string token)
+        public async Task<CaptchaResponseDTO> Verify(string token)
         {
             
             var todoItemJson = new StringContent(JsonSerializer.Serialize<string>(token), Encoding.UTF8,
@@ -31,7 +30,7 @@ namespace Plants.WA.Services
                 await _httpClient.PostAsync(URL + RESOURCE, todoItemJson);
 
             var jsonString = await httpResponseMessage.Content.ReadAsStringAsync();
-            var result = JsonSerializer.Deserialize<string>(jsonString);
+            var result = JsonSerializer.Deserialize<CaptchaResponseDTO>(jsonString);
 
             return result;
         }

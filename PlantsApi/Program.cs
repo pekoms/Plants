@@ -30,6 +30,9 @@ builder.Services.AddScoped<IUserService, UserService>();
 builder.Services.AddScoped<IPlantService, PlantService>();
 builder.Services.AddScoped<IPlantRecordService, PlantRecordService>();
 builder.Services.AddScoped<IUtilsService, UtilsService>();
+builder.Services.AddScoped<ICaptchaService, CaptchaService>();
+builder.Services.AddScoped<HttpClient>();
+
 
 
 builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)

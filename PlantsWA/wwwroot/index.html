@@ -18,15 +18,16 @@
 </head>
 
 <body>
-    <script>
+    <script>        
         function recaptchaReady() {
-            console.log("llego")
             grecaptcha.ready(function () {
-                grecaptcha.execute("6LfiXicpAAAAAAbAXl8KOHSCs_ZhA9ldpHyi6bQ_", { action: 'submit' }).then(function (token) {
+                grecaptcha.execute("6LfiXicpAAAAAAbAXl8KOHSCs_ZhA9ldpHyi6bQ_", { action: 'submit' }).then(function (token) {               
+                    // Invocar el método de C# con el token almacenado
                     DotNet.invokeMethodAsync("Plants.WA", "RecaptchaCallback", token);
                 });
             });
         }
+      
     </script>
     <div id="app">Loading...</div>
     <MudProgressLinear Color="Color.Secondary" Indeterminate="true" Class="my-7" />

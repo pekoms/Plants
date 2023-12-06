@@ -1,9 +1,6 @@
 ﻿@page "/"
 @inject NavigationManager NavigationManager
 @inject IJSRuntime jsr
-
-
-
 @using Plants.Domain.Domain.Dtos;
 @using Plants.WA.Services;
 @using Plants.WA.Shared;
@@ -11,7 +8,7 @@
 
 
 <MudText Align="Align.Center" Typo="Typo.h4">Autenticación</MudText>
-        <EditForm Model="@model" OnValidSubmit="OnValidSubmit">
+        <EditForm Model="@model" >
                 <DataAnnotationsValidator />
                         <MudItem xs="6" sm="6" md="6" lg="6" xl="6" xxl="6" Class="mx-auto pa-6">
                         <MudCard Elevation="3">
@@ -24,19 +21,12 @@
                             </MudCardContent>
                             <MudCardActions>
                                 <MudButton OnClick="@(()=>IniciarSesion())" ButtonType="ButtonType.Submit" Variant="Variant.Filled" Color="Color.Primary" Class="ml-auto">Iniciar Sesion</MudButton>
-                                <MudButton OnClick="@(()=>Registrarse())" ButtonType="ButtonType.Submit" Variant="Variant.Filled" Color="Color.Secondary" Class="mx-2">Registrarse</MudButton>                                
+                                <MudButton Href="/registration" ButtonType="ButtonType.Submit" Variant="Variant.Filled" Color="Color.Secondary" Class="mx-2">Registrarse</MudButton>                                
                             </MudCardActions>
                         </MudCard>
                     </MudItem>                
         </EditForm>
-
-      
-
-        @* <ReCaptcha MensajeHijo=@mensajeDesdePadre onMensajeCambiado="ManejarMensajeCambiado"></ReCaptcha> *@
-
-        <ReCaptcha ></ReCaptcha>
-
-       
+          
         @if (success == true)
         {
             <MudAlert Severity="Severity.Success">Se ha autenticado correctamente</MudAlert>
@@ -48,6 +38,11 @@
         @if (loading)
         {
             <MudProgressLinear Color="Color.Secondary" Indeterminate="true" Class="my-7" />
+        }
+        @if (captchaLoading)
+        {
+            <MudAlert Severity="Severity.Info" Variant="Variant.Filled">Verificando Protección Contra Bots</MudAlert>
+            <MudProgressLinear Color="Color.Primary" Indeterminate="true" Class="my-7" />
         }
 
 @code {
@@ -62,24 +57,17 @@
     [CascadingParameter]
     public MainLayout Layout { get; set; }
 
-    // private string mensajeDesdePadre = "Hola desde el padre";
-
-    // // Este método se llama cuando el evento en el componente Hijo es disparado
-    // private async void ManejarMensajeCambiado(string nuevoMensaje)
-    // {
-    //     Console.WriteLine($"Mensaje cambiado en el componente hijo: {nuevoMensaje}");
-    //     await _captchaService.Verify(nuevoMensaje);
-    // }
+    private static string _captchaToken { get; set; } = "";
 
     private TokenDTO jwtToken { get; set; }
     bool _drawerOpen = true;
-    private bool loading = false;
+    private  bool  loading = false;
     private bool error = false;   
-    bool success;
-    string dataKey = "6LfiXicpAAAAAAbAXl8KOHSCs_ZhA9ldpHyi6bQ_";
-    bool captchaSucces = false;
+    private bool success = false;    
+    bool captchaLoading = false;
+
     RegisterAccountForm model = new RegisterAccountForm();
-  
+
     public class RegisterAccountForm
     {
         [Required]
@@ -91,33 +79,69 @@
         public string Password { get; set; }       
 
     }
+
+    protected override async Task OnInitializedAsync()
+    {    
+
+    }
+    [JSInvokable]
+    public async static void RecaptchaCallback(string token)
+    {           
+        Console.WriteLine($"Token de reCAPTCHA: {token}");
+        _captchaToken = token;
+    }
     private async void IniciarSesion()
     {
         try
         {
-             Type t = typeof(System.Data.DataSet);
-             string s = t.Assembly.FullName.ToString();
-            var loginUser = new UserDTO
-                {
-                    Name = model.Username,
-                    Password = model.Password
-                };
-
-            jwtToken = await UserService.Login(loginUser);
-            if (!string.IsNullOrEmpty(jwtToken.token))
+            await jsr.InvokeVoidAsync("recaptchaReady");
+            captchaLoading = true;
+            StateHasChanged();
+            await Task.Delay(15000);
+            captchaLoading = false;
+            StateHasChanged();
+            if (!string.IsNullOrEmpty(_captchaToken))
             {
-                // Iniciar sesión exitosamente
-                loading = true;
-                StateHasChanged();
-                await Task.Delay(3000);
-                await jsr.InvokeVoidAsync("localStorage.setItem", "jwtToken", jwtToken.token);
-                await jsr.InvokeVoidAsync("localStorage.setItem", "name", loginUser.Name);
-                SharedState.ActualizarValor(true);
-                NavigationManager.NavigateTo("main");
+                var captCharesult= await _captchaService.Verify(_captchaToken);
+                if (captCharesult.success)
+                {
+                    var loginUser = new UserDTO
+                        {
+                            Name = model.Username,
+                            Password = model.Password
+                        };
+
+                    jwtToken = await UserService.Login(loginUser);
+                    if (!string.IsNullOrEmpty(jwtToken.token))
+                    {
+                        // Iniciar sesión exitosamente
+                        success = true;
+                        loading = true;
+                        StateHasChanged();
+                        await Task.Delay(3000);
+                        await jsr.InvokeVoidAsync("localStorage.setItem", "jwtToken", jwtToken.token);
+                        await jsr.InvokeVoidAsync("localStorage.setItem", "name", loginUser.Name);
+                        SharedState.ActualizarValor(true);
+                        success = false;
+                        loading = false;
+                        error = false;
+                        captchaLoading = false;
+                        NavigationManager.NavigateTo("main");
+                    }
+                    else
+                    {
+                        ShowDialog("Usuario o Contraseña incorrecto.");
+                    }
+                }
+                else
+                {
+                    ShowDialog("Validación Captcha fallida.");
+                }
+
             }
             else
             {
-                ShowDialog();
+                ShowDialog("Vuelva a intentarlo en algunos segundos. Algunos servicios podrían no haberse cargado bien.");
             }
         }
         catch(Exception ex)
@@ -130,24 +154,15 @@
         }                      
     }
 
-    private async void ShowDialog()
+    private async void ShowDialog(string message)
     {
         bool? result = await DialogService.ShowMessageBox(
            "Aviso",
-           "Usuario o Contraseña incorrecto",
+           message,
            yesText: "OK");
-        
-        StateHasChanged();
-    }
 
-    private void Registrarse()
-    {
-        NavigationManager.NavigateTo("registration");
-        
-    }
-    private void OnValidSubmit(EditContext context)
-    {
-        success = true;
         StateHasChanged();
-    }    
+    }  
+    
+    
 }

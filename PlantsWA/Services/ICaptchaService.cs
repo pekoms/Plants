@@ -1,7 +1,9 @@
-﻿namespace Plants.WA.Services
+﻿using Plants.Domain.Domain.Dtos;
+
+namespace Plants.WA.Services
 {
     public interface ICaptchaService
     {
-        Task<string> Verify(string token);
+        Task<CaptchaResponseDTO> Verify(string token);
     }
 }
