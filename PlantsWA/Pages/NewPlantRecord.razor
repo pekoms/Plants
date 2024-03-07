@@ -9,7 +9,7 @@
 <MudText Align="Align.Center" Typo="Typo.h4">Crear Registro Planta</MudText>
 <MudItem xs="6" sm="6" md="6" lg="6" xl="6" xxl="6" Class="mx-auto pa-6">
     <MudCard Elevation="3">
-<MudFileUpload T="IBrowserFile" Accept=".png, .jpg" FilesChanged="UploadFiles2" MaximumFileCount="100" >
+<MudFileUpload T="IBrowserFile" Accept=".png, .jpg" FilesChanged="UploadFiles" MaximumFileCount="100" >
     <ButtonTemplate>
         <MudButton HtmlTag="label"
                    Variant="Variant.Filled"
@@ -166,8 +166,6 @@
         {
 
         }
-
-
     }
     private async void Resetear()
     {
@@ -183,8 +181,7 @@
         NavigationManager.NavigateTo($"PlantRecord/{Id}");
     }
 
-
-    private void UploadFiles2(IBrowserFile file)
+    private void UploadFiles(IBrowserFile file)
     {
         files.Add(file);
         //TODO upload the files to the server

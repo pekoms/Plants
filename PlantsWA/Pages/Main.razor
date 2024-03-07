@@ -29,10 +29,13 @@
             }                       
         }       
     </MudCarousel>
-    <MudPaper  Class="d-flex justify-center flex-grow-1 gap-4 ma-2" Elevation="0">
-        <MudFab Color="Color.Warning" StartIcon="@Icons.Material.Filled.ThumbDown" Size="Size.Large" OnClick="@(()=>Dislike())" />
+    @if (_source.Any())
+    {
+        <MudPaper  Class="d-flex justify-center flex-grow-1 gap-4 ma-2" Elevation="0">
+            <MudFab Color="Color.Warning" StartIcon="@Icons.Material.Filled.ThumbDown" Size="Size.Large" OnClick="@(()=>Dislike())" />
         <MudFab Color="Color.Success" StartIcon="@Icons.Material.Filled.ThumbUp"  Size="Size.Large" OnClick="@(()=>Like())" />
-    </MudPaper>
+        </MudPaper>
+    }
 </MudPaper>
 <MudContainer Class="d-flex justify-end flex-grow-1 gap-4 mt-1">
     <LoggoutBtn></LoggoutBtn>

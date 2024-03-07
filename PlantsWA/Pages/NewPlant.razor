@@ -3,156 +3,147 @@
 @using Plants.Api.Domain.Dtos
 @using Plants.WA.Services
 @using Plants.WA.Shared
+@using System.ComponentModel.DataAnnotations;
 @inject IJSRuntime jsr
 @inject NavigationManager NavigationManager
 
-<NavMenu />
-<h3>NewPlantRecord</h3>
+
+    <MudText Align="Align.Center" Typo="Typo.h4">Crear Registro Planta</MudText>
+    <MudItem xs="6" sm="6" md="6" lg="6" xl="6" xxl="6" Class="mx-auto pa-6">    
+        <MudCard Elevation="3">
+            <MudFileUpload T="IBrowserFile" Accept=".png, .jpg" FilesChanged="UploadFiles" MaximumFileCount="100">
+                <ButtonTemplate>
+                    <MudButton HtmlTag="label"
+                               Variant="Variant.Filled"
+                               Color="Color.Primary"
+                               StartIcon="@Icons.Material.Filled.CloudUpload"
+                               for="@context.Id"
+                               Class="mx-2 mt-2">
+                        Only image files
+                    </MudButton>
+                </ButtonTemplate>
+            </MudFileUpload>
+            @if (files != null)
+            {
+                <MudList>
+                    @foreach (var file in files)
+                    {
+                        <MudListItem Icon="@Icons.Material.Filled.AttachFile" Class="mx-2">
+                            @file.Name <code>@file.Size bytes</code>
+                        </MudListItem>
+                    }
+                </MudList>
+            }
+
+            <EditForm Model="@model" >
+                <DataAnnotationsValidator />
 
 
-<form>
-    <div class="form-group">
-        <label for="inputNombre">Nombre:</label>
-        <input type="text" class="form-control" id="inputNombre" @bind="@Nombre">
-    </div>
-    <div class="form-group">
-        <label for="inputEmail">Foto:</label>
-        <InputFile OnChange="HandleFileChange" />
-        @if (Foto != null)
-        {
-            <h4>Imagen cargada:</h4>
-            <img src="@Foto" alt="Imagen cargada" />
-        }
-    </div>
-    <div class="form-group">
-        <label for="inputFechaLlegadaCasa">Fecha De Llegada A Casa:</label>
-        <input type="text" class="form-control" id="inputFechaLlegadaCasa" @bind="@FechaLlegadaCasa">
-    </div>
+                <MudCardContent>
+                <MudTextField Variant="Variant.Outlined" Label="Nombre" HelperText="Nombre"
+                @bind-Value="model.Nombre" For="@(() => model.Nombre)" />  
 
-   @* <div class="form-group">
-        <label for="inputFamilia">Familia:</label>
-       
-        <input type="text" class="form-control" id="inputFamilia" @bind="@Familia">
-    </div>
-    <div class="form-group">
-        <label for="inputOrigen">Origen:</label>
-        <input type="text" class="form-control" id="inputOrigen" @bind="@Origen">
-    </div>
-    <div class="form-group">
-        <label for="inputCaracteristicas">Caracteristicas:</label>
-        <input type="text" class="form-control" id="inputCaracteristicas" @bind="@Caracteristicas">
-    </div>
-    <div class="form-group">
-        <label for="inputHojas">Hojas:</label>
-        <input type="text" class="form-control" id="inputHojas" @bind="@Hojas">
-    </div>
-     <div class="form-group">
-        <label for="inputFlores">Flores:</label>
-        <input type="text" class="form-control" id="inputFlores" @bind="@Flores">
-    </div>
-     <div class="form-group">
-        <label for="inputEpocaFloracion">EpocaFloracion:</label>
-        <input type="text" class="form-control" id="inputEpocaFloracion" @bind="@EpocaFloracion">
-    </div>
-     <div class="form-group">
-        <label for="inputDestino">Destino:</label>
-        <input type="text" class="form-control" id="inputDestino" @bind="@Destino">
-    </div>
-     <div class="form-group">
-        <label for="inputAdaptacion">Adaptación:</label>
-        <input type="text" class="form-control" id="inputAdaptacion" @bind="@Adaptacion">
-    </div>
-     <div class="form-group">
-        <label for="inputSuelo">Suelo:</label>
-        <input type="tel" class="form-control" id="inputSuelo" @bind="@Suelo">
-    </div>
-    <div class="form-group">
-        <label for="inputLuminosidad">Luminosidad:</label>
-        <input type="tel" class="form-control" id="inputLuminosidad" @bind="@Luminosidad">
-    </div>
-    <div class="form-group">
-        <label for="inputResistenciaFrio">Resistencia Al Frio:</label>
-        <input type="tel" class="form-control" id="inputResistenciaFrio" @bind="@ResistenciaFrio">
-    </div>
-    <div class="form-group">
-        <label for="inputHumedadAmbiente">Humedad Del Ambiente:</label>
-        <input type="tel" class="form-control" id="inputHumedadAmbiente" @bind="@HumedadAmbiente">
-    </div>
-    <div class="form-group">
-        <label for="inputRiego">Riego:</label>
-        <input type="tel" class="form-control" id="inputRiego" @bind="@Riego">
-    </div>
-    <div class="form-group">
-        <label for="inputAbonos">Abonos:</label>
-        <input type="tel" class="form-control" id="inputAbonos" @bind="@Abonos">
-    </div>
-    <div class="form-group">
-        <label for="inputParasitos">Parasitos:</label>
-        <input type="tel" class="form-control" id="inputParasitos" @bind="@Parasitos">
-    </div>
-    <div class="form-group">
-        <label for="inputPropagacion">Propagacion:</label>
-        <input type="tel" class="form-control" id="inputPropagacion" @bind="@Propagacion">
-    </div>
-   *@ <div class="form-group">
-        <label for="inputCuidados">Cuidados:</label>
-        <input type="tel" class="form-control" id="inputCuidados" @bind="@Cuidados">
-    </div>
+                <MudSelect Margin="Margin.Dense" T="Categorias" @bind-Value="indexCategoria" Label="Categoria" Variant="Variant.Text" SelectedValuesChanged="@(()=>RellenarSubcategorias())">
+                    @foreach (Categorias item in Enum.GetValues(typeof(Categorias)))
+                    {
+                        <MudSelectItem Value="@item">@item</MudSelectItem>
+                    }
+                               
+                </MudSelect>
 
+                <MudSelect Margin="Margin.Dense" @bind-Value="IndexSubcategoria" T="string" Label="SubCategoria" Variant="Variant.Text" SelectedValuesChanged="@(()=>RellenarDetalles())">
+                    @foreach (var item in SubCategorias)
+                    {
+                        <MudSelectItem Value="@(item)" />
+                    }
 
- @*   <div class="form-group">
-        <label for="inputMensaje">Mensaje:</label>
-        <textarea class="form-control" id="inputMensaje" rows="5" @bind="@Familia"></textarea>
-    </div>*@
-    <button type="button" class="btn btn-primary" @onclick="@Enviar">Enviar</button>
+                </MudSelect>
+                <MudSelect Margin="Margin.Dense" Label="Detalle" T="string" Variant="Variant.Text">
+                    @foreach (var item in Detalles)
+                    {
+                        <MudSelectItem Value="@(item)" />
+                    }
 
-         
-        @if(spinner==true)
-        {
-        <button class="btn btn-primary" type="button" disabled>
-            <span class="spinner-grow spinner-grow-sm" role="status" aria-hidden="true"></span>
-            Creando Planta...
-        </button>
-        }    
-    
-</form>
+                </MudSelect>
+                <MudTextField Variant="Variant.Outlined" Label="Observaciones" HelperText="Observaciones"
+                 @bind-Value="model.Observation" For="@(() => model.Observation)" />
+                    @*  <MudTextField Label="Password" HelperText="Introduzca su contraseña" Class="mt-3"
+                    @bind-Value="model.Password" For="@(() => model.Password)" /> *@
 
+                </MudCardContent>
+                <MudCardActions>
+                    <MudButton OnClick="@(()=>Crear())" ButtonType="ButtonType.Submit" Variant="Variant.Filled" Color="Color.Secondary" Class="mx-2">Crear</MudButton>
+                    <MudButton OnClick="@(()=>Resetear())" ButtonType="ButtonType.Submit" Variant="Variant.Filled" Color="Color.Secondary" Class="mx-2">Reset</MudButton>
+                </MudCardActions>
 
+            </EditForm>
+        </MudCard>
+    </MudItem>
+    <MudContainer Class="d-flex justify-end flex-grow-1 gap-4 mt-1">
+        <MudFab Color="Color.Tertiary" StartIcon="@Icons.Material.Filled.ArrowBack" Size="Size.Large" OnClick="@(()=>BackToPlants())" />
+        <LoggoutBtn></LoggoutBtn>
+    </MudContainer>
+    @if (success == true)
+    {
+        <MudAlert Severity="Severity.Success">Se ha autenticado actualizado el registro correctamente</MudAlert>
+    }
+    @if (error == true)
+    {
+        <MudAlert Severity="Severity.Error" Variant="Variant.Filled">Ha ocurrido un error inesperado. Intentelo mas tarde</MudAlert>
+    }
+    @if (loading)
+    {
+        <MudProgressLinear Color="Color.Secondary" Indeterminate="true" Class="my-7" />
+    }
+    @if (spinner == true)
+    {
+        <MudProgressLinear Color="Color.Secondary" Indeterminate="true" Class="my-7" />
+    }
 
 @code {
+    public PlantCreateForm model { get; set; } = new PlantCreateForm();
 
+    public enum Categorias  { PlantasInterior,PlantasExterior,  Bulbos, Bonsáis , Huerto };
+    private Categorias indexCategoria { get; set; }
+    private string IndexSubcategoria { get; set; }
 
-    private string Nombre { get; set; }
+    public List<string> SubCategorias = new List<string>();
+    public List<string> Detalles = new List<string>();
+
+    private string? Nombre { get; set; }
     private string? Foto { get; set; }
     private string? FechaLlegadaCasa { get; set; }
-
-    //private string? Familia { get; set; }
-    //private string? Origen { get; set; }
-    //private string? Caracteristicas { get; set; }
-    //private string? Hojas { get; set; }
-    //private string? Flores { get; set; }
-    //private string? EpocaFloracion { get; set; }
-    //private string? Destino { get; set; }
-    //private string? Adaptacion { get; set; }
-    //private string? Suelo { get; set; }
-    //private string? Luminosidad { get; set; }
-    //private string? ResistenciaFrio { get; set; }
-    //private string? HumedadAmbiente { get; set; }
-    //private string? Riego { get; set; }
-    //private string? Abonos { get; set; }
-    //private string? Parasitos { get; set; }
-    //private string? Propagacion { get; set; }
     private string? Cuidados { get; set; }
 
+    private bool loading = false;
+    private bool error = false;
+    private bool success = false;
     private bool spinner = false;
-    private string token;
+    private string? token;
+    private string? user;
+    IList<IBrowserFile> files = new List<IBrowserFile>();
 
+  
+
+    public class PlantCreateForm
+    {
+        [Required]
+        public string? ContentImage { get; set; }
+        [Required]
+        public string? Observation { get; set; }
+        [Required]
+        public string? Nombre { get; set; }
+        [Required]
+        public bool IsWatered { get; set; }
+        [Required]
+        public bool IsFertilised { get; set; }
+    }
     protected override async Task OnInitializedAsync()
     {
         token = await jsr.InvokeAsync<string>("localStorage.getItem", "jwtToken");
+        user = await jsr.InvokeAsync<string>("localStorage.getItem", "name");
+
     }
-
-
 
     private async Task HandleFileChange(InputFileChangeEventArgs e)
     {
@@ -172,7 +163,7 @@
             Foto = null;
         }
     }
-    private async void Enviar()
+    private async void Crear()
     {
         var createPlantRecord = new PlantDTO
         {
@@ -180,7 +171,7 @@
                 Foto = Foto,
                 FechaLlegadaCasa = FechaLlegadaCasa,  
                 Cuidados = Cuidados,
-                OwnerId = "ale"
+                OwnerId = user
                 //Familia = Familia,
                 //Origen = Origen,
                 //Caracteristicas = Caracteristicas,
@@ -196,15 +187,130 @@
                 //Riego = Riego,
                 //Abonos = Abonos,
                 //Parasitos = Parasitos,
-                //Propagacion = Propagacion,
-                
-
+                //Propagacion = Propagacion,                
         };
         await CrearPlant(createPlantRecord);
         spinner = true;
+        StateHasChanged();
         await Task.Delay(TimeSpan.FromSeconds(3));
         spinner = false;
-               
+        StateHasChanged();
+
         NavigationManager.NavigateTo("Plants");
+    }
+
+    private void Resetear()
+    {
+        model.IsFertilised = false;
+        model.IsWatered = false;
+        model.Observation = string.Empty;
+
+        files.Clear();
+    }
+
+    private void BackToPlants()
+    {
+        NavigationManager.NavigateTo("Plants");
+    }
+
+    private void UploadFiles(IBrowserFile file)
+    {
+        files.Add(file);            
+    }
+
+
+
+    private void RellenarSubcategorias()
+    {
+        var index = indexCategoria;
+        SubCategorias.Clear();  
+        
+        switch (indexCategoria)
+        {
+            case Categorias.PlantasInterior:
+                var listSubCategoriasInterior = new List<string>() { {"PlantasInteriorFlor" }, { "PlantasVerdes" }, { "Orquídeas" }, { "Cactus/Crasas" }, { "Bambú" }, {"Carnívoras" }, {"Bromelias" }, {"Composiciones" } };
+                foreach (var item in listSubCategoriasInterior)
+                {
+                    SubCategorias.Add(item);
+                }
+
+                break;
+            case Categorias.PlantasExterior:
+                var listSubCategoriasExterior = new List<string>() { { "PlantasTemporadaBalcónTerraza" }, { "Trepadoras" }, { "Frutales" }, { "Arómaticas" }, { "Arbustos" }, { "Palmeras" }, { "Coníferas" }, { "Rosales" }, { "Árboles" } };
+                foreach (var item in listSubCategoriasExterior)
+                {
+                    SubCategorias.Add(item);
+                }
+                break;
+            case Categorias.Bulbos:
+                var listSubCategoriasBulbos = new List<string>() { { "BulbosPrimavera" }, {"Bulbos de Otoño" } };
+                foreach (var item in listSubCategoriasBulbos)
+                {
+                    SubCategorias.Add(item);
+                }
+                break;
+            case Categorias.Bonsáis:
+                var listSubCategoriasBonsai = new List<string>() { { "Bonsai" } };
+                foreach (var item in listSubCategoriasBonsai)
+                {
+                    SubCategorias.Add(item);
+                }
+                break;
+            case Categorias.Huerto:
+                var listSubCategoriasHuerto = new List<string>() { { "PlantasHuerto" }, { "HuertosUrbanos" }, { "Calabazas" } };
+                foreach (var item in listSubCategoriasHuerto)
+                {
+                    SubCategorias.Add(item);
+                }
+                break;
+
+        }
+    }
+
+    private void RellenarDetalles()
+    {
+        var index = indexCategoria;
+        SubCategorias.Clear();
+
+        switch (indexCategoria)
+        {
+            case Categorias.PlantasInterior:
+                var listSubCategoriasInterior = new List<string>() { { "PlantasInteriorFlor" }, { "PlantasVerdes" }, { "Orquídeas" }, { "Cactus/Crasas" }, { "Bambú" }, { "Carnívoras" }, { "Bromelias" }, { "Composiciones" } };
+                foreach (var item in listSubCategoriasInterior)
+                {
+                    SubCategorias.Add(item);
+                }
+
+                break;
+            case Categorias.PlantasExterior:
+                var listSubCategoriasExterior = new List<string>() { { "PlantasTemporadaBalcónTerraza" }, { "Trepadoras" }, { "Frutales" }, { "Arómaticas" }, { "Arbustos" }, { "Palmeras" }, { "Coníferas" }, { "Rosales" }, { "Árboles" } };
+                foreach (var item in listSubCategoriasExterior)
+                {
+                    SubCategorias.Add(item);
+                }
+                break;
+                // case 2:
+                //     var listSubCategoriasBulbos = new Dictionary<int, string>() { { 0, "BulbosPrimavera" }, { 1, "Bulbos de Otoño" } };
+                //     foreach (var item in listSubCategoriasBulbos)
+                //     {
+                //         SubCategorias.Add(item.Key, item.Value);
+                //     }
+                //     break;
+                // case 3:
+                //     var listSubCategoriasBonsai = new Dictionary<int, string>() { { 0, "Bonsai" }};
+                //     foreach (var item in listSubCategoriasBonsai)
+                //     {
+                //         SubCategorias.Add(item.Key, item.Value);
+                //     }
+                //     break;
+                // case 4:
+                //     var listSubCategoriasHuerto = new Dictionary<int, string>() { { 0, "PlantasHuerto" }, { 1, "HuertosUrbanos" }, { 2, "Calabazas" } };
+                //     foreach (var item in listSubCategoriasHuerto)
+                //     {
+                //         SubCategorias.Add(item.Key, item.Value);
+                //     }
+                //     break;
+
+        }
     }
 }
